@@ -18,14 +18,12 @@ class SiteController extends Controller
 
     private $AppID;
     private $AppSecret;
-    const INSERT = 'insert_user_assign';
 
     public function init()
     {
         parent::init();
         $this->AppID     = Yii::$app->params['AppID'];
         $this->AppSecret = Yii::$app->params['AppSecret'];
-        $this->on(self::INSERT, ['backend\components\event\UserEvent', 'InsertUserAssign']);
     }
 
 
