@@ -17,6 +17,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'baseUrl' => '/admin',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -40,19 +41,7 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,//true 美化路由(注:需要配合web服务器配置伪静态，详见http://doc.feehi.com/install.html), false 不美化路由
             'showScriptName' => false,//隐藏index.php
-            'rules' => [
-                '' => 'site/index',
-                '<page:\d+>' => 'article/index',
-                'login' => 'site/login',
-                'signup' => 'site/signup',
-                'view/<id:\d+>' => 'article/view',
-                'page/<name:\w+>' => 'page/view',
-                'comment' => 'article/comment',
-                'search' => 'search/index',
-                'tag/<tag:[- \w]+>' => 'search/tag',
-                'rss' => 'article/rss',
-                'list/<page:\d+>' => 'site/index',
-            ],
+            'rules' => [],
         ],
     ],
     'params' => $params,
