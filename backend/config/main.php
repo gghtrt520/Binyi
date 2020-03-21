@@ -13,9 +13,6 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        'admin' => [
-            'class' => 'mdm\admin\Module',
-        ]
     ],
     'components' => [
         'request' => [
