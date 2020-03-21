@@ -158,3 +158,1814 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1584698025.55
     'REQUEST_TIME' => 1584698025
 ]
+2020-03-21 12:02:29 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:02:29 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:02:29 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_POST = [
+    '_csrf-backend' => 'v-LBEJ3yD4MI9OPfXrzbYPI9ncB2n8w3zkirXOyEfneO0pJyz5987mbG0J0q2pQjplDomk7Xj1KUIvEkoLQMGw=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '239'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7698'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '239'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792149.8914
+    'REQUEST_TIME' => 1584792149
+]
+2020-03-21 12:02:49 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:02:49 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+    'file' => '9b7926dad4d24b53b9c71495f6609f30'
+]
+
+$_POST = [
+    '_csrf-backend' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '9b7926dad4d24b53b9c71495f6609f30' => '1'
+        '0117d2599829e5525943d643f80b5e5f' => '1'
+        '2b5fd47f60f66bc25ba4abebadac0773' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '374'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7863'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/default/preview?id=module&file=9b7926dad4d24b53b9c71495f6609f30'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '374'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=module&file=9b7926dad4d24b53b9c71495f6609f30'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792169.2693
+    'REQUEST_TIME' => 1584792169
+]
+2020-03-21 12:02:54 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:02:54 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+    'file' => '0117d2599829e5525943d643f80b5e5f'
+]
+
+$_POST = [
+    '_csrf-backend' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '9b7926dad4d24b53b9c71495f6609f30' => '1'
+        '0117d2599829e5525943d643f80b5e5f' => '1'
+        '2b5fd47f60f66bc25ba4abebadac0773' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '374'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7863'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/default/preview?id=module&file=0117d2599829e5525943d643f80b5e5f'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '374'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=module&file=0117d2599829e5525943d643f80b5e5f'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792174.6556
+    'REQUEST_TIME' => 1584792174
+]
+2020-03-21 12:03:00 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:03:00 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+    'file' => '2b5fd47f60f66bc25ba4abebadac0773'
+]
+
+$_POST = [
+    '_csrf-backend' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '9b7926dad4d24b53b9c71495f6609f30' => '1'
+        '0117d2599829e5525943d643f80b5e5f' => '1'
+        '2b5fd47f60f66bc25ba4abebadac0773' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '374'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7863'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/default/preview?id=module&file=2b5fd47f60f66bc25ba4abebadac0773'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '374'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=module&file=2b5fd47f60f66bc25ba4abebadac0773'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792180.6742
+    'REQUEST_TIME' => 1584792180
+]
+2020-03-21 12:03:04 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:03:04 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:03:04 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_POST = [
+    '_csrf-backend' => 'uUnZPRPWnn1N6cw4Ij9LDpzce1d1mBjOwhrm454QjjGIeYpfQbvtECPb_3pWWQRNyLEODU3QW6uYcLyb0iD8XQ=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '9b7926dad4d24b53b9c71495f6609f30' => '1'
+        '0117d2599829e5525943d643f80b5e5f' => '1'
+        '2b5fd47f60f66bc25ba4abebadac0773' => '1'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '384'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7863'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '384'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792184.7479
+    'REQUEST_TIME' => 1584792184
+]
+2020-03-21 12:04:34 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:04:34 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:04:34 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_POST = [
+    '_csrf-backend' => 'yehEG0h7BqshdvtWV2v0gqhzbnhwJLHTfBW4QyJ96jf42Bd5GhZ1xk9EyBQjDbvB_B4bIkhs8rYmf-I7bk2YWw=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '239'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7944'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '239'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792274.9695
+    'REQUEST_TIME' => 1584792274
+]
+2020-03-21 12:04:36 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:04:36 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:04:36 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_POST = [
+    '_csrf-backend' => 'zee5eO1Bzf6Fnqs6GxdG5E2_zV7Gy4-89BNblBQMNgr81-oavyy-k-usmHhvcQmnGdK4BP6DzNmueQHsWDxEZg=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '9b7926dad4d24b53b9c71495f6609f30' => '1'
+        '0117d2599829e5525943d643f80b5e5f' => '1'
+        '2b5fd47f60f66bc25ba4abebadac0773' => '1'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '384'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '7948'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '384'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792276.8858
+    'REQUEST_TIME' => 1584792276
+]
+2020-03-21 12:11:13 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:13 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:13 [192.168.50.95][2][-][info][application] $_GET = [
+    'id' => 'module'
+]
+
+$_POST = [
+    '_csrf-backend' => 'yehEG0h7BqshdvtWV2v0gqhzbnhwJLHTfBW4QyJ96jf42Bd5GhZ1xk9EyBQjDbvB_B4bIkhs8rYmf-I7bk2YWw=='
+    'Generator' => [
+        'moduleClass' => 'app\\modules\\backend\\Module'
+        'moduleID' => 'backend'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/gii/module'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://192.168.50.125'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONTENT_LENGTH' => '239'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8304'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/gii/module'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '239'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792673.8057
+    'REQUEST_TIME' => 1584792673
+]
+2020-03-21 12:11:16 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "backend". in /data/www/Binyi/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backend', Array)
+#1 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:11:16 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+2020-03-21 12:11:16 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:16 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8309'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792676.6135
+    'REQUEST_TIME' => 1584792676
+]
+2020-03-21 12:11:24 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "backend/default/index". in /data/www/Binyi/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backend/default...', Array)
+#1 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:11:24 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+2020-03-21 12:11:24 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:24 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8304'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/default/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792684.6221
+    'REQUEST_TIME' => 1584792684
+]
+2020-03-21 12:11:31 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:11:31 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:31 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/backend/default/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8310'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792691.8233
+    'REQUEST_TIME' => 1584792691
+]
+2020-03-21 12:11:33 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:25
+2020-03-21 12:11:33 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:33 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/user/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8305'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792693.5937
+    'REQUEST_TIME' => 1584792693
+]
+2020-03-21 12:11:34 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:38
+2020-03-21 12:11:34 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:34 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/room/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8304'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/commemorate'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792694.5419
+    'REQUEST_TIME' => 1584792694
+]
+2020-03-21 12:11:52 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "backend/". in /data/www/Binyi/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backend/', Array)
+#1 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /data/www/Binyi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /data/www/Binyi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/Binyi/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:11:52 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+2020-03-21 12:11:52 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:52 [192.168.50.95][2][ccmqmh7dcdhp5igf594e0eo6kh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8306'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792712.1561
+    'REQUEST_TIME' => 1584792712
+]
+2020-03-21 12:11:58 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:11:58 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:11:58 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/backend/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8308'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792718.1942
+    'REQUEST_TIME' => 1584792718
+]
+2020-03-21 12:12:00 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/user/index.php:65
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:12:00 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/user/index.php:65
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:12:00 [192.168.50.95][2][-][info][application] $_GET = [
+    'sort' => 'nick_name'
+    '_pjax' => '#p0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/user/index'
+    'HTTP_X_PJAX_CONTAINER' => '#p0'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'zZ3R4rkZKyp5L4n4U8TBCh5Hkm4aVUCSaoSZrTTKcCv8rYKA63RYRxcduronoo5JSirnNCIdA_cw7sPVePoCRw=='
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8308'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/index?sort=nick_name&_pjax=%23p0'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'sort=nick_name&_pjax=%23p0'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792720.4505
+    'REQUEST_TIME' => 1584792720
+]
+2020-03-21 12:14:55 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:38
+2020-03-21 12:14:55 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:14:55 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8427'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/commemorate'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792895.2929
+    'REQUEST_TIME' => 1584792895
+]
+2020-03-21 12:15:02 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/modules/backend/controllers/DefaultController.php:18
+2020-03-21 12:15:02 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:15:02 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8475'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792902.5918
+    'REQUEST_TIME' => 1584792902
+]
+2020-03-21 12:15:53 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/modules/backend/controllers/DefaultController.php:18
+2020-03-21 12:15:53 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:15:53 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8477'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792953.5282
+    'REQUEST_TIME' => 1584792953
+]
+2020-03-21 12:16:37 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/modules/backend/controllers/DefaultController.php:18
+2020-03-21 12:16:37 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:37 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8474'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584792997.0373
+    'REQUEST_TIME' => 1584792997
+]
+2020-03-21 12:16:47 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/modules/backend/controllers/DefaultController.php:18
+2020-03-21 12:16:47 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:47 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8474'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793007.6099
+    'REQUEST_TIME' => 1584793007
+]
+2020-03-21 12:16:54 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:16:54 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:54 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/backend/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8478'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793014.4859
+    'REQUEST_TIME' => 1584793014
+]
+2020-03-21 12:16:56 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:25
+2020-03-21 12:16:56 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:56 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/user/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8476'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793016.2164
+    'REQUEST_TIME' => 1584793016
+]
+2020-03-21 12:16:57 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:38
+2020-03-21 12:16:57 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:57 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/room/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8475'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/commemorate'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793017.0305
+    'REQUEST_TIME' => 1584793017
+]
+2020-03-21 12:16:57 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/RoomController.php:38
+2020-03-21 12:16:57 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:57 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/room/commemorate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8427'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/room/commemorate'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793017.7537
+    'REQUEST_TIME' => 1584793017
+]
+2020-03-21 12:16:59 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+    in /data/www/Binyi/backend/views/layouts/main.php:61
+    in /data/www/Binyi/backend/controllers/UserController.php:65
+2020-03-21 12:16:59 [192.168.50.95][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.50.95
+2020-03-21 12:16:59 [192.168.50.95][2][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'zh_CN'
+    'phpMyAdmin' => '55e559ff83e25380d902f6486a7a0cfb'
+    'pmaUser-1' => '{\"iv\":\"SSIzqnUn1d88KEA1u2mIzA==\",\"mac\":\"b0a41ac1db2f3f01f44cb0185a743256a9b08aec\",\"payload\":\"cmbaPAiqih+8Uv5VXteHHQ==\"}'
+    'pmaAuth-1' => '{\"iv\":\"ZtP+RKfxcMWWHHaFCNPeQA==\",\"mac\":\"3d96223b0a1524fb62eb5f682901d5eccb2d8dc8\",\"payload\":\"BESoT82CgnhmkKQgtUWeWSxyS7j\\/8XXSOqd0bMDFF2Q=\"}'
+    'advanced-backend' => 'ccmqmh7dcdhp5igf594e0eo6kh'
+    '_identity-backend' => 'c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"cWf0j209RMTPTI0GLnydGGffiEqBMg23\",2592000]\";}'
+    '_csrf-backend' => '39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"10SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://192.168.50.125/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'pma_lang=zh_CN; phpMyAdmin=55e559ff83e25380d902f6486a7a0cfb; pmaUser-1=%7B%22iv%22%3A%22SSIzqnUn1d88KEA1u2mIzA%3D%3D%22%2C%22mac%22%3A%22b0a41ac1db2f3f01f44cb0185a743256a9b08aec%22%2C%22payload%22%3A%22cmbaPAiqih%2B8Uv5VXteHHQ%3D%3D%22%7D; pmaAuth-1=%7B%22iv%22%3A%22ZtP%2BRKfxcMWWHHaFCNPeQA%3D%3D%22%2C%22mac%22%3A%223d96223b0a1524fb62eb5f682901d5eccb2d8dc8%22%2C%22payload%22%3A%22BESoT82CgnhmkKQgtUWeWSxyS7j%5C%2F8XXSOqd0bMDFF2Q%3D%22%7D; advanced-backend=ccmqmh7dcdhp5igf594e0eo6kh; _identity-backend=c21560726a1b084fa9b163f4bcfba29a35368c4632e838fb3b5fe5534bc03b83a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22cWf0j209RMTPTI0GLnydGGffiEqBMg23%22%2C2592000%5D%22%3B%7D; _csrf-backend=39dd2a984f74256a757f4d01b2e849ab45754cb9a09b92caf2532de0f5553ad3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2210SbRmsmn23BtfOCTmuZ8HCeZjZxL0rl%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.50.125/room/commemorate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.50.125'
+    'SCRIPT_FILENAME' => '/data/www/Binyi/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.2'
+    'REMOTE_PORT' => '8474'
+    'REMOTE_ADDR' => '192.168.50.95'
+    'SERVER_SOFTWARE' => 'nginx/1.16.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/data/www/Binyi/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1584793019.117
+    'REQUEST_TIME' => 1584793019
+]
