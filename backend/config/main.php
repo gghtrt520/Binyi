@@ -26,14 +26,6 @@ return [
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
-        'frontend' => [
-            'class' => 'yii\web\User',
-            'identityClass' => 'app\modules\frontend\models\FrontendUser',
-            'enableAutoLogin' => true,
-            'loginUrl'=>['/frontend/default/login'],//定义后台默认登录界面[权限不足跳到该页]
-            'identityCookie' => ['name' => '__frontend_identity', 'httpOnly' => true],
-            'idParam' => '__frontend'
-        ],
         'assetManager' => [
             'bundles' => [
                 'dmstr\web\AdminLteAsset'
