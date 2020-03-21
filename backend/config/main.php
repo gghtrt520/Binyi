@@ -15,12 +15,6 @@ return [
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
-        ],
-        'backend' => [
-            'class' => 'app\modules\backend\Module',
-        ],
-        'frontend' => [
-            'class' => 'app\modules\frontend\Module',
         ]
     ],
     'components' => [
