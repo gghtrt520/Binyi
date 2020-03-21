@@ -26,7 +26,7 @@ class DefaultController extends Controller
         }
         $model = new \common\models\LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->redirect('index');
         } else {
             $model->password = '';
             return $this->render('login', [

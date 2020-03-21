@@ -22,7 +22,7 @@ $fieldOptions2 = [
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b>纪念馆后台管理系统</b></a>
+        <a href="#"><b>二维码扫描登录页面</b></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
