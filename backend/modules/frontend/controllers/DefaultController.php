@@ -2,6 +2,7 @@
 
 namespace app\modules\frontend\controllers;
 
+use Yii;
 use yii\web\Controller;
 
 /**
@@ -23,7 +24,7 @@ class DefaultController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-        $model = new LoginForm();
+        $model = new \common\models\LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {
