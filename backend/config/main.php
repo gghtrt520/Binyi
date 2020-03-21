@@ -51,6 +51,7 @@ return [
         ],
         'session' => [
             'name' => 'advanced-backend',
+            'timeout' => 1440,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
