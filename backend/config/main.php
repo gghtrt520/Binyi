@@ -31,13 +31,16 @@ return [
         'assetManager' => [
             'bundles' => [
                 'dmstr\web\AdminLteAsset' => [
-                    'skin' => 'skin-red',
+                    'skin' => 'skin-blue',
                 ],
             ],
         ],
         'session' => [
             'name' => 'advanced-backend',
             'timeout' => 1440,
+        ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -46,6 +49,14 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
+    ],
+    'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+            'site/login',
+            'site/logout',
+            'site/index',
+         ]
     ],
     'params' => $params,
 ];
