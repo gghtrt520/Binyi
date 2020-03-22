@@ -7,7 +7,6 @@ $params = array_merge(
 
 return [
     'id' => 'api',
-    'homeUrl' => '/api',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'api\controllers',
@@ -39,7 +38,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 '' => 'site/index',
-                'site/list' => 'site/list',
+                'list' => 'site/list',
                 'v1/login' => 'v1/site/login',
                 'register' => 'site/register',
                 'v1/register' => 'v1/site/register',
