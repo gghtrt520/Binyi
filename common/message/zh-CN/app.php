@@ -37,4 +37,13 @@ return [
     'Num'         =>'数量',
     'Style'       =>'贡品样式',
     'Norms'       =>'贡品规格',
+
+    /**
+     * Frontend Menus
+     */
+    'Frontend Menus'=>'前台菜单',
+    'Create Frontend Menu'=>'创建菜单',
+    'Frontend Name' =>'菜单名称',
+    'Route'         =>'路由',
+    'Order'         =>'排序',
 ];

@@ -14,7 +14,7 @@ use Yii;
  * @property string|null $updated_at
  * @property string|null $created_at
  */
-class FrontendMenu extends \yii\db\ActiveRecord
+class FrontendMenu extends Base
 {
     /**
      * {@inheritdoc}
@@ -44,7 +44,7 @@ class FrontendMenu extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
+            'name' => Yii::t('app', 'Frontend Name'),
             'route' => Yii::t('app', 'Route'),
             'order' => Yii::t('app', 'Order'),
             'updated_at' => Yii::t('app', 'Updated At'),
