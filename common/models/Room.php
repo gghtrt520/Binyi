@@ -55,7 +55,7 @@ class Room extends Base
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'avatar_url' => Yii::t('app', 'Avatar Url'),
+            'avatar_url' => Yii::t('app', 'Death Avatar Url'),
             'surname' => Yii::t('app', 'Surname'),
             'name' => Yii::t('app', 'Name'),
             'gender' => Yii::t('app', 'Gender'),

@@ -4,21 +4,21 @@ return [
     'Nick Name'  => '用户名',
     'Avatar Url' => '用户头像',
     'Gender'     => '性别',
-
-
    	'ID' => '序号',
-    'Tree Number' => '树木编号',
-    'Tree Image' => '树木照片',
-    'Latitude' => '纬度',
-    'Longitude' => '经度',
-    'Nation' => '国家',
-    'Province' => '省',
-    'City' => '市',
-    'District' => '区',
-    'Street' => '街道',
-    'Tree Category ID' => '树种分类',
-    'Property Unit ID' => '产权单位',
-    'Construction Unit ID' => '施工单位',
-    'Conservation Unit ID' => '养护单位',
-    'Other' => '其它信息',
+    
+    /**
+     * Room
+     */
+    'Rooms'    => '云上殿堂',
+    'Create Room'=>'创建殿堂',
+    'Death Avatar Url' =>'逝者头像',
+    'Surname'   => '逝者姓',
+    'Name'      => '逝者名',
+    'Birthdate' => '生辰',
+    'Death'     => '忌日',
+    'Age'       => '享年',
+    'Native'    =>  '籍贯',
+    'Religion'  => '宗教信仰',
+    'Relation'  => '逝者关系',
+    'Rule'      => '浏览权限'
 ];
