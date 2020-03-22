@@ -111,4 +111,13 @@ return array (
       '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput/src',
     ),
   ),
+  'bailangzhan/yii2-webuploader' => 
+  array (
+    'name' => 'bailangzhan/yii2-webuploader',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@manks' => $vendorDir . '/bailangzhan/yii2-webuploader',
+    ),
+  ),
 );

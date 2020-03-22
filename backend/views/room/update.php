@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Room */
 
-$this->title = Yii::t('app', 'Update Room: {name}', [
+$this->title = Yii::t('app', '更新云上殿堂: {name}', [
     'name' => $model->name,
 ]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Rooms'), 'url' => ['index']];
