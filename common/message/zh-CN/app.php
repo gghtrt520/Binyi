@@ -4,7 +4,8 @@ return [
     'Nick Name'  => '用户名',
     'Avatar Url' => '用户头像',
     'Gender'     => '性别',
-   	'ID' => '序号',
+    'ID' => '序号',
+    'Save' =>'确认保存',
     
     /**
      * Room

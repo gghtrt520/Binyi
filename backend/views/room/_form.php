@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'gender')->dropDownList([ '男' => '男', '女' => '女', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'gender')->dropDownList([ '男' => '男', '女' => '女', ], ['prompt' => '请选择性别']) ?>
 
     <?= $form->field($model, 'birthdate')->textInput() ?>
 
@@ -32,11 +32,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'relation')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'rule')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?>
-
-    <?= $form->field($model, 'created_at')->textInput() ?>
+    <?= $form->field($model, 'rule')->dropDownList([ '0' => '公开', '1' => '仅自己可见', ], ['prompt' => '请选择浏览权限']) ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
