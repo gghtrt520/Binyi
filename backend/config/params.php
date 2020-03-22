@@ -1,6 +1,6 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    'AppID'      => 'wxa4afbd0dea4b3157',
-    'AppSecret'  => 'bebcd402dc27d7d201852003ffcaa962',
+    'AppID'      => 'wx63337fb12da9aa79',
+    'AppSecret'  => '6e9ee1defe31caa977950338ea134b74',
 ];
