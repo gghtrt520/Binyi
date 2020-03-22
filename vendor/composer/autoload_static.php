@@ -45,7 +45,6 @@ class ComposerStaticInitd01fb3f7c883d00f73de51014500d740
         'm' => 
         array (
             'mdm\\admin\\' => 10,
-            'manks\\' => 6,
         ),
         'k' => 
         array (
@@ -165,10 +164,6 @@ class ComposerStaticInitd01fb3f7c883d00f73de51014500d740
         'mdm\\admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
-        ),
-        'manks\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bailangzhan/yii2-webuploader',
         ),
         'kartik\\plugins\\fileinput\\' => 
         array (

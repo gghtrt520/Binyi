@@ -9,7 +9,8 @@ return [
     'Updated At'=>'更新时间',
     'Created At'=>'创建时间',
     'Update'    =>'更新',
-    'Delete'    =>'删除',     
+    'Delete'    =>'删除',
+
     /**
      * Room
      */
@@ -25,5 +26,15 @@ return [
     'Religion'  => '宗教信仰',
     'Relation'  => '逝者关系',
     'Is Show'   => '审核',
-    'Rule'      => '浏览权限'
+    'Rule'      => '浏览权限',
+
+    /**
+     * Product
+     */
+    'Products'     =>'贡品',
+    'Product Name'=>'贡品名称',
+    'Price'       =>'价格',
+    'Num'         =>'数量',
+    'Style'       =>'贡品样式',
+    'Norms'       =>'贡品规格',
 ];

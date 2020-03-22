@@ -51,48 +51,6 @@
         ]
     },
     {
-        "name": "bailangzhan/yii2-webuploader",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/bailangzhan/yii2-webuploader.git",
-            "reference": "988b70baa21d16d477c035de22ae9d4d47aadb59"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/bailangzhan/yii2-webuploader/zipball/988b70baa21d16d477c035de22ae9d4d47aadb59",
-            "reference": "988b70baa21d16d477c035de22ae9d4d47aadb59",
-            "shasum": "",
-            "mirrors": [
-                {
-                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                    "preferred": true
-                }
-            ]
-        },
-        "require": {
-            "yiisoft/yii2": ">=2.0.4"
-        },
-        "time": "2018-01-12T04:02:15+00:00",
-        "type": "yii2-extension",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "manks\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "description": "yii2-webuploader组件",
-        "keywords": [
-            "webuploader",
-            "yii2"
-        ]
-    },
-    {
         "name": "behat/gherkin",
         "version": "v4.6.2",
         "version_normalized": "4.6.2.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cecc358b854764d8e31dc51ef47709f",
+    "content-hash": "044d0f8630eb0b2dc07b6d5f272dd15c",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -54,46 +54,6 @@
                 "web"
             ],
             "time": "2019-08-29T08:20:20+00:00"
-        },
-        {
-            "name": "bailangzhan/yii2-webuploader",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bailangzhan/yii2-webuploader.git",
-                "reference": "988b70baa21d16d477c035de22ae9d4d47aadb59"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bailangzhan/yii2-webuploader/zipball/988b70baa21d16d477c035de22ae9d4d47aadb59",
-                "reference": "988b70baa21d16d477c035de22ae9d4d47aadb59",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "yiisoft/yii2": ">=2.0.4"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "manks\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "yii2-webuploader组件",
-            "keywords": [
-                "webuploader",
-                "yii2"
-            ],
-            "time": "2018-01-12T04:02:15+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -5031,8 +4991,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kartik-v/yii2-widget-fileinput": 20,
-        "bailangzhan/yii2-webuploader": 20
+        "kartik-v/yii2-widget-fileinput": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
