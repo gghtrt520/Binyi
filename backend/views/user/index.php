@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title];
             'label'    => '用户头像',
             'format' => 'raw',
             'value' => function ($model){
-                return Html::img('/admin'.$model->avatar_url, ['height' => '30px','width'=>'30px']);
+                return Html::img(Yii::$app->homeUrl.$model->avatar_url, ['height' => '30px','width'=>'30px']);
             }
 
         ],

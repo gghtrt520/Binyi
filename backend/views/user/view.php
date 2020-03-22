@@ -19,7 +19,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'username',
             'nick_name',
-            'avatar_url:image',
+            [
+                'attribute'=>'avatar_url',
+                'label'    => '用户头像',
+                'format' => 'raw',
+                'value' => function ($model){
+                    return Html::img(Yii::$app->homeUrl.$model->avatar_url, ['height' => '30px','width'=>'30px']);
+                }
+    
+            ],
             [
                 'attribute' => 'gender',
                 'value' => function ($model) {
