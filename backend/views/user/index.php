@@ -33,8 +33,8 @@ $this->params['breadcrumbs'][] = ['label' => $this->title];
             'attribute'=>'avatar_url',
             'label'    => '用户头像',
             'format' => 'raw',
-            'value' => function ($model) {
-                return Html::img($model->avatar_url, ['height' => '30px','width'=>'30px']);
+            'value' => function ($model){
+                return Html::img('/admin'.$model->avatar_url, ['height' => '30px','width'=>'30px']);
             }
 
         ],

@@ -11,8 +11,8 @@ $this->params['breadcrumbs'][] = ['label' => '用户管理'];
 $this->params['breadcrumbs'][] = ['label' => '用户列表', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
+print_r(Yii::$app->request->hostInfo);
 ?>
-
 <div class="user-view">
     <?= DetailView::widget([
         'model' => $model,
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'username',
             'nick_name',
-            'avatar_url:ntext',
+            'avatar_url:image',
             [
                 'attribute' => 'gender',
                 'value' => function ($model) {
