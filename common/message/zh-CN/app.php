@@ -6,7 +6,10 @@ return [
     'Gender'     => '性别',
     'ID' => '序号',
     'Save' =>'确认保存',
-    
+    'Updated At'=>'更新时间',
+    'Created At'=>'创建时间',
+    'Update'    =>'更新',
+    'Delete'    =>'删除',     
     /**
      * Room
      */
@@ -21,5 +24,6 @@ return [
     'Native'    =>  '籍贯',
     'Religion'  => '宗教信仰',
     'Relation'  => '逝者关系',
+    'Is Show'   => '审核',
     'Rule'      => '浏览权限'
 ];

@@ -41,7 +41,7 @@ class Room extends Base
             [['avatar_url', 'surname', 'name', 'gender', 'birthdate', 'death', 'age', 'native', 'religion', 'relation'], 'required'],
             [['gender'], 'string'],
             [['birthdate', 'death', 'updated_at', 'created_at'], 'safe'],
-            [['age', 'rule'], 'integer'],
+            [['age', 'rule','is_show'], 'integer'],
             [['avatar_url'], 'string', 'max' => 150],
             [['surname', 'name', 'religion', 'relation'], 'string', 'max' => 30],
             [['native'], 'string', 'max' => 60],
@@ -66,6 +66,7 @@ class Room extends Base
             'religion' => Yii::t('app', 'Religion'),
             'relation' => Yii::t('app', 'Relation'),
             'rule' => Yii::t('app', 'Rule'),
+            'is_show' => Yii::t('app', 'Is Show'),
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
         ];
