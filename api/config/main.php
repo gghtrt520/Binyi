@@ -10,6 +10,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'api\controllers',
+    'homeUrl' => '/api',
     'components' => [
         'user' => [
             'class' => yii\web\User::className(),
@@ -23,6 +24,7 @@ return [
                 'application/json' => 'yii\web\JsonParser',
                 'text/json' => 'yii\web\JsonParser',
             ],
+            'baseUrl' => '/api',
             'enableCsrfValidation' => false,
             'enableCookieValidation' => false,
         ],
