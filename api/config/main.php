@@ -14,6 +14,8 @@ return [
     'components' => [
         'user' => [
             'class' => yii\web\User::className(),
+            'identityClass' => api\models\User::className(),
+            'enableSession' => false,
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

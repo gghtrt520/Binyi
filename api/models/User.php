@@ -15,28 +15,20 @@ class User extends \common\models\User implements IdentityInterface
         return $fields;
     }
 
-    public static function findIdentityByAccessToken($token, $type = null)
-    {
-        if( !self::accessTokenIsValid($token) ){
-            throw new UnauthorizedHttpException("token格式错误或已过期");
-        }
-        return static::findOne(['access_token' => $token]);
-    }
-
     public function generateAccessToken()
     {
-        $this->access_token = Yii::$app->security->generateRandomString(32) . time();
-
+        $this->access_token=Yii::$app->security->generateRandomString();
+        return $this->access_token;
     }
 
-    public static function accessTokenIsValid($token)
+    public static function findIdentityByAccessToken($token, $type = null)
     {
-        if (empty($token)) {
-            return false;
+        if(static::findOne(['access_token' => $token])){
+            return static::findOne(['access_token' => $token]);
+        }else{
+            throw new UnauthorizedHttpException("token验证失败");
         }
-        $timestamp = (int) substr($token, -10);
-        $expire = Yii::$app->params['user.apiTokenExpire'];
-        return $timestamp + $expire >= time();
     }
+
 
 }
