@@ -45,6 +45,7 @@ return [
      */
     'Frontend Menus'=>'前台菜单',
     'Create Frontend Menu'=>'创建菜单',
+    'Update Frontend Menu: {name}'=>'更新菜单: {name}',
     'Frontend Name' =>'菜单名称',
     'Route'         =>'路由',
     'Order'         =>'排序',
