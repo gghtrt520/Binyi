@@ -29,10 +29,7 @@ return [
             'enableCookieValidation' => false,
         ],
         'response' => [
-            'as format' => [
-                'class' => api\behaviors\ResponseFormatBehavior::className(),
-                'defaultResponseFormat' => yii\web\Response::FORMAT_JSON
-            ]
+            "format" => \yii\web\Response::FORMAT_JSON
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

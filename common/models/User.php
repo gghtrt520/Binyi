@@ -304,8 +304,4 @@ class User extends ActiveRecord implements IdentityInterface
         return $dataProvider;
     }
 
-    public function getUserAssign()
-    {
-        return $this->hasOne(UserAssign::className(), ['user_id'=>'id']);
-    }
 }

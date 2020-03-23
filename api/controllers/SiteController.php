@@ -40,7 +40,7 @@ class SiteController extends Controller
     
     public function actionIndex()
     {
-        return 123;
+        return ['name'=>'admin','password'=>'qwe123'];
     }
 
     public function actionList()
