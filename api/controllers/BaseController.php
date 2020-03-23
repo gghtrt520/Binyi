@@ -25,7 +25,7 @@ class BaseController extends \yii\rest\Controller
                     HttpBearerAuth::className(),
                     [
                         'class' => QueryParamAuth::className(),
-                        'tokenParam' => 'access-token',
+                        'tokenParam' => 'access_token',
                     ]
                 ]
             ]

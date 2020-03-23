@@ -32,9 +32,10 @@ class SiteController extends \yii\rest\Controller
     }
 
     
+    
     public function actionLogin()
     {
-        throw new UnauthorizedHttpException("token验证失败");
+        return ['username'=>'admin'];
     }
 
 }

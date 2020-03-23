@@ -38,9 +38,10 @@ return [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => 'site/login',
-                'show' => 'room/show',
-                'register' => 'site/register',
+                ''            => 'site/index',
+                'login'       => 'site/login',
+                'show'        => 'room/show',
+                'register'    => 'site/register',
                 'v1/register' => 'v1/site/register',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                 '<version:v\d+>/<controller:\w+>/<action:\w+>'=>'<version>/<controller>/<action>',
