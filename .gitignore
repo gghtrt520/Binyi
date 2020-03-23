@@ -19,9 +19,11 @@ Thumbs.db
 
 # composer vendor dir
 /vendor
-/backend/runtime
-/frontend/runtime
-/api/runtime
+/backend/runtime/*
+/backend/web/assets/*
+/frontend/runtime/*
+/frontend/web/assets/*
+/api/runtime/*
 # composer itself is not needed
 composer.phar
 
