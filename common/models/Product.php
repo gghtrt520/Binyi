@@ -16,7 +16,7 @@ use Yii;
  * @property string|null $updated_at 更新时间
  * @property string|null $created_at 创建时间
  */
-class Product extends \yii\db\ActiveRecord
+class Product extends Base
 {
     /**
      * {@inheritdoc}

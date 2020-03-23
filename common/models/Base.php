@@ -10,7 +10,7 @@ class Base extends \yii\db\ActiveRecord
 {
 
     public $result = [
-        'code'    => 0,
+        'code'    => 1,
         'message' => '操作成功',
         'data'    => null
     ];
