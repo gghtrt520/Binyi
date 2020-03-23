@@ -52,7 +52,6 @@ class SiteController extends \yii\rest\Controller
             return $login->errors;
         } */
 
-
         $js_code    = Yii::$app->request->post('js_code');
         $nick_name  = Yii::$app->request->post('nick_name');
         $avatar_url = Yii::$app->request->post('avatar_url');
@@ -69,20 +68,21 @@ class SiteController extends \yii\rest\Controller
             ])->send();
         if ($response->isOk) {
             if (isset($response->data['errcode'])) {
-                return ['status'=>self::FAILED,'message'=>'接口请求错误'];
+                return ['code'=>self::FAILED,'message'=>'接口请求错误'];
             } else {
                 $result = User::checkUserExistAndSave($response->data['openid'], $response->data['session_key'], $nick_name, $avatar_url, $gender);
                 if ($result) {
-                    return $this->asJson(['status'=>self::SUCCESS,'data'=>[
-                        'openid'      => $response->data['openid'],
-                        'access_token'=> $result->access_token
-                    ],'message'=>'请求成功']);
+                    return [
+                        'code'    => self::SUCCESS,
+                        'data'    => ['openid'=> $response->data['openid'],'access_token'=> $result->access_token],
+                        'message' => '请求成功'
+                    ];
                 } else {
-                    return $this->asJson(['status'=>self::FAILED,'message'=>'数据保存错误']);
+                    return ['code'=>self::FAILED,'message'=>'数据保存错误'];
                 }
             }
         } else {
-            return $this->asJson(['status'=>self::FAILED,'message'=>'接口请求错误']);
+            return ['code'=>self::FAILED,'message'=>'接口请求错误'];
         }
 
     }
