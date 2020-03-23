@@ -43,8 +43,10 @@ return [
                 'show'        => 'room/show',
                 'register'    => 'site/register',
                 'v1/register' => 'v1/site/register',
-                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-                '<version:v\d+>/<controller:\w+>/<action:\w+>'=>'<version>/<controller>/<action>',
+                [
+                    'class' => yii\rest\UrlRule::className(),
+                    'controller' => 'room',
+                ],
             ],
         ],
     ],

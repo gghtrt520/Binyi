@@ -36,3 +36,4 @@ phpunit.phar
 /.vagrant
 
 # ignore generated files
+api/config/main.php
