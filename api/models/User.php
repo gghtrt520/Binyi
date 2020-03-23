@@ -31,4 +31,34 @@ class User extends \common\models\User implements IdentityInterface
     }
 
 
+    public static function checkUserExistAndSave($username, $auth_key, $nick_name, $avatar_url, $gender)
+    {
+        $exists = self::findByAccessToken($username);
+        if ($exists) {
+            $exists->auth_key   = $auth_key;
+            if ($exists->save()) {
+                return $exists;
+            } else {
+                return false;
+            }
+        } else {
+            $user = new User();
+            $user->username     = $username;
+            $user->nick_name    = $nick_name;
+            $user->avatar_url   = $avatar_url;
+            $user->gender       = (string)$gender;
+            $user->setPassword($username);
+            $user->auth_key     = $auth_key;
+            $user->access_token = $username;
+            $user->status       = self::STATUS_ACTIVE;
+            $user->type         = '2';
+            if ($user->save()) {
+                return $user;
+            } else {
+                return false;
+            }
+        }
+    }
+
+
 }

@@ -17,9 +17,6 @@ class BaseController extends \yii\rest\Controller
             'authenticator' => [
                 //使用ComopositeAuth混合认证
                 'class' => CompositeAuth::className(),
-                'optional' => [
-                    'info',//无需access-token的action
-                ],
                 'authMethods' => [
                     HttpBasicAuth::className(),
                     HttpBearerAuth::className(),
@@ -31,26 +28,5 @@ class BaseController extends \yii\rest\Controller
             ]
         ]);
     }
-
-    /**
-     * 访问路由 /paids 或/paid/index (p.s如果入口在frontend/web/api/index.php则还需在前加上api)
-     *
-     * @return array
-     */
-    public function actionIndex()
-    {
-        return ["我是需要access-token才能访问的接口"];
-    }
-
-    /**
-     * 访问路由 /paid/info (p.s如果入口在frontend/web/api/index.php则还需在前加上api)
-     *
-     * @return array
-     */
-    public function actionInfo()
-    {
-        return ["我不需要access-token也能访问"];
-    }
-
 
 }
