@@ -2,16 +2,10 @@
 namespace api\controllers;
 
 use Yii;
-use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
+use yii\web\UnauthorizedHttpException;
 use yii\httpclient\Client;
-use common\models\LoginForm;
-use common\models\User;
-use common\models\UserAssign;
-use backend\components\event\UserEvent;
 
-class SiteController extends Controller
+class SiteController extends \yii\rest\Controller
 {
     const SUCCESS = 1;
     const FAILED  = 0;
@@ -38,39 +32,9 @@ class SiteController extends Controller
     }
 
     
-    public function actionIndex()
-    {
-        return ['name'=>'admin','password'=>'qwe123'];
-    }
-
-    public function actionList()
-    {
-        return 456;
-    }
-    
     public function actionLogin()
     {
-        print_r(123);die;
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            $model->password = '';
-            return $this->render('login', [
-                'model' => $model,
-            ]);
-        }
+        throw new UnauthorizedHttpException("token验证失败");
     }
-
-    
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-        return $this->goHome();
-    }
-
 
 }
