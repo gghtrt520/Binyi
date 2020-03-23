@@ -3,6 +3,12 @@ use yii\widgets\Breadcrumbs;
 use dmstr\widgets\Alert;
 
 ?>
+<style type="text/css">
+   .form{
+        width: 60%;
+        margin: 0 auto;
+   }
+</style>
 <div class="content-wrapper">
     <section class="content-header">
         <?php if (isset($this->blocks['content-header'])) { ?>

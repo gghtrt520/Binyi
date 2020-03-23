@@ -31,6 +31,8 @@ return [
     /**
      * Product
      */
+    'Create Product'=>'创建贡品',
+    'Update Product: {name}'=>'更新贡品: {name}',
     'Products'     =>'贡品',
     'Product Name'=>'贡品名称',
     'Price'       =>'价格',

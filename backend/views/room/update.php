@@ -12,9 +12,7 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Rooms'), 'url' => ['
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
-<div class="room-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="form">
 
     <?= $this->render('_form', [
         'model' => $model,
