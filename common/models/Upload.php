@@ -12,34 +12,28 @@ class Upload extends \yii\db\ActiveRecord
     
 
     
-    public function uploadImgFile()
+    public function uploadImgFile($model)
     {
-        $model = new TreeInformation();
-        $file  = UploadedFile::getInstances($model, 'tree_image');
-        $data  = [];
-        if (is_array($file) && $file) {
-            foreach ($file as $value) {
-                if ($value) {
-                    if ($value->hasError) {
-                        throw new BadRequestHttpException($value->error);
-                    }
-                    $file_name = $this->createUploadPath('images') . microtime() . '.' . $value->extension;
-                    if ($value->saveAs(Yii::getAlias('@webroot') . $file_name)) {
-                        $data[] = $file_name;
-                    } else {
-                        throw new BadRequestHttpException('文件上传失败');
-                    }
-                }
+        $file  = UploadedFile::getInstances($model, 'image');
+        if ($file) {
+            if ($file->hasError) {
+                throw new BadRequestHttpException($file->error);
             }
+            $file_name = $this->createUploadPath('images') . microtime() . '.' . $file->extension;
+            if ($file->saveAs(Yii::getAlias('@webroot') . $file_name)) {
+                return $file_name;
+            } else {
+                throw new BadRequestHttpException('文件上传失败');
+            }
+        }else {
+            throw new BadRequestHttpException('文件上传失败');
         }
-        return $data;
     }
 
 
-    public function uploadVideoFile()
+    public function uploadVideoFile($model)
     {
-        $model = new TreeInformation();
-        $file  = UploadedFile::getInstance($model, 'tree_video');
+        $file  = UploadedFile::getInstance($model, 'video');
         if ($file) {
             if ($file->hasError) {
                 throw new BadRequestHttpException($file->error);
@@ -51,13 +45,13 @@ class Upload extends \yii\db\ActiveRecord
                 throw new BadRequestHttpException('文件上传失败');
             }
         } else {
-            return '';
+            throw new BadRequestHttpException('文件上传失败');
         }
     }
     
 
 
-    private function createUploadPath($value)
+    public function createUploadPath($value)
     {
         $root_path = Yii::getAlias('@webroot');
         $path = rtrim('/upload/'.$value.'/'.date('Y-m-d', time()), '/').'/';
