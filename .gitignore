@@ -40,3 +40,4 @@ phpunit.phar
 
 # ignore generated files
 api/config/main.php
+common/config/main-local.php
