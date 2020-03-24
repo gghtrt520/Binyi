@@ -23,7 +23,7 @@ class RoomSearch extends Room
     {
         return [
             [['id', 'age', 'rule','is_show'], 'integer'],
-            [['avatar_url', 'surname', 'name', 'gender', 'birthdate', 'death', 'native', 'religion', 'relation', 'updated_at', 'created_at'], 'safe'],
+            [['avatar_url','name', 'gender', 'birthdate', 'death', 'religion','updated_at', 'created_at'], 'safe'],
         ];
     }
 
@@ -64,12 +64,9 @@ class RoomSearch extends Room
         ]);
 
         $query->andFilterWhere(['like', 'avatar_url', $this->avatar_url])
-            ->andFilterWhere(['like', 'surname', $this->surname])
             ->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'gender', $this->gender])
-            ->andFilterWhere(['like', 'native', $this->native])
-            ->andFilterWhere(['like', 'religion', $this->religion])
-            ->andFilterWhere(['like', 'relation', $this->relation]);
+            ->andFilterWhere(['like', 'religion', $this->religion]);
 
         return $dataProvider;
     }

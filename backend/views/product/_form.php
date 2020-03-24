@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\file\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Product */
@@ -16,11 +17,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'price')->textInput() ?>
 
-    <?= $form->field($model, 'num')->textInput() ?>
-
-    <?= $form->field($model, 'style')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'norms')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'style')->widget(FileInput::classname(), [
+        'options' => ['multiple' => false,'accept' => 'image/*'],
+        'pluginOptions' => [
+            'previewFileType' => 'any',
+            'showUpload'=>false,
+            'overwriteInitial'=>true,
+            'browseLabel'=>'请选择贡品样式',
+            'allowedFileExtensions'=>['jpg','gif','png']
+        ]
+    ]);?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

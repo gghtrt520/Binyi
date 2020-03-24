@@ -32,11 +32,11 @@ class Product extends Base
     public function rules()
     {
         return [
-            [['name', 'price', 'num', 'style', 'norms'], 'required'],
+            [['name', 'price','style'], 'required'],
             [['price', 'num'], 'integer'],
             [['updated_at', 'created_at'], 'safe'],
             [['name'], 'string', 'max' => 30],
-            [['style', 'norms'], 'string', 'max' => 150],
+            [['style'], 'string', 'max' => 150],
         ];
     }
 
@@ -51,7 +51,6 @@ class Product extends Base
             'price' => Yii::t('app', 'Price'),
             'num' => Yii::t('app', 'Num'),
             'style' => Yii::t('app', 'Style'),
-            'norms' => Yii::t('app', 'Norms'),
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
         ];

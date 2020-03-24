@@ -18,7 +18,7 @@ class ProductSearch extends Product
     {
         return [
             [['id', 'price', 'num'], 'integer'],
-            [['name', 'style', 'norms', 'updated_at', 'created_at'], 'safe'],
+            [['name', 'style','updated_at', 'created_at'], 'safe'],
         ];
     }
 
@@ -51,12 +51,9 @@ class ProductSearch extends Product
         $this->load($params);
 
         if (!$this->validate()) {
-            // uncomment the following line if you do not want to return any records when validation fails
-            // $query->where('0=1');
             return $dataProvider;
         }
 
-        // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'price' => $this->price,
@@ -66,8 +63,7 @@ class ProductSearch extends Product
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'style', $this->style])
-            ->andFilterWhere(['like', 'norms', $this->norms]);
+            ->andFilterWhere(['like', 'style', $this->style]);
 
         return $dataProvider;
     }

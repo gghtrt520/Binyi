@@ -21,6 +21,7 @@ Thumbs.db
 /vendor
 /backend/runtime/*
 /backend/web/assets/*
+/backend/web/upload/*
 /frontend/runtime/*
 /frontend/web/assets/*
 /api/runtime/*

@@ -28,16 +28,29 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'avatar_url:url',
-            'surname',
             'name',
             'gender',
             'birthdate',
             'death',
             'age',
-            'native',
+            [
+                'label' => '籍贯',
+                'options'   => ['style' => 'width:150px'],
+                'value'     => function ($model) {
+                    return $model->province.$model->city.$model->area;
+                }
+            ],
             'religion',
-            'relation',
-            'rule',
+            [
+                'attribute' => 'rule',
+                'value'     => function ($model) {
+                    if($model['rule']== 0) {
+                        return '仅自己可见';
+                    }else{
+                        return '公开权限';
+                    }
+                }
+            ],
             'updated_at',
             'created_at',
         ],

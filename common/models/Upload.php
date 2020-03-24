@@ -12,15 +12,15 @@ class Upload extends \yii\db\ActiveRecord
     
 
     
-    public function uploadImgFile($model,$root_path)
+    public function uploadFile($model,$root_path,$attribute)
     {
-        $file  = UploadedFile::getInstances($model, 'avatar_url');
+        $file  = UploadedFile::getInstances($model, $attribute);
         $file  = $file[0];
         if ($file) {
             if ($file->error) {
                 throw new BadRequestHttpException($file->error);
             }
-            $file_name = $this->createUploadPath('avatar_url',$root_path) . microtime() . '.' . $file->extension;
+            $file_name = $this->createUploadPath($attribute,$root_path) . microtime() . '.' . $file->extension;
             if ($file->saveAs($root_path . $file_name)) {
                 return $file_name;
             } else {
@@ -31,24 +31,6 @@ class Upload extends \yii\db\ActiveRecord
         }
     }
 
-
-    public function uploadVideoFile($model,$root_path)
-    {
-        $file  = UploadedFile::getInstance($model, 'video');
-        if ($file) {
-            if ($file->error) {
-                throw new BadRequestHttpException($file->error);
-            }
-            $file_name = $this->createUploadPath('video',$root_path) . microtime() . '.' . $file->extension;
-            if ($file->saveAs($root_path . $file_name)) {
-                return $file_name;
-            } else {
-                throw new BadRequestHttpException('文件上传失败');
-            }
-        } else {
-            throw new BadRequestHttpException('文件上传失败');
-        }
-    }
     
 
 

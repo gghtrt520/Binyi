@@ -86,10 +86,10 @@ class RoomController extends Controller
      */
     public function actionCreate()
     {
-        $model  = new \common\models\Room();
+        $model  = new Room();
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
-            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadImgFile($model,$this->root_path);
+            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }

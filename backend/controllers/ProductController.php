@@ -14,9 +14,14 @@ use yii\filters\VerbFilter;
  */
 class ProductController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
+    public $root_path;
+
+    public function init(){
+        parent::init();
+        $this->root_path = Yii::getAlias('@backend/web');
+    }
+
+    
     public function behaviors()
     {
         return [
@@ -65,9 +70,12 @@ class ProductController extends Controller
     public function actionCreate()
     {
         $model = new Product();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $upload = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'style');
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('create', [

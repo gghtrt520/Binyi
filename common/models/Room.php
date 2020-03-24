@@ -35,13 +35,12 @@ class Room extends Base
     public function rules()
     {
         return [
-            [['avatar_url', 'surname', 'name', 'gender', 'birthdate', 'death', 'age', 'native', 'religion', 'relation'], 'required'],
+            [['avatar_url', 'name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion'], 'required'],
             [['gender'], 'string'],
             [['birthdate', 'death', 'updated_at', 'created_at'], 'safe'],
             [['age', 'rule','is_show'], 'integer'],
             [['avatar_url'], 'string', 'max' => 150],
-            [['surname', 'name', 'religion', 'relation'], 'string', 'max' => 30],
-            [['native'], 'string', 'max' => 60],
+            [['name', 'religion','province','city','area'], 'string', 'max' => 30],
         ];
     }
 
@@ -53,15 +52,15 @@ class Room extends Base
         return [
             'id' => Yii::t('app', 'ID'),
             'avatar_url' => Yii::t('app', 'Death Avatar Url'),
-            'surname' => Yii::t('app', 'Surname'),
             'name' => Yii::t('app', 'Name'),
             'gender' => Yii::t('app', 'Gender'),
             'birthdate' => Yii::t('app', 'Birthdate'),
             'death' => Yii::t('app', 'Death'),
             'age' => Yii::t('app', 'Age'),
-            'native' => Yii::t('app', 'Native'),
+            'province' => Yii::t('app', 'Province'),
+            'city' => Yii::t('app', 'City'),
+            'area' => Yii::t('app', 'Area'),
             'religion' => Yii::t('app', 'Religion'),
-            'relation' => Yii::t('app', 'Relation'),
             'rule' => Yii::t('app', 'Rule'),
             'is_show' => Yii::t('app', 'Is Show'),
             'updated_at' => Yii::t('app', 'Updated At'),
