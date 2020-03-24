@@ -32,7 +32,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'name',
             'gender',
-            'birthdate',
             [
                 'attribute' => 'birthdate',
                 'filterType'=>'date',
@@ -55,21 +54,28 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
             [
+                'attribute' => 'category',
+                'filter'    => Yii::$app->params['Category'],
+                'value'     => function ($model) {
+                    return $model->category;
+                }
+            ],
+            [
                 'attribute' => 'rule',
-                'options'   => ['style' => 'width:100px'],
+                'options'   => ['style' => 'width:150px'],
                 'format'    => 'html',
                 'filter'    => [0=>'仅自己可见',1=>'公开权限'],
                 'value'     => function ($model) {
                     if($model['rule']== 0) {
                         return '<span class="badge">仅自己可见</span>';
                     }else{
-                        return '<span class="bg-green">公开权限</span>';
+                        return '<span class="badge bg-green">公开权限</span>';
                     }
                 }
             ],
             [
                 'attribute' => 'is_show',
-                'options'   => ['style' => 'width:60px'],
+                'options'   => ['style' => 'width:120px'],
                 'format'    => 'html',
                 'filter'    => [0=>'未审核',1=>'审核'],
                 'value'     => function ($item) {

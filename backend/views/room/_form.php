@@ -44,6 +44,8 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'religion')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'category')->dropDownList(Yii::$app->params['Category'], ['prompt' => '请选择分类']) ?>
+
     <?= $form->field($model, 'rule')->dropDownList([ '0' => '公开', '1' => '仅自己可见', ], ['prompt' => '请选择浏览权限']) ?>
 
     <div class="form-group">

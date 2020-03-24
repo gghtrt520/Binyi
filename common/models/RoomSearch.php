@@ -23,7 +23,7 @@ class RoomSearch extends Room
     {
         return [
             [['id', 'age', 'rule','is_show'], 'integer'],
-            [['avatar_url','name', 'gender', 'birthdate', 'death', 'religion','updated_at', 'created_at'], 'safe'],
+            [['avatar_url','name', 'gender', 'birthdate', 'death', 'religion','category','updated_at', 'created_at'], 'safe'],
         ];
     }
 
@@ -60,6 +60,7 @@ class RoomSearch extends Room
             'death'     => $this->death,
             'age'       => $this->age,
             'rule'      => $this->rule,
+            'category'  => $this->category,
             'is_show'   => $this->is_show
         ]);
 

@@ -26,6 +26,7 @@ return [
     'City'    =>  '籍贯:市',
     'Area'    =>  '籍贯:区',
     'Religion'  => '宗教信仰',
+    'Category'  => '所属分类',
     'Relation'  => '逝者关系',
     'Is Show'   => '审核',
     'Rule'      => '浏览权限',

@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\actions\RoomCheckAction;
+use backend\actions\RoomDeleteAction;
 
 /**
  * RoomController implements the CRUD actions for Room model.
@@ -34,7 +35,7 @@ class RoomController extends Controller
                 'is_show' => 0
             ],
             'delete-all'=>[
-                'class'=>RoomCheckAction::className(),
+                'class'=> RoomDeleteAction::className(),
             ]
         ]);
     }

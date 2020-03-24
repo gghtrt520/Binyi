@@ -20,23 +20,16 @@ class RoomDeleteAction extends Action
         if(empty($ids)){
             return ['messgae'=>'id不能为空','code'=>0];
         }
-        $attr = ['is_show'=>$this->is_show];
-
-        $query = Room::find();
-
-        $query->andFilterWhere([
-            'in', 'id', $ids
-        ]);
         try {
-            Room::deleteAll($attr, $query->where);
+            Room::deleteAll(['id'=>$ids]);
             return [
                 'code'=>0,
                 'data'=>'操作成功'
             ];
         }catch(Exception $e){
             return [
-                'code'=>1,
-                'data'=>$e->getMessage()
+                'code' => 1,
+                'data' => $e->getMessage()
             ];
         }
     }
