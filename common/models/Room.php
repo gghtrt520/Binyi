@@ -37,7 +37,8 @@ class Room extends Base
         return [
             [['avatar_url', 'name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion','category'], 'required'],
             [['gender'], 'string'],
-            [['birthdate', 'death', 'updated_at', 'created_at'], 'safe'],
+            [['birthdate', 'death'], 'date'],
+            [['updated_at', 'created_at'], 'safe'],
             [['age', 'rule','is_show'], 'integer'],
             [['avatar_url'], 'string', 'max' => 150],
             [['name', 'religion','province','city','area','category'], 'string', 'max' => 30],

@@ -31,9 +31,24 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'gender')->dropDownList([ '男' => '男', '女' => '女', ], ['prompt' => '请选择性别']) ?>
 
-    <?= $form->field($model, 'birthdate')->textInput() ?>
+    <?= $form->field($model, 'birthdate')->widget(\kartik\date\DatePicker::classname(), [
+        'options' => ['placeholder' => '请选取生辰时间'],
+        'pluginOptions' => [
+            'autoclose' => true,
+            'todayHighlight' => true,
+            'format' => 'yyyy-mm-dd',
+            ]
+    ]);?>
 
-    <?= $form->field($model, 'death')->textInput() ?>
+    <?= $form->field($model, 'death')->widget(\kartik\date\DatePicker::classname(), [
+        'options' => ['placeholder' => '请选取忌日时间'],
+        'pluginOptions' => [
+            'autoclose' => true,
+            'todayHighlight' => true,
+            'format' => 'yyyy-mm-dd',
+            ]
+    ]);?>
+
 
     <?= $form->field($model, 'age')->textInput() ?>
 
