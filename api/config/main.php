@@ -46,6 +46,9 @@ return [
                 [
                     'class' => yii\rest\UrlRule::className(),
                     'controller' => 'room',
+                    'extraPatterns' => [
+                        'OPTIONS,POST    upload' => 'upload',
+                    ]
                 ],
             ],
         ],

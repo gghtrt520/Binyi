@@ -9,6 +9,12 @@ use yii\helpers\ArrayHelper;
 
 class RoomController extends \yii\rest\ActiveController
 {
+    public $root_path;
+
+    public function init(){
+        parent::init();
+        $this->root_path = Yii::getAlias('@api/web');
+    }
 
     public function behaviors()
     {
@@ -33,5 +39,20 @@ class RoomController extends \yii\rest\ActiveController
     public function actionShow()
     {
         return 123;
+    }
+
+    public function actionUpload()
+    {
+        $model  = new \common\models\Room();
+        $upload = new \common\models\Upload();
+        $result = $upload->uploadFile($model,$this->root_path,'avatar_url');
+        $path   = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
+        return [
+            'code' => 1,
+            'message'=>'上传成功',
+            'data' => [
+                'path' => $path
+            ]
+        ];
     }
 }
