@@ -13,7 +13,7 @@ class RoomController extends \yii\rest\ActiveController
 
     public function init(){
         parent::init();
-        $this->root_path = Yii::getAlias('@frontend/web');c
+        $this->root_path = Yii::getAlias('@frontend/web');
     }
 
     public function behaviors()
