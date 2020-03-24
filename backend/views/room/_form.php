@@ -17,10 +17,11 @@ use kartik\file\FileInput;
     <?= $form->field($model, 'avatar_url')->widget(FileInput::classname(), [
         'options' => ['multiple' => false,'accept' => 'image/*'],
         'pluginOptions' => [
+            'defaultPreviewContent'=>'请上传头像图片',
             'previewFileType' => 'any',
             'showUpload'=>false,
             'overwriteInitial'=>true,
-            'browseLabel'=>'请选择树木照片',
+            'browseLabel'=>'请选择头像照片',
             'allowedFileExtensions'=>['jpg','gif','png']
         ]
     ]);?>

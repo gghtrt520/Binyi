@@ -20,10 +20,11 @@ use kartik\file\FileInput;
     <?= $form->field($model, 'style')->widget(FileInput::classname(), [
         'options' => ['multiple' => false,'accept' => 'image/*'],
         'pluginOptions' => [
+            'defaultPreviewContent'=>'请上传贡品样式图片',
             'previewFileType' => 'any',
             'showUpload'=>false,
             'overwriteInitial'=>true,
-            'browseLabel'=>'请选择贡品样式',
+            'browseLabel'=>'请选择贡品样式图片',
             'allowedFileExtensions'=>['jpg','gif','png']
         ]
     ]);?>
