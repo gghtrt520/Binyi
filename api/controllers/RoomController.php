@@ -13,7 +13,7 @@ class RoomController extends \yii\rest\ActiveController
 
     public function init(){
         parent::init();
-        $this->root_path = Yii::getAlias('@api/web');
+        $this->root_path = Yii::getAlias('@frontend/web');c
     }
 
     public function behaviors()
@@ -46,7 +46,7 @@ class RoomController extends \yii\rest\ActiveController
         $model  = new \common\models\Room();
         $upload = new \common\models\Upload();
         $result = $upload->uploadFile($model,$this->root_path,'avatar_url');
-        $path   = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$result;
+        $path   = Yii::$app->request->hostInfo.$result;
         return [
             'code' => 1,
             'message'=>'上传成功',
