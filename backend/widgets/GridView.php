@@ -97,9 +97,7 @@ class GridView extends YiiGridView
     {
         ob_start();
         ob_implicit_flush(false);
-        Pjax::begin();
         parent::run();
-        Pjax::end();
         return ob_get_clean();
     }
 }
