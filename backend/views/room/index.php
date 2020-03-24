@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'=>'avatar_url',
                 'format' => 'raw',
                 'value' => function ($model){
-                    return Html::img(Yii::$app->homeUrl.$model->avatar_url, ['height' => '30px','width'=>'30px']);
+                    return Html::img($model->avatar_url, ['height' => '30px','width'=>'30px']);
                 }
     
             ],

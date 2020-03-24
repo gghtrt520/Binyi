@@ -12,15 +12,16 @@ class Upload extends \yii\db\ActiveRecord
     
 
     
-    public function uploadImgFile($model)
+    public function uploadImgFile($model,$root_path)
     {
-        $file  = UploadedFile::getInstances($model, 'image');
+        $file  = UploadedFile::getInstances($model, 'avatar_url');
+        $file  = $file[0];
         if ($file) {
-            if ($file->hasError) {
+            if ($file->error) {
                 throw new BadRequestHttpException($file->error);
             }
-            $file_name = $this->createUploadPath('images') . microtime() . '.' . $file->extension;
-            if ($file->saveAs(Yii::getAlias('@webroot') . $file_name)) {
+            $file_name = $this->createUploadPath('avatar_url',$root_path) . microtime() . '.' . $file->extension;
+            if ($file->saveAs($root_path . $file_name)) {
                 return $file_name;
             } else {
                 throw new BadRequestHttpException('文件上传失败');
@@ -31,15 +32,15 @@ class Upload extends \yii\db\ActiveRecord
     }
 
 
-    public function uploadVideoFile($model)
+    public function uploadVideoFile($model,$root_path)
     {
         $file  = UploadedFile::getInstance($model, 'video');
         if ($file) {
-            if ($file->hasError) {
+            if ($file->error) {
                 throw new BadRequestHttpException($file->error);
             }
-            $file_name = $this->createUploadPath('video') . microtime() . '.' . $file->extension;
-            if ($file->saveAs(Yii::getAlias('@webroot') . $file_name)) {
+            $file_name = $this->createUploadPath('video',$root_path) . microtime() . '.' . $file->extension;
+            if ($file->saveAs($root_path . $file_name)) {
                 return $file_name;
             } else {
                 throw new BadRequestHttpException('文件上传失败');
@@ -51,9 +52,8 @@ class Upload extends \yii\db\ActiveRecord
     
 
 
-    public function createUploadPath($value)
+    public function createUploadPath($value,$root_path)
     {
-        $root_path = Yii::getAlias('@webroot');
         $path = rtrim('/upload/'.$value.'/'.date('Y-m-d', time()), '/').'/';
         if (!is_dir($root_path.$path)) {
             FileHelper::createDirectory($root_path.$path, 0777);

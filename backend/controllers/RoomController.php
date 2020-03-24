@@ -14,9 +14,13 @@ use yii\filters\VerbFilter;
  */
 class RoomController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
+    public $root_path;
+
+    public function init(){
+        parent::init();
+        $this->root_path = Yii::getAlias('@backend/web');
+    }
+
     public function behaviors()
     {
         return [
@@ -64,10 +68,13 @@ class RoomController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Room();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $model  = new \common\models\Room();
+        $upload = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadImgFile($model,$this->root_path);
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('create', [
