@@ -8,6 +8,7 @@ use common\models\RoomSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use backend\actions\RoomCheckAction;
 
 /**
  * RoomController implements the CRUD actions for Room model.
@@ -19,6 +20,23 @@ class RoomController extends Controller
     public function init(){
         parent::init();
         $this->root_path = Yii::getAlias('@backend/web');
+    }
+
+    public function actions()
+    {
+        return array_merge(parent::actions(), [
+            'check'=>[
+                'class'   => RoomCheckAction::className(),
+                'is_show' => 1
+            ],
+            'un-check'=>[
+                'class'   => RoomCheckAction::className(),
+                'is_show' => 0
+            ],
+            'delete-all'=>[
+                'class'=>RoomCheckAction::className(),
+            ]
+        ]);
     }
 
     public function behaviors()

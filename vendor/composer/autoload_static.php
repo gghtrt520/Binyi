@@ -49,7 +49,9 @@ class ComposerStaticInitd01fb3f7c883d00f73de51014500d740
         'k' => 
         array (
             'kartik\\plugins\\fileinput\\' => 25,
+            'kartik\\form\\' => 12,
             'kartik\\file\\' => 12,
+            'kartik\\date\\' => 12,
             'kartik\\base\\' => 12,
         ),
         'd' => 
@@ -169,9 +171,17 @@ class ComposerStaticInitd01fb3f7c883d00f73de51014500d740
         array (
             0 => __DIR__ . '/..' . '/kartik-v/bootstrap-fileinput',
         ),
+        'kartik\\form\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-activeform/src',
+        ),
         'kartik\\file\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-fileinput/src',
+        ),
+        'kartik\\date\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datepicker/src',
         ),
         'kartik\\base\\' => 
         array (

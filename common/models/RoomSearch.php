@@ -11,13 +11,18 @@ use common\models\Room;
  */
 class RoomSearch extends Room
 {
-    /**
-     * {@inheritdoc}
-     */
+    const UNCHECK = 0;
+    const ISCHECK = 1;
+    
+    static public $check = [
+        self::UNCHECK => '未审核',
+        self::ISCHECK  => '审核',
+    ];
+
     public function rules()
     {
         return [
-            [['id', 'age', 'rule'], 'integer'],
+            [['id', 'age', 'rule','is_show'], 'integer'],
             [['avatar_url', 'surname', 'name', 'gender', 'birthdate', 'death', 'native', 'religion', 'relation', 'updated_at', 'created_at'], 'safe'],
         ];
     }
@@ -27,7 +32,6 @@ class RoomSearch extends Room
      */
     public function scenarios()
     {
-        // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
 
@@ -51,13 +55,12 @@ class RoomSearch extends Room
             return $dataProvider;
         }
         $query->andFilterWhere([
-            'id' => $this->id,
+            'id'        => $this->id,
             'birthdate' => $this->birthdate,
-            'death' => $this->death,
-            'age' => $this->age,
-            'rule' => $this->rule,
-            'updated_at' => $this->updated_at,
-            'created_at' => $this->created_at,
+            'death'     => $this->death,
+            'age'       => $this->age,
+            'rule'      => $this->rule,
+            'is_show'   => $this->is_show
         ]);
 
         $query->andFilterWhere(['like', 'avatar_url', $this->avatar_url])

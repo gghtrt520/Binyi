@@ -24,9 +24,6 @@ use Yii;
  */
 class Room extends Base
 {
-    /**
-     * {@inheritdoc}
-     */
     public static function tableName()
     {
         return '{{%room}}';
