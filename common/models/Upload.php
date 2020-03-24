@@ -20,7 +20,7 @@ class Upload extends \yii\db\ActiveRecord
             if ($file->error) {
                 throw new BadRequestHttpException($file->error);
             }
-            $file_name = $this->createUploadPath($attribute,$root_path) . microtime() . '.' . $file->extension;
+            $file_name = $this->createUploadPath($attribute,$root_path) . microtime(true) . '.' . $file->extension;
             if ($file->saveAs($root_path . $file_name)) {
                 return $file_name;
             } else {
