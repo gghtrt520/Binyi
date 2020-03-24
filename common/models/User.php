@@ -270,8 +270,6 @@ class User extends ActiveRecord implements IdentityInterface
             $user->status       = self::STATUS_ACTIVE;
             $user->type         = '2';
             if ($user->save()) {
-                $rule    = new Assignment($user->attributes['id']);
-                $success = $rule->assign(['普通用户']);
                 return $user;
             } else {
                 return false;
