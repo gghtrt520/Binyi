@@ -46,7 +46,7 @@ class RoomController extends \yii\rest\ActiveController
         $model  = new \common\models\Room();
         $upload = new \common\models\Upload();
         $result = $upload->uploadFile($model,$this->root_path,'avatar_url');
-        $path   = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
+        $path   = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$result;
         return [
             'code' => 1,
             'message'=>'上传成功',
