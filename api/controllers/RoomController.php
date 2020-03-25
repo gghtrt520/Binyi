@@ -37,7 +37,7 @@ class RoomController extends \yii\rest\Controller
     public function actionShow($category)
     {
         $data = \common\models\Room::find()->where(['rule'=>1])->andFilterWhere([
-            'like','category',$category
+            'in','category',$category
         ])->asArray()->all();
         return [
             'code' => 1,
