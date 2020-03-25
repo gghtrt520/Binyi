@@ -74,7 +74,7 @@ class SiteController extends \yii\rest\Controller
                 if ($result) {
                     return [
                         'code'    => self::SUCCESS,
-                        'data'    => ['openid'=> $response->data['openid'],'access_token'=> $result->access_token,'user_id'=>$result],
+                        'data'    => ['openid'=> $response->data['openid'],'access_token'=> $result->access_token,'user_id'=>$result->id],
                         'message' => '请求成功'
                     ];
                 } else {
