@@ -52,8 +52,9 @@ class RoomController extends \yii\rest\Controller
 
     public function actionSelf()
     {
+        $name    = Yii::$app->request->get('name');
         $user_id = Yii::$app->user->identity->id;
-        $data = \common\models\Room::find()->where(['user_id'=>$user_id])->asArray()->all();
+        $data = \common\models\Room::find()->where(['user_id'=>$user_id])->andFilterWhere(['like','name',$name])->asArray()->all();
         return [
             'code' => 1,
             'message'=>'操作成功',
