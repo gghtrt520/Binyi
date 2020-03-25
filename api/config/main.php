@@ -43,7 +43,7 @@ return [
                 'login'       => 'site/login',
                 'show'        => 'room/show',
                 'add'         => 'room/add',
-                'upload'      => 'room/create'
+                'upload'      => 'room/upload'
             ],
         ],
     ],
