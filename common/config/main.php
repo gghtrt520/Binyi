@@ -1,6 +1,7 @@
 <?php
 return [
     'language'  => 'zh-CN',
+    'charset'   => 'UTF-8', 
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
