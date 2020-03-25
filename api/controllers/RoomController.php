@@ -67,6 +67,11 @@ class RoomController extends \yii\rest\Controller
                     'message'=>'操作成功',
                     'data' => $model
                 ];
+            }else {
+                return [
+                    'code' => 0,
+                    'message'=>$model->getErrors(),
+                ];
             }
         }else{
             return [
