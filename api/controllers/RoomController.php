@@ -34,9 +34,16 @@ class RoomController extends \yii\rest\Controller
     }
 
 
-    public function actionShow()
+    public function actionShow($category)
     {
-        return 123;
+        $data = \common\models\Room::find()->where(['rule'=>1])->andFilterWhere([
+            'like','category',$category
+        ])->asArray()->all();
+        return [
+            'code' => 1,
+            'message'=>'操作成功',
+            'data' => $data
+        ];
     }
 
     public function actionUpload()
@@ -47,7 +54,7 @@ class RoomController extends \yii\rest\Controller
         $path   = Yii::$app->request->hostInfo.$result;
         return [
             'code' => 1,
-            'message'=>'上传成功',
+            'message'=>'操作成功',
             'data' => [
                 'path' => $path
             ]
