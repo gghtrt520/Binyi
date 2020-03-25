@@ -54,7 +54,7 @@ class RoomController extends \yii\rest\Controller
         ];
     }
 
-    public function actionCreate()
+    public function actionAdd()
     {
         $model  = new \common\models\Room();
         $upload = new \common\models\Upload();

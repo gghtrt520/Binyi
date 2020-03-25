@@ -42,7 +42,7 @@ return [
                 ''            => 'site/index',
                 'login'       => 'site/login',
                 'show'        => 'room/show',
-                'create'      => 'room/create',
+                'add'         => 'room/add',
                 'upload'      => 'room/create'
             ],
         ],
