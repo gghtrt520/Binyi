@@ -71,7 +71,7 @@ class RoomController extends \yii\rest\Controller
         }else{
             return [
                 'code' => 0,
-                'message'=>'操作失败',
+                'message'=>$model->getErrors(),
             ];
         }
     }
