@@ -42,8 +42,6 @@ return [
                 ''            => 'site/index',
                 'login'       => 'site/login',
                 'show'        => 'room/show',
-                'register'    => 'site/register',
-                'v1/register' => 'v1/site/register',
                 [
                     'class' => yii\rest\UrlRule::className(),
                     'controller' => 'room',

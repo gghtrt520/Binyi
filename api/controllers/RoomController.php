@@ -58,7 +58,7 @@ class RoomController extends \yii\rest\ActiveController
 
     public function actionCreate()
     {
-        $model  = new Room();
+        $model  = new \common\models\Room();
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
             $model->user_id    = Yii::$app->user->identity->id;
