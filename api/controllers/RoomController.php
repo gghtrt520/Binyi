@@ -50,6 +50,17 @@ class RoomController extends \yii\rest\Controller
         ];
     }
 
+    public function actionSelf()
+    {
+        $user_id = Yii::$app->user->identify->id;
+        $data = \common\models\Room::find()->where(['user_id'=>$user_id])->asArray()->all();
+        return [
+            'code' => 1,
+            'message'=>'操作成功',
+            'data' => $data
+        ];
+    }
+
     public function actionUpload()
     {
         $model  = new \common\models\Room();
