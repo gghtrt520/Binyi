@@ -55,4 +55,26 @@ class RoomController extends \yii\rest\ActiveController
             ]
         ];
     }
+
+    public function actionCreate()
+    {
+        $model  = new Room();
+        $upload = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->user_id    = Yii::$app->user->identity->id;
+            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
+            if ($model->save()) {
+                return [
+                    'code' => 1,
+                    'message'=>'操作成功',
+                    'data' => $model
+                ];
+            }
+        }else{
+            return [
+                'code' => 0,
+                'message'=>'操作失败',
+            ];
+        }
+    }
 }
