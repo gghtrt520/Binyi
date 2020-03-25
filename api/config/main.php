@@ -31,7 +31,7 @@ return [
             'enableCookieValidation' => false,
         ],
         'response' => [
-            'format'=> 'yii\web\Response::FORMAT_JSON',
+            'format'=>  yii\web\Response::FORMAT_JSON,
             'class' => 'yii\web\Response',
             'on beforeSend' => function ($event) {
                 $response = $event->sender;
