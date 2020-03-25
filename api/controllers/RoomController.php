@@ -70,14 +70,21 @@ class RoomController extends \yii\rest\Controller
             }else {
                 return [
                     'code' => 0,
-                    'message'=>$model->getErrors(),
+                    'message'=>$this->getErrorMessage($model),
                 ];
             }
         }else{
             return [
                 'code' => 0,
-                'message'=>$model->getErrors(),
+                'message'=>$this->getErrorMessage($model),
             ];
         }
+    }
+
+
+    public  function getErrorMessage($model) {
+        $errors  = $model->getErrors();
+        $first   = array_shift($errors);
+        return array_shift($first);
     }
 }
