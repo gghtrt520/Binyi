@@ -52,7 +52,7 @@ class RoomController extends \yii\rest\Controller
 
     public function actionSelf()
     {
-        $user_id = Yii::$app->user->identify->id;
+        $user_id = Yii::$app->user->identity->id;
         $data = \common\models\Room::find()->where(['user_id'=>$user_id])->asArray()->all();
         return [
             'code' => 1,
