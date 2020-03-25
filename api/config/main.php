@@ -43,13 +43,7 @@ return [
                 'login'       => 'site/login',
                 'show'        => 'room/show',
                 'create'      => 'room/create',
-                [
-                    'class' => yii\rest\UrlRule::className(),
-                    'controller' => 'room',
-                    'extraPatterns' => [
-                        'OPTIONS,POST    upload' => 'upload',
-                    ]
-                ],
+                'upload'      => 'room/create'
             ],
         ],
     ],

@@ -7,7 +7,7 @@ use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\helpers\ArrayHelper;
 
-class RoomController extends \yii\rest\ActiveController
+class RoomController extends \yii\rest\Controller
 {
     public $root_path;
 
@@ -33,8 +33,6 @@ class RoomController extends \yii\rest\ActiveController
         ]);
     }
 
-
-    public $modelClass = "api\models\Room";
 
     public function actionShow()
     {
