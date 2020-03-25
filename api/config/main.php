@@ -33,21 +33,6 @@ return [
         'response' => [
             'format'=>  yii\web\Response::FORMAT_JSON,
             'class' => 'yii\web\Response',
-            'on beforeSend' => function ($event) {
-                $response = $event->sender;
-                $code = $response->getStatusCode();
-                $message = $response->statusText;
-                if ($code == 404) {
-                    !empty($response->data['message']) && $message = $response->data['message'];
-                }
-                $data = [
-                    'code'    => $code,
-                    'message' => $message,
-                    'data'    => $response->data
-                ];
-                $code == 200 && $data['data'] = $response->data;
-                $response->data = $data;
-            },
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
