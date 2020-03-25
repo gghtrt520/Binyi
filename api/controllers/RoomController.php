@@ -1,5 +1,6 @@
 <?php
 namespace api\controllers;
+
 use Yii;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBasicAuth;
@@ -11,7 +12,8 @@ class RoomController extends \yii\rest\Controller
 {
     public $root_path;
 
-    public function init(){
+    public function init()
+    {
         parent::init();
         $this->root_path = Yii::getAlias('@frontend/web');
     }
@@ -34,8 +36,10 @@ class RoomController extends \yii\rest\Controller
     }
 
 
-    public function actionShow($category)
+    public function actionShow()
     {
+        $category = Yii::$app->request->post('category');
+        $category = explode(',', $category);
         $data = \common\models\Room::find()->where(['rule'=>1])->andFilterWhere([
             'in','category',$category
         ])->asArray()->all();
@@ -50,7 +54,7 @@ class RoomController extends \yii\rest\Controller
     {
         $model  = new \common\models\Room();
         $upload = new \common\models\Upload();
-        $result = $upload->uploadFile($model,$this->root_path,'avatar_url');
+        $result = $upload->uploadFile($model, $this->root_path, 'avatar_url');
         $path   = Yii::$app->request->hostInfo.$result;
         return [
             'code' => 1,
@@ -83,7 +87,7 @@ class RoomController extends \yii\rest\Controller
                 'message' => '操作成功',
                 'data'    => $model
             ];
-        }else {
+        } else {
             return [
                 'code'    => 0,
                 'message' =>$this->getErrorMessage($model),
@@ -92,7 +96,8 @@ class RoomController extends \yii\rest\Controller
     }
 
 
-    public  function getErrorMessage($model) {
+    public function getErrorMessage($model)
+    {
         $errors  = $model->getErrors();
         $first   = array_shift($errors);
         return array_shift($first);
