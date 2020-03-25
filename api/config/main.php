@@ -31,8 +31,21 @@ return [
             'enableCookieValidation' => false,
         ],
         'response' => [
-            'format'=>  yii\web\Response::FORMAT_JSON,
             'class' => 'yii\web\Response',
+            'on beforeSend' => function ($event) {
+                $response = $event->sender;
+                $code = $response->getStatusCode();
+                if($code >=200 && $code < 300){
+                    $return ['code'] = 1;
+                    $return ['message'] = $response->statusText;
+                    $return ['data']    = $response->data;
+                }else {
+                    $return ['code'] = 0;
+                    $return ['message'] = $response->statusText;
+                }
+                $response->data = $return;
+                $response->format = yii\web\Response::FORMAT_JSON;
+            },
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
