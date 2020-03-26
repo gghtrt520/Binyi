@@ -17,6 +17,8 @@ use kartik\file\FileInput;
     <?= $form->field($model, 'avatar_url')->widget(FileInput::classname(), [
         'options' => ['multiple' => false,'accept' => 'image/*'],
         'pluginOptions' => [
+            'autoReplace'=>true,
+            'initialPreviewShowDelete'=>false,
             'defaultPreviewContent'=>'请上传头像图片',
             'previewFileType' => 'any',
             'showUpload'=>false,

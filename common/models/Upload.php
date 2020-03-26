@@ -15,8 +15,8 @@ class Upload extends \yii\db\ActiveRecord
     public function uploadFile($model,$root_path,$attribute)
     {
         $file  = UploadedFile::getInstances($model, $attribute);
-        $file  = $file[0];
         if ($file) {
+            $file  = $file[0];
             if ($file->error) {
                 throw new BadRequestHttpException($file->error);
             }
@@ -27,7 +27,7 @@ class Upload extends \yii\db\ActiveRecord
                 throw new BadRequestHttpException('文件上传失败');
             }
         }else {
-            throw new BadRequestHttpException('文件上传失败');
+            throw new BadRequestHttpException('未上传文件');
         }
     }
 
