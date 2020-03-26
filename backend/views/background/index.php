@@ -23,6 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions'=>['class'=>'text-center'],
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
             [

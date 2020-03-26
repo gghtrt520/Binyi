@@ -31,6 +31,7 @@ class Background extends \common\models\Base
         return [
             [['background'], 'required'],
             [['price'], 'integer'],
+            ['price', 'default', 'value' =>0],
             [['updated_at', 'created_at'], 'safe'],
             [['background'], 'string', 'max' => 200],
         ];
