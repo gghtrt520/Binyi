@@ -25,7 +25,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'background',
+            [
+                'attribute'=>'background',
+                'filter'=>false,
+                'format' => 'raw',
+                'value' => function ($model){
+                    return Html::img($model->background, ['height' => '80px','width'=>'80px']);
+                }
+    
+            ],
             'price',
             'created_at',
             ['class' => 'yii\grid\ActionColumn'],

@@ -14,9 +14,14 @@ use yii\filters\VerbFilter;
  */
 class BackgroundController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
+    
+    public $root_path;
+
+    public function init(){
+        parent::init();
+        $this->root_path = Yii::getAlias('@backend/web');
+    }
+
     public function behaviors()
     {
         return [
@@ -65,9 +70,12 @@ class BackgroundController extends Controller
     public function actionCreate()
     {
         $model = new Background();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $upload = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('create', [
@@ -85,9 +93,12 @@ class BackgroundController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $upload = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
+            if($model->save()){
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('update', [
