@@ -26,17 +26,23 @@ $this->params['breadcrumbs'][] = $this->title;
         'rowOptions'=>['class'=>'text-center'],
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
+            'name',
             [
                 'attribute'=>'background',
                 'filter'=>false,
                 'format' => 'raw',
                 'value' => function ($model){
-                    return Html::img($model->background, ['height' => '80px','width'=>'80px']);
+                    return Html::img($model->background, ['height' => '30px','width'=>'30px']);
                 }
     
             ],
             'price',
-            'created_at',
+            [
+                'attribute'=>'created_at',
+                'filter'=>false,
+                'value'=>'created_at'
+    
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

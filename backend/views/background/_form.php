@@ -10,6 +10,7 @@ use kartik\file\FileInput;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'name')->textInput() ?>
 
     <?= $form->field($model, 'background')->widget(FileInput::classname(), [
         'options' => ['multiple' => false,'accept' => 'image/*'],

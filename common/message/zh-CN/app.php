@@ -59,6 +59,7 @@ return [
      */
     'Backgrounds' =>'祭祀背景',
     'Create Background'=>'创建背景',
+    'Background Name'=>'背景名称',
     'Update Background: {name}'=>'更新背景: {name}',
     'Background'=>'背景样式',
 

@@ -29,11 +29,12 @@ class Background extends \common\models\Base
     public function rules()
     {
         return [
-            [['background'], 'required'],
+            [['name','background'], 'required'],
             [['price'], 'integer'],
             ['price', 'default', 'value' =>0],
             [['updated_at', 'created_at'], 'safe'],
             [['background'], 'string', 'max' => 200],
+            [['name'], 'string', 'max' => 50],
         ];
     }
 
@@ -44,6 +45,7 @@ class Background extends \common\models\Base
     {
         return [
             'id' => Yii::t('app', 'ID'),
+            'name' => Yii::t('app', 'Background Name'),
             'background' => Yii::t('app', 'Background'),
             'price' => Yii::t('app', 'Price'),
             'updated_at' => Yii::t('app', 'Updated At'),

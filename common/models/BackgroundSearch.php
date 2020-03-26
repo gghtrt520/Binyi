@@ -18,6 +18,7 @@ class BackgroundSearch extends Background
     {
         return [
             [['id', 'price'], 'integer'],
+            [['name'], 'string'],
             [['background', 'updated_at', 'created_at'], 'safe'],
         ];
     }
@@ -64,7 +65,7 @@ class BackgroundSearch extends Background
             'created_at' => $this->created_at,
         ]);
 
-        $query->andFilterWhere(['like', 'background', $this->background]);
+        $query->andFilterWhere(['like', 'name', $this->name]);
 
         return $dataProvider;
     }
