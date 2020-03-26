@@ -44,7 +44,8 @@ return [
                 'show'        => 'room/show',
                 'add'         => 'room/add',
                 'upload'      => 'room/upload',
-                'self'        => 'room/self'
+                'self'        => 'room/self',
+                'change'      => 'room/change',
             ],
         ],
     ],
