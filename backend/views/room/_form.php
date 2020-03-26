@@ -22,7 +22,11 @@ use kartik\file\FileInput;
             'showUpload'=>false,
             'overwriteInitial'=>true,
             'browseLabel'=>'请选择头像照片',
-            'allowedFileExtensions'=>['jpg','gif','png']
+            'allowedFileExtensions'=>['jpg','gif','png'],
+            'initialPreviewAsData'=>true,
+            'initialPreview'=>[
+                $model->avatar_url
+            ],
         ]
     ]);?>
 

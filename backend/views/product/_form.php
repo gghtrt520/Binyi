@@ -25,7 +25,11 @@ use kartik\file\FileInput;
             'showUpload'=>false,
             'overwriteInitial'=>true,
             'browseLabel'=>'请选择贡品样式图片',
-            'allowedFileExtensions'=>['jpg','gif','png']
+            'allowedFileExtensions'=>['jpg','gif','png'],
+            'initialPreviewAsData'=>true,
+            'initialPreview'=>[
+                $model->style
+            ],
         ]
     ]);?>
 
