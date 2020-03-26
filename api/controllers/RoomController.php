@@ -129,5 +129,21 @@ class RoomController extends BaseController
     }
 
 
+    public function actionDetail()
+    {
+        $id = Yii::$app->request->post('id');
+        $model = \common\models\Room::findOne($id);
+        if($model){
+            return [
+                'code'    => 1,
+                'message' => '操作成功',
+                'data'    => $model
+            ];
+        }else{
+            throw new yii\web\NotFoundHttpException('数据查询失败');
+        }
+    }
+
+
     
 }
