@@ -53,6 +53,15 @@ return [
     'Product ID'=>'贡品ID',
     'User ID'=>'用户ID',
 
+
+    /**
+     * Background
+     */
+    'Backgrounds' =>'祭祀背景',
+    'Create Background'=>'创建背景',
+    'Update Background: {name}'=>'更新背景: {name}',
+    'Background'=>'背景样式',
+
     /**
      * Frontend Menus
      */
