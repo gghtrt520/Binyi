@@ -35,12 +35,13 @@ class Room extends Base
     public function rules()
     {
         return [
-            [['avatar_url', 'name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion','category'], 'required'],
+            [['avatar_url', 'name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion','category','description'], 'required'],
             [['gender'], 'string'],
             [['birthdate', 'death'], 'date'],
             [['updated_at', 'created_at'], 'safe'],
             [['age', 'rule','is_show','user_id'], 'integer'],
             [['avatar_url'], 'string', 'max' => 150],
+            [['description'], 'string', 'max' => 100],
             [['name', 'religion','province','city','area','category'], 'string', 'max' => 30],
         ];
     }
@@ -58,6 +59,7 @@ class Room extends Base
             'birthdate' => Yii::t('app', 'Birthdate'),
             'death' => Yii::t('app', 'Death'),
             'age' => Yii::t('app', 'Age'),
+            'description' => Yii::t('app', 'Description'),
             'province' => Yii::t('app', 'Province'),
             'city' => Yii::t('app', 'City'),
             'area' => Yii::t('app', 'Area'),

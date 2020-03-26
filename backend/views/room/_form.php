@@ -58,6 +58,8 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'age')->textInput() ?>
 
+    <?= $form->field($model, 'description')->textarea(['rows' => 4]) ?>
+
     <?= $form->field($model, 'province')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>

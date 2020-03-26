@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'birthdate',
             'death',
             'age',
+            'description',
             [
                 'label' => '籍贯',
                 'options'   => ['style' => 'width:150px'],

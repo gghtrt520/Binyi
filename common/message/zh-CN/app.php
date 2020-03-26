@@ -22,6 +22,7 @@ return [
     'Birthdate' => '生辰',
     'Death'     => '忌日',
     'Age'       => '享年',
+    'Description'=> '寄语',
     'Province'    =>  '籍贯:省',
     'City'    =>  '籍贯:市',
     'Area'    =>  '籍贯:区',
