@@ -8,7 +8,7 @@ use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\helpers\ArrayHelper;
 
-class RoomController extends \yii\rest\Controller
+class RoomController extends BaseController
 {
     public $root_path;
 
@@ -18,22 +18,6 @@ class RoomController extends \yii\rest\Controller
         $this->root_path = Yii::getAlias('@frontend/web');
     }
 
-    public function behaviors()
-    {
-        return ArrayHelper::merge(parent::behaviors(), [
-            'authenticator' => [
-                'class' => CompositeAuth::className(),
-                'authMethods' => [
-                    HttpBasicAuth::className(),
-                    HttpBearerAuth::className(),
-                    [
-                        'class' => QueryParamAuth::className(),
-                        'tokenParam' => 'access_token',
-                    ]
-                ]
-            ]
-        ]);
-    }
 
 
     public function actionShow()
@@ -145,10 +129,5 @@ class RoomController extends \yii\rest\Controller
     }
 
 
-    public function getErrorMessage($model)
-    {
-        $errors  = $model->getErrors();
-        $first   = array_shift($errors);
-        return array_shift($first);
-    }
+    
 }

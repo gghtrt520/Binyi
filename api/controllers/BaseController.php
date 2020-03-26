@@ -29,4 +29,11 @@ class BaseController extends \yii\rest\Controller
         ]);
     }
 
+    public function getErrorMessage($model)
+    {
+        $errors  = $model->getErrors();
+        $first   = array_shift($errors);
+        return array_shift($first);
+    }
+
 }
