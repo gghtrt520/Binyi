@@ -44,6 +44,15 @@ return [
     'Style'       =>'贡品样式',
     'Norms'       =>'贡品规格',
 
+
+    /**
+     * Gift
+     */
+    'Gifts'   =>'祭品记录',
+    'Room ID' =>'纪念馆ID',
+    'Product ID'=>'贡品ID',
+    'User ID'=>'用户ID',
+
     /**
      * Frontend Menus
      */
