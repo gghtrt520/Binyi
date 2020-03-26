@@ -86,6 +86,7 @@ class RoomController extends \yii\rest\Controller
         $model->gender = Yii::$app->request->post('gender');
         $model->birthdate = Yii::$app->request->post('birthdate');
         $model->death = Yii::$app->request->post('death');
+        $model->description = Yii::$app->request->post('description');
         $model->age = Yii::$app->request->post('age');
         $model->province = Yii::$app->request->post('province');
         $model->city = Yii::$app->request->post('city');
@@ -119,6 +120,7 @@ class RoomController extends \yii\rest\Controller
             $model->birthdate  = Yii::$app->request->post('birthdate');
             $model->death      = Yii::$app->request->post('death');
             $model->age        = Yii::$app->request->post('age');
+            $model->description = Yii::$app->request->post('description');
             $model->province   = Yii::$app->request->post('province');
             $model->city       = Yii::$app->request->post('city');
             $model->area       = Yii::$app->request->post('area');
