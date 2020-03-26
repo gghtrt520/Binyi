@@ -114,7 +114,7 @@ class RoomController extends Controller
         $upload = new \common\models\Upload();
         $model  = $this->findModel($id);
         if ($model->load(Yii::$app->request->post())) {
-            $model->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
+            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
             if($model->save()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }
