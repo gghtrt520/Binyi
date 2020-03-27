@@ -57,6 +57,8 @@ return [
                 'photoupload' => 'photo/photo-upload',
                 'photolistcreate'=>'photo/photo-list-create',
                 'photolistdetail'=>'photo/photo-list-detail',
+                'videoupload' => 'video/video-upload',
+                'videocreate' => 'video/video-create',
             ],
         ],
     ],
