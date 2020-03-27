@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     }elseif ($model->type == 3) {
                         return '祭品';
                     }else {
-                        return '--';
+                        return '不存在';
                     }
                 }
             ],
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'type_id',
                 'filter'=>false,
                 'value'     => function ($model) {
-                    return $model->payProduct ? $model->payProduct->name :'--';
+                    return $model->payProduct ? $model->payProduct->name :'已删除';
                 }
             ],
             [
