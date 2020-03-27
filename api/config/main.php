@@ -61,6 +61,7 @@ return [
                 'videoupload' => 'video/video-upload',
                 'videocreate' => 'video/video-create',
                 'videolist'   => 'video/video-list',
+                'appointmentcreate'   => 'appointment/appointment-create',
             ],
         ],
     ],
