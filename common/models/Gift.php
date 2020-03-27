@@ -54,16 +54,16 @@ class Gift extends \common\models\Base
 
     public function getUser()
     {
-        return $this->hasOne(User::className(),['id'=>'user_id']);
+        return $this->hasOne(User::className(),['user.id'=>'gift.user_id']);
     }
 
     public function getProduct()
     {
-        return $this->hasOne(Product::className(),['id'=>'product_id']);
+        return $this->hasOne(Product::className(),['product.id'=>'gift.product_id']);
     }
 
     public function getRoom()
     {
-        return $this->hasOne(Room::className(),['id'=>'room_id']);
+        return $this->hasOne(Room::className(),['room.id'=> 'gift.room_id']);
     }
 }
