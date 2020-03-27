@@ -145,5 +145,25 @@ class RoomController extends BaseController
     }
 
 
+    public function actionChangeBg()
+    {
+        $id    = Yii::$app->request->post('id');
+        $bg_id = Yii::$app->request->post('bg_id');
+        $model = \common\models\Room::findOne($id);
+        $model->background_id = $bg_id;
+        if($model->save()){
+            return [
+                'code'    => 1,
+                'message' => '操作成功'
+            ];
+        }else{
+            return [
+                'code'    => 0,
+                'message' =>$this->getErrorMessage($model),
+            ];
+        }
+    }
+
+
     
 }

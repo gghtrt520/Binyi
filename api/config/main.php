@@ -50,7 +50,8 @@ return [
                 'present'     => 'gift/present',
                 'list'        => 'product/list',
                 'bglist'      => 'background/bglist',
-                'plist'       => 'gift/present-list'
+                'plist'       => 'gift/present-list',
+                'changepg'    => 'room/change-bg'
             ],
         ],
     ],
