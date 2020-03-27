@@ -39,7 +39,7 @@ class GiftController extends BaseController
         return [
             'code'    => 1,
             'message' => '操作成功',
-            'data'    => $model
+            'data'    => $data
         ];
     }
 
