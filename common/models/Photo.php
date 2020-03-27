@@ -1,3 +1,4 @@
+
 <?php
 
 namespace common\models;
@@ -48,5 +49,10 @@ class Photo extends \common\models\Base
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
         ];
+    }
+
+    public function  getPhotoList()
+    {
+        return $this->hasMany(PhotoList::className(),['photo_id'=>'id']);
     }
 }

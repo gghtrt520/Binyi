@@ -51,7 +51,12 @@ return [
                 'list'        => 'product/list',
                 'bglist'      => 'background/bglist',
                 'plist'       => 'gift/present-list',
-                'changepg'    => 'room/change-bg'
+                'changepg'    => 'room/change-bg',
+                'photocreate' => 'photo/photo-create',
+                'photodetail' => 'photo/photo-detail',
+                'photoupload' => 'photo/photo-upload',
+                'photolistcreate'=>'photo/photo-list-create',
+                'photolistdetail'=>'photo/photo-list-detail',
             ],
         ],
     ],

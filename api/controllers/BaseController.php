@@ -11,6 +11,14 @@ use yii\filters\VerbFilter;
 
 class BaseController extends \yii\rest\Controller
 {
+    public $root_path;
+
+    public function init()
+    {
+        parent::init();
+        $this->root_path = Yii::getAlias('@frontend/web');
+    }
+
     public function behaviors()
     {
         return ArrayHelper::merge(parent::behaviors(), [
