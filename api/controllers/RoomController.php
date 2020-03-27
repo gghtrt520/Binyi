@@ -8,7 +8,7 @@ use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\helpers\ArrayHelper;
 
-class RoomController extends BaseController
+class RoomController extends api\controllers\BaseController
 {
     public $root_path;
 
