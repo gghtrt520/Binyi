@@ -52,4 +52,12 @@ class Background extends \common\models\Base
             'created_at' => Yii::t('app', 'Created At'),
         ];
     }
+
+
+    public static function getList()
+    {
+        $data = self::find()->select('id,name')->all();
+        $data = \yii\helpers\ArrayHelper::map(array_merge($data), 'id', 'name');
+        return $data;
+    }
 }

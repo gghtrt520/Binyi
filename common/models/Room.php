@@ -76,4 +76,9 @@ class Room extends Base
             'created_at' => Yii::t('app', 'Created At'),
         ];
     }
+
+    public function getBackground()
+    {
+        return $this->hasOne(Background::className(),['id'=>'background_id']);
+    }
 }

@@ -43,6 +43,26 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'religion',
             [
+                'attribute' => 'is_pay',
+                'value'     => function ($model) {
+                    if($model['is_pay']== 0) {
+                        return '免费';
+                    }else{
+                        return '付费';
+                    }
+                }
+            ],
+            [
+                'attribute' => 'background_id',
+                'value'     => function ($model) {
+                    if($model['background_id']== 0) {
+                        return '默认背景';
+                    }else{
+                        return $model->background ? $model->background->name : '--';
+                    }
+                }
+            ],
+            [
                 'attribute' => 'rule',
                 'value'     => function ($model) {
                     if($model['rule']== 0) {
