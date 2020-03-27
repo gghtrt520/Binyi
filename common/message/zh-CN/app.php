@@ -26,6 +26,8 @@ return [
     'Province'    =>  '籍贯:省',
     'City'    =>  '籍贯:市',
     'Area'    =>  '籍贯:区',
+    'Background Name'=>'背景主题',
+    'Is Pay'=>'是否付费',
     'Religion'  => '宗教信仰',
     'Category'  => '所属分类',
     'Relation'  => '逝者关系',
