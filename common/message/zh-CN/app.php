@@ -73,4 +73,12 @@ return [
     'Frontend Name' =>'菜单名称',
     'Route'         =>'路由',
     'Order'         =>'排序',
+
+    /**
+     * Pay
+     */
+    'Pay Type' => '付费类型',
+    'Pay Num' => '金额',
+    'Pay User ID' => '付费用户',
+    'Pay Type ID' => '付费产品',
 ];

@@ -3,25 +3,20 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Background;
-use common\models\BackgroundSearch;
+use common\models\Pay;
+use common\models\PaySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * BackgroundController implements the CRUD actions for Background model.
+ * PayController implements the CRUD actions for Pay model.
  */
-class BackgroundController extends Controller
+class PayController extends Controller
 {
-    
-    public $root_path;
-
-    public function init(){
-        parent::init();
-        $this->root_path = Yii::getAlias('@backend/web');
-    }
-
+    /**
+     * {@inheritdoc}
+     */
     public function behaviors()
     {
         return [
@@ -35,12 +30,12 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Lists all Background models.
+     * Lists all Pay models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new BackgroundSearch();
+        $searchModel = new PaySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -50,7 +45,7 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Displays a single Background model.
+     * Displays a single Pay model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -63,19 +58,16 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Creates a new Background model.
+     * Creates a new Pay model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Background();
-        $upload = new \common\models\Upload();
-        if ($model->load(Yii::$app->request->post())) {
-            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
-            if ($model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
-            }
+        $model = new Pay();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -84,7 +76,7 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Updates an existing Background model.
+     * Updates an existing Pay model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -93,12 +85,9 @@ class BackgroundController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $upload = new \common\models\Upload();
-        if ($model->load(Yii::$app->request->post())) {
-            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
-            if($model->save()){
-                return $this->redirect(['view', 'id' => $model->id]);
-            }
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -107,7 +96,7 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Deletes an existing Background model.
+     * Deletes an existing Pay model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -121,15 +110,15 @@ class BackgroundController extends Controller
     }
 
     /**
-     * Finds the Background model based on its primary key value.
+     * Finds the Pay model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Background the loaded model
+     * @return Pay the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Background::findOne($id)) !== null) {
+        if (($model = Pay::findOne($id)) !== null) {
             return $model;
         }
 
