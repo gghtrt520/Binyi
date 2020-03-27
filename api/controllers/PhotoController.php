@@ -12,6 +12,7 @@ class PhotoController extends BaseController
         $model->room_id = Yii::$app->request->post('room_id');
         $model->name    = Yii::$app->request->post('name');
         $photo_list     = Yii::$app->request->post('photo_list');
+        $photo_list     = explode(',',$photo_list);
         if($model->save()){
             if($photo_list &&is_array($photo_list)){
                 foreach($photo_list as $value){
