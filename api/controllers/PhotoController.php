@@ -9,8 +9,8 @@ class PhotoController extends BaseController
     public function actionPhotoCreate()
     {
         $model   = new \common\models\Photo(); 
-        $model->room_id = Yii::$app->requset->post('room_id');
-        $model->name    = Yii::$app->requset->post('name');
+        $model->room_id = Yii::$app->request->post('room_id');
+        $model->name    = Yii::$app->request->post('name');
         if($model->save()){
             return [
                 'code'    => 1,
@@ -28,7 +28,7 @@ class PhotoController extends BaseController
 
     public function actionPhotoDetail()
     {   
-        $room_id = Yii::$app->requset->post('room_id');
+        $room_id = Yii::$app->request->post('room_id');
         $model   = \common\models\Photo::find()->where(['room_id'=>$room_id])->all();
         $option = [
             'common\models\Photo' => [
@@ -67,8 +67,8 @@ class PhotoController extends BaseController
     public function actionPhotoListCreate()
     {
         $model  = new \common\models\PhotoList();
-        $model->photo_id = Yii::$app->requset->post('photo_id');
-        $model->photo_url = Yii::$app->requset->post('photo_url');
+        $model->photo_id = Yii::$app->request->post('photo_id');
+        $model->photo_url = Yii::$app->request->post('photo_url');
         if($model->save()){
             return [
                 'code'    => 1,
@@ -86,7 +86,7 @@ class PhotoController extends BaseController
 
     public function actionPhotoListDetail()
     {
-        $photo_id = Yii::$app->requset->post('photo_id');
+        $photo_id = Yii::$app->request->post('photo_id');
         $data = \common\models\PhotoList::find()->where(['photo_id'=>$photo_id])->asArray()->all();
         return [
             'code'    => 1,
