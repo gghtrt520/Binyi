@@ -42,6 +42,18 @@ class GiftController extends BaseController
         }
     }
 
+
+    public function actionVideoList()
+    {
+        $room_id = Yii::$app->request->post('room_id');
+        $data    = \common\models\Video::find()->where(['room_id'=>$room_id])->asArray()->all();
+        return [
+            'code'    => 1,
+            'message' => '操作成功',
+            'data'    => $data
+        ];
+    }
+
     
 
 

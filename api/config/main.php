@@ -59,6 +59,7 @@ return [
                 'photolistdetail'=>'photo/photo-list-detail',
                 'videoupload' => 'video/video-upload',
                 'videocreate' => 'video/video-create',
+                'videolist'   => 'video/video-list',
             ],
         ],
     ],
