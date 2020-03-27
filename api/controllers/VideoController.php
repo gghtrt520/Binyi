@@ -3,7 +3,7 @@ namespace api\controllers;
 
 use Yii;
 
-class GiftController extends BaseController
+class VideoController extends BaseController
 {
 
     public function actionVideoUpload()
