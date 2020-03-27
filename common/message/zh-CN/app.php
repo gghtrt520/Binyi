@@ -37,14 +37,14 @@ return [
     /**
      * Product
      */
-    'Create Product'=>'创建贡品',
-    'Update Product: {name}'=>'更新贡品: {name}',
-    'Products'     =>'贡品',
-    'Product Name'=>'贡品名称',
+    'Create Product'=>'创建祭品',
+    'Update Product: {name}'=>'更新祭品: {name}',
+    'Products'     =>'祭品',
+    'Product Name'=>'祭品名称',
     'Price'       =>'价格',
     'Num'         =>'数量',
-    'Style'       =>'贡品样式',
-    'Norms'       =>'贡品规格',
+    'Style'       =>'祭品样式',
+    'Norms'       =>'祭品规格',
 
 
     /**
@@ -52,7 +52,7 @@ return [
      */
     'Gifts'   =>'祭品记录',
     'Room ID' =>'纪念馆ID',
-    'Product ID'=>'贡品ID',
+    'Product ID'=>'祭品ID',
     'User ID'=>'用户ID',
 
 
