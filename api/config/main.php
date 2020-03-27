@@ -49,7 +49,8 @@ return [
                 'detail'      => 'room/detail',
                 'present'     => 'gift/present',
                 'list'        => 'product/list',
-                'bglist'      => 'background/bglist'
+                'bglist'      => 'background/bglist',
+                'plist'       => 'gift/present-list'
             ],
         ],
     ],
