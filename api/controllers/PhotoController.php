@@ -11,11 +11,19 @@ class PhotoController extends BaseController
         $model   = new \common\models\Photo(); 
         $model->room_id = Yii::$app->request->post('room_id');
         $model->name    = Yii::$app->request->post('name');
+        $photo_list     = Yii::$app->request->post('photo_list');
         if($model->save()){
+            if($photo_list &&is_array($photo_list)){
+                foreach($photo_list as $value){
+                    $list = new \common\models\PhotoList();
+                    $list->photo_id  = $model->attributes['id'];
+                    $list->photo_url = $value;
+                    $list->save();
+                }
+            }
             return [
-                'code'    => 1,
-                'message' => '操作成功',
-                'data'    => $model
+                'code' => 1,
+                'message' => '操作成功'
             ];
         }else{
             return [
