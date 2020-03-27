@@ -77,6 +77,7 @@ return [
     /**
      * Pay
      */
+    'Pays'     =>'付费记录',
     'Pay Type' => '付费类型',
     'Pay Num' => '金额',
     'Pay User ID' => '付费用户',

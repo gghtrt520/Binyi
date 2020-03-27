@@ -46,4 +46,22 @@ class Pay extends \common\models\Base
             'created_at' => Yii::t('app', 'Created At'),
         ];
     }
+
+    public function getPayProduct()
+    {
+        if($this->type == 1){
+            return $this->hasOne(Room::className(),['id'=>'type_id']);
+        }elseif ($this->type == 2) {
+            return $this->hasOne(Background::className(),['id'=>'type_id']);
+        }elseif ($this->type == 3) {
+            return $this->hasOne(Product::className(),['id'=>'type_id']);
+        }else {
+            return false;
+        }
+    }
+
+    public function getUser()
+    {
+        return $this->hasOne(User::className(),['id'=>'user_id']);
+    }
 }

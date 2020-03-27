@@ -11,14 +11,12 @@ use common\models\Pay;
  */
 class PaySearch extends Pay
 {
-    /**
-     * {@inheritdoc}
-     */
+    public $username;
     public function rules()
     {
         return [
             [['id', 'type', 'pay_num', 'user_id', 'type_id'], 'integer'],
-            [['updated_at', 'created_at'], 'safe'],
+            [['updated_at', 'created_at','username'], 'safe'],
         ];
     }
 
@@ -40,7 +38,7 @@ class PaySearch extends Pay
      */
     public function search($params)
     {
-        $query = Pay::find();
+        $query = Pay::find()->joinWith('user');
 
         // add conditions that should always apply here
 
@@ -59,13 +57,14 @@ class PaySearch extends Pay
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'type' => $this->type,
+            'pay.type' => $this->type,
             'pay_num' => $this->pay_num,
-            'user_id' => $this->user_id,
             'type_id' => $this->type_id,
             'updated_at' => $this->updated_at,
             'created_at' => $this->created_at,
         ]);
+
+        $query->andFilterWhere(['like','user.nick_name',$this->username]);
 
         return $dataProvider;
     }

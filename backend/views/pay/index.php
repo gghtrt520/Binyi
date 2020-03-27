@@ -12,11 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pay-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a(Yii::t('app', 'Create Pay'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,16 +21,38 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'type',
+            [
+                'attribute' => 'type',
+                'filter'    => [1=>'房间',2=>'背景主题',3=>'祭品'],
+                'value'     => function ($model) {
+                    if($model->type == 1){
+                        return '房间';
+                    }elseif ($model->type == 2) {
+                        return '背景主题';
+                    }elseif ($model->type == 3) {
+                        return '祭品';
+                    }else {
+                        return '--';
+                    }
+                }
+            ],
             'pay_num',
-            'user_id',
-            'type_id',
-            //'updated_at',
-            //'created_at',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'attribute' => 'username',
+                'label'     =>'付费用户',
+                'value'     =>'user.nick_name' 
+            ],
+            [
+                'attribute' => 'type_id',
+                'filter'=>false,
+                'value'     => function ($model) {
+                    return $model->payProduct ? $model->payProduct->name :'--';
+                }
+            ],
+            [
+            'class' => 'yii\grid\ActionColumn',
+                'template' => '{view} {delete}',
+            ],
         ],
     ]); ?>
 
