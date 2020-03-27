@@ -7,6 +7,7 @@ $params = array_merge(
 
 return [
     'id' => 'api',
+    'charset'   => 'UTF-8', 
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'api\controllers',
