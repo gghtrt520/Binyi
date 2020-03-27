@@ -8,17 +8,8 @@ use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\helpers\ArrayHelper;
 
-class RoomController extends \api\controllers\BaseController
+class RoomController extends BaseController
 {
-    public $root_path;
-
-    public function init()
-    {
-        parent::init();
-        $this->root_path = Yii::getAlias('@frontend/web');
-    }
-
-
 
     public function actionShow()
     {
