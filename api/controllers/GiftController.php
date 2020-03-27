@@ -32,7 +32,7 @@ class GiftController extends BaseController
     {
         $room_id = Yii::$app->request->post('room_id');
         $data = \common\models\Gift::find()->select([
-            'nick_name','name','created_at'
+            'user.nick_name','product.name','gift.created_at'
         ])->where([
             'room_id'=>$room_id
         ])->joinWith(['user','product'])->asArray()->all();
