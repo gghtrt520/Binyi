@@ -28,11 +28,34 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'type',
+            [
+                'attribute' => 'type',
+                'value'     => function ($model) {
+                    if($model->type == 1){
+                        return '房间';
+                    }elseif ($model->type == 2) {
+                        return '背景主题';
+                    }elseif ($model->type == 3) {
+                        return '祭品';
+                    }else {
+                        return '--';
+                    }
+                }
+            ],
             'pay_num',
-            'user_id',
-            'type_id',
-            'updated_at',
+            [
+                'attribute' => 'user.nick_name',
+                'label'     =>'付费用户',
+                'value'     =>function ($model) {
+                    return $model->user->nick_name;
+                }
+            ],
+            [
+                'attribute' => 'type_id',
+                'value'     => function ($model) {
+                    return $model->payProduct ? $model->payProduct->name :'已删除';
+                }
+            ],
             'created_at',
         ],
     ]) ?>
