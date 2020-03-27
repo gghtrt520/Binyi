@@ -31,21 +31,23 @@ class GiftController extends BaseController
     public function actionPresentList()
     {
         $room_id = Yii::$app->request->post('room_id');
-        $data = \common\models\Gift::find()->with(['user','product'])->where(['room_id'=>$room_id])->all();
-        $return = [];
-        if ($data) {
-            foreach ($data as $value) {
-                $return[] = [
-                    'created_at'=>$value->created_at,
-                    'nick_name'=>$value->user->nick_name,
-                    'name'=>$value->product->name,
-                ];
-            }
-        }
+        $data = \common\models\Gift::find()->joinWith(['user','product'])->where(['gift.room_id'=>$room_id])->all();
+        $option = [
+            'common\models\Gift' => [
+                'created_at',
+                'nick_name'=> function ($post){
+                    return $post->user ? $post->user->nick_name:'--';
+                },
+                'name' => function ($post){
+                    return $post->product ? $post->product->name:'--';
+                },
+            ],
+        ];
+        $data = yii\helpers\ArrayHelper::toArray($data,$option);
         return [
             'code'    => 1,
             'message' => '操作成功',
-            'data'    => $return
+            'data'    => $data
         ];
     }
 
