@@ -82,4 +82,14 @@ return [
     'Pay Num' => '金额',
     'Pay User ID' => '付费用户',
     'Pay Type ID' => '付费产品',
+
+    /**
+     * Combination
+     */
+
+    'Create Combination'=>'创建预约扫墓套餐',
+    'Combinations'      => '预约扫墓',
+    'Combinations Name' => '套餐名称',
+    'Combinations Description'=>'套餐简介',
+    'Update Combination: {name}'=>'更新预约套餐：{name}'
 ];

@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
             [
                 'attribute' => 'type',
-                'filter'    => [1=>'房间',2=>'背景主题',3=>'祭品'],
+                'filter'    => [1=>'房间',2=>'背景主题',3=>'祭品',4=>'预约扫墓'],
                 'value'     => function ($model) {
                     if($model->type == 1){
                         return '房间';
@@ -31,6 +31,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         return '背景主题';
                     }elseif ($model->type == 3) {
                         return '祭品';
+                    }elseif ($model->type == 3)
+                    {
+                        return '预约扫墓';
                     }else {
                         return '不存在';
                     }

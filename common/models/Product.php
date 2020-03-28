@@ -34,6 +34,7 @@ class Product extends Base
         return [
             [['name', 'price','style'], 'required'],
             [['price', 'num'], 'integer'],
+            ['price', 'default', 'value' =>0],
             [['updated_at', 'created_at'], 'safe'],
             [['name'], 'string', 'max' => 30],
             [['style'], 'string', 'max' => 150],

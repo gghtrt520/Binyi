@@ -55,6 +55,8 @@ class Pay extends \common\models\Base
             return $this->hasOne(Background::className(),['id'=>'type_id']);
         }elseif ($this->type == 3) {
             return $this->hasOne(Product::className(),['id'=>'type_id']);
+        }elseif ($this->type == 4) {
+            return $this->hasOne(Combination::className(),['id'=>'type_id']);
         }else {
             return false;
         }
