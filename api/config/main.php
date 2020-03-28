@@ -47,6 +47,7 @@ return [
                 'upload'      => 'room/upload',
                 'self'        => 'room/self',
                 'change'      => 'room/change',
+                'roomdelete'  => 'room/delete-room',
                 'detail'      => 'room/detail',
                 'present'     => 'gift/present',
                 'list'        => 'product/list',
