@@ -159,7 +159,7 @@ class RoomController extends BaseController
     public function actionDeleteRoom()
     {
         $room_id = Yii::$app->request->post('room_id');
-        $model   = \commom\models\Room::findOne($room_id);
+        $model   = \common\models\Room::findOne($room_id);
         if($model->delete()){
             return [
                 'code'   => 1,
