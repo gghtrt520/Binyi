@@ -44,13 +44,14 @@ class AppointmentController extends BaseController
     public function actionPaySuccess()
     {
         $pay = new \common\models\Pay();
+        $pay->pay_order = Yii::$app->security->generateRandomString();
         $pay->type    = Yii::$app->request->post('type');
         $pay->pay_num = Yii::$app->request->post('pay_num');
         $pay->user_id = Yii::$app->user->identity->id;
         $pay->type_id = Yii::$app->request->post('type_id');
         if($pay->save()){
             $order = [
-                'out_trade_no' => $pay->attributes['id'],
+                'out_trade_no' => $pay->attributes['pay_order'],
                 'total_fee'    => $pay->pay_num,
                 'body'         => '商品支付',
                 'openid'       => Yii::$app->user->identity->username,

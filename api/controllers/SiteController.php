@@ -96,7 +96,7 @@ class SiteController extends \yii\rest\Controller
         } catch (\Exception $e) {
             $e->getMessage();
         }
-        $model = \common\models\Pay::findOne($data->out_trade_no);
+        $model = \common\models\Pay::findOne(['pay_order'=>$data->out_trade_no]);
         $model->is_success = 1;
         if($pay->save()){
             return $pay->success()->send();
