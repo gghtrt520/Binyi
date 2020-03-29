@@ -53,6 +53,7 @@ return [
                 'list'        => 'product/list',
                 'bglist'      => 'background/bglist',
                 'plist'       => 'gift/present-list',
+                'presentcount'=> 'gift/present-count',
                 'changepg'    => 'room/change-bg',
                 'photocreate' => 'photo/photo-create',
                 'photodetail' => 'photo/photo-detail',

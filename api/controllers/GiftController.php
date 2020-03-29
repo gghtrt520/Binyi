@@ -51,6 +51,26 @@ class GiftController extends BaseController
         ];
     }
 
+    public function actionPresentCount()
+    {
+        $room_id = Yii::$app->request->post('room_id');
+        $data = \common\models\Gift::find()->where(['room_id'=>$room_id])->groupBy('gift.product_id')->all();
+        $return = [];
+        if($data){
+            foreach($data as $value){
+                $return [] = [
+                    'name' => $value->product ? $value->product->name : '已删除',
+                    'total'=> $value->getCount()
+                ];
+            }
+        }
+        return [
+            'code'    => 1,
+            'message' => '操作成功',
+            'data'    => $return
+        ];
+    }
+
     
 
 

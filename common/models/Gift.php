@@ -66,4 +66,9 @@ class Gift extends \common\models\Base
     {
         return $this->hasOne(Room::className(),['id'=> 'room_id']);
     }
+
+    public function getCount()
+    {
+        return self::find()->where(['room_id'=>$this->room_id,'product_id'=>$this->product_id])->count();
+    }
 }
