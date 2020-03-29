@@ -37,6 +37,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         return '背景主题';
                     }elseif ($model->type == 3) {
                         return '祭品';
+                    }elseif ($model->type == 4) {
+                        return '预约扫墓';
                     }else {
                         return '--';
                     }
@@ -54,6 +56,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'type_id',
                 'value'     => function ($model) {
                     return $model->payProduct ? $model->payProduct->name :'已删除';
+                }
+            ],
+            [
+                'attribute' => 'is_success',
+                'value'     => function ($model) {
+                    if($model->is_success == 0){
+                        return '支付失败';
+                    }elseif ($model->is_success == 1) {
+                        return '支付成功';
+                    }else {
+                        return '--';
+                    }
                 }
             ],
             'created_at',
