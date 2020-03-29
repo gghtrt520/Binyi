@@ -93,7 +93,7 @@ class SiteController extends \yii\rest\Controller
         //$path  = Yii::getAlias('@frontend/web').'/upload/key.txt';
         //$list  = explode('|',file_get_contents($path)); 
         $model = new \common\models\Comment();
-        $model->content = $list, Yii::$app->request->post('content');
+        $model->content = Yii::$app->request->post('content');
         $model->room_id = Yii::$app->request->post('room_id');
         $model->user_id = Yii::$app->request->post('user_id');
         if($model->save()){
