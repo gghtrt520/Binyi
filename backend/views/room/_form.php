@@ -74,7 +74,7 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'is_pay')->dropDownList([ '0' => '免费', '1' => '付费'], ['prompt' => '请选择房间类型']) ?>
 
-    <?= $form->field($model, 'rule')->dropDownList([ '0' => '公开', '1' => '仅自己可见'], ['prompt' => '请选择浏览权限']) ?>
+    <?= $form->field($model, 'rule')->dropDownList([ '0' => '仅自己可见', '1' => '公开'], ['prompt' => '请选择浏览权限']) ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
