@@ -194,6 +194,18 @@ class RoomController extends BaseController
         ];
     }
 
+    public function actionRoomSetting()
+    {
+        $model = \common\models\Setting::findOne(['key'=>'room_price']);
+        return [
+            'code'   => 1,
+            'message'=> '操作成功',
+            'data'=> [
+                'price'=>$model->price
+            ]
+        ];
+    }
+
 
     
 }
