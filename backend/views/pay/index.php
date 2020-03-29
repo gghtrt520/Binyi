@@ -53,6 +53,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
             [
+                'attribute' => 'is_success',
+                'filter'    => [0=>'支付失败',1=>'支付成功'],
+                'value'     => function ($model) {
+                    if($model->is_success == 0){
+                        return '支付失败';
+                    }elseif ($model->is_success == 1) {
+                        return '支付成功';
+                    }else {
+                        return '--';
+                    }
+                }
+            ],
+            [
             'class' => 'yii\grid\ActionColumn',
                 'template' => '{view} {delete}',
             ],
