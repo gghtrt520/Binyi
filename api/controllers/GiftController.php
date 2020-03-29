@@ -31,7 +31,7 @@ class GiftController extends BaseController
     public function actionPresentList()
     {
         $room_id = Yii::$app->request->post('room_id');
-        $data = \common\models\Gift::find()->joinWith(['user','product'])->where(['gift.room_id'=>$room_id])->all();
+        $data = \common\models\Gift::find()->joinWith(['user','product'])->where(['gift.room_id'=>$room_id])->oderBy('id desc')->all();
         $option = [
             'common\models\Gift' => [
                 'created_at',
