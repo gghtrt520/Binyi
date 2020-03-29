@@ -145,7 +145,7 @@ class SiteController extends \yii\rest\Controller
                 $room->is_pay = 1;
                 $room ->save();
             }
-            $pay->success()->send();exit;
+            return $pay->success()->send();exit;
         }else{
             return $model->getErrors();
         }
