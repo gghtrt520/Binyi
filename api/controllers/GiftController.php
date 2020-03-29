@@ -60,7 +60,8 @@ class GiftController extends BaseController
             foreach($data as $value){
                 $return [] = [
                     'name' => $value->product ? $value->product->name : '已删除',
-                    'total'=> $value->getCount()
+                    'total'=> $value->getCount(),
+                    'style'=> $value->product ? $value->product->style : '已删除',
                 ];
             }
         }
