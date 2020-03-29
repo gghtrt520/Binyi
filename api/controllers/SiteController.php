@@ -90,8 +90,10 @@ class SiteController extends \yii\rest\Controller
 
     public function actionAddComment()
     {
+        $path  = Yii::getAlias('@frontend/web').'/upload/key.txt';
+        $list  = explode('|',file_get_contents($path)); 
         $model = new \common\models\Comment();
-        $model->content = Yii::$app->request->post('content');
+        $model->content = $this->sensitive($list, Yii::$app->request->post('content'));
         $model->room_id = Yii::$app->request->post('room_id');
         $model->user_id = Yii::$app->request->post('user_id');
         if($model->save()){
@@ -107,6 +109,24 @@ class SiteController extends \yii\rest\Controller
             ];
         }
     }
+
+
+
+    public function sensitive($list, $string){
+        $count = 0; 
+        $sensitiveWord = ''; 
+        $stringAfter = $string; //替换后的内容
+        $pattern = "/".implode("|",$list)."/i"; //定义正则表达式
+        if(preg_match_all($pattern, $string, $matches)){ //匹配到了结果
+            $patternList = $matches[0]; //匹配到的数组
+            $count = count($patternList);
+            $sensitiveWord = implode(',', $patternList); //敏感词数组转字符串
+            $replaceArray = array_combine($patternList,array_fill(0,count($patternList),'*')); //把匹配到的数组进行合并，替换使用
+            $stringAfter = strtr($string, $replaceArray); //结果替换
+        }
+        return $stringAfter;
+       }
+
 
 
     public function actionPayBack()
