@@ -41,6 +41,23 @@ class AppointmentController extends BaseController
     }
 
 
+    public function actionPaySuccess()
+    {
+        $order = [
+            'out_trade_no' => time(),
+            'total_fee'    => '1',
+            'body'         => 'test body - 测试',
+            'openid'       => 'o4kYL4yivEMXVydsDh7OUpv9qMkA',
+        ];
+        $pay = Yii::$app->pay->wechat()->miniapp($order);
+        return [
+            'code' => 1,
+            'message'=>'操作成功',
+            'data' =>$pay
+        ];
+    }
+
+
     
 
 

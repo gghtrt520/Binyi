@@ -34,5 +34,20 @@ return [
                 ],
             ],
         ],
+        'pay' => [
+            'class' => 'Guanguans\YiiPay\Pay',
+            'wechat' => [
+                'appid' => 'wxb3fxxxxxxxxxxx', // APP APPID
+                'app_id' => 'wxb3fxxxxxxxxxxx', // 公众号 APPID
+                'miniapp_id' => 'wxf8966f5ad9c4f6e2',
+                'mch_id' => '1582009541',
+                'key'    => 'e96ca5d340d12ed301c72710eca66469',
+                'notify_url' => 'http://xxxxxx.cn/notify.php',
+                'http' => [ // optional
+                    'timeout' => 5.0,
+                    'connect_timeout' => 5.0,
+                ],
+            ],
+        ],
     ],
 ];

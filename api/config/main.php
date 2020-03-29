@@ -67,6 +67,7 @@ return [
                 'videolist'   => 'video/video-list',
                 'appointmentcreate'   => 'appointment/appointment-create',
                 'paycreate'   => 'pay/pay-create',
+                'paysuccess'   => 'appointment/pay-success',
                 'combinationlist'=>'combination/combination-list'
             ],
         ],
