@@ -65,14 +65,17 @@ class AppointmentController extends BaseController
         $pay->pay_num = 1;
         $pay->user_id = 1;
         $pay->type_id = 1;
-        $pay->save();
-        $pay = Yii::$app->pay->wechat();
-        try{
-            $data = $pay->verify();
-        } catch (\Exception $e) {
-             $e->getMessage();
+        if($pay->save()){
+            $pay = Yii::$app->pay->wechat();
+            try{
+                $data = $pay->verify();
+            } catch (\Exception $e) {
+                $e->getMessage();
+            }
+            return $pay->success()->send();
+        }else{
+            return $pay->getErrors();
         }
-        return $pay->success()->send();
     }
 
 

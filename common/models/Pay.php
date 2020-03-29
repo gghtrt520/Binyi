@@ -27,8 +27,8 @@ class Pay extends \common\models\Base
     public function rules()
     {
         return [
-            [['id', 'type', 'pay_num', 'user_id', 'type_id'], 'required'],
-            [['id', 'type', 'pay_num', 'user_id', 'type_id'], 'integer'],
+            [['type', 'pay_num', 'user_id', 'type_id'], 'required'],
+            [['type', 'pay_num', 'user_id', 'type_id'], 'integer'],
             [['updated_at', 'created_at'], 'safe'],
         ];
     }
