@@ -48,7 +48,7 @@ class GiftController extends BaseController
         ];
         $gift_data = yii\helpers\ArrayHelper::toArray($gift,$option);
 
-        $comment   = \common\models\Comment::find()->where(['room_id'=>$room_id])->all();
+        $comment   = \common\models\Comment::find()->where(['room_id'=>$room_id])->orderBy('id desc')->all();
         $option = [
             'common\models\Comment' => [
                 'content',
