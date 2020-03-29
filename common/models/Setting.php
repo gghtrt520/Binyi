@@ -29,8 +29,8 @@ class Setting extends \common\models\Base
     public function rules()
     {
         return [
-            [['id', 'key', 'price'], 'required'],
-            [['id', 'price'], 'integer'],
+            [['key', 'price'], 'required'],
+            [['price'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['key'], 'string', 'max' => 20],
         ];
