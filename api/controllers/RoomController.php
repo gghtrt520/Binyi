@@ -173,6 +173,27 @@ class RoomController extends BaseController
         }
     }
 
+    public function actionCommentList()
+    {
+        $room_id = Yii::$app->request->post('room_id');
+        $model   = \common\models\Comment::find()->where(['room_id'=>$room_id])->all();
+        $option = [
+            'common\models\Comment' => [
+                'content',
+                'user'=> function ($model){
+                    return $model->user ? $model->user->nick_name : '游客';
+                },
+                'created_at'
+            ],
+        ];
+        $data = yii\helpers\ArrayHelper::toArray($model,$option);
+        return [
+            'code'   => 1,
+            'message'=> '操作成功',
+            'data'=>$data
+        ];
+    }
+
 
     
 }

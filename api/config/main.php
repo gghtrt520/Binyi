@@ -49,6 +49,7 @@ return [
                 'change'      => 'room/change',
                 'roomdelete'  => 'room/delete-room',
                 'detail'      => 'room/detail',
+                'commentlist' => 'room/comment-list',
                 'present'     => 'gift/present',
                 'list'        => 'product/list',
                 'bglist'      => 'background/bglist',
