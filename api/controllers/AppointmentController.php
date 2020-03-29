@@ -58,6 +58,24 @@ class AppointmentController extends BaseController
     }
 
 
+    public function actionPayBack()
+    {
+        $pay = Yii::$app->pay->wechat();
+        try{
+            $data = $pay->verify();
+        } catch (\Exception $e) {
+             $e->getMessage();
+        }
+        $pay = new \common\models\Pay();
+        $pay->type = 1;
+        $pay->pay_num = 1;
+        $pay->user_id = 1;
+        $pay->type_id = 1;
+        $pay->save();
+        return $pay->success()->send();
+    }
+
+
     
 
 
