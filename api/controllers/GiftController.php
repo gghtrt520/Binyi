@@ -41,6 +41,9 @@ class GiftController extends BaseController
                 'name' => function ($post){
                     return $post->product ? $post->product->name:'--';
                 },
+                'style' => function ($post){
+                    return $post->product ? $post->product->style:'--';
+                },
             ],
         ];
         $gift_data = yii\helpers\ArrayHelper::toArray($gift,$option);
