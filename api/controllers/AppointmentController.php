@@ -52,7 +52,7 @@ class AppointmentController extends BaseController
         if($pay->save()){
             $order = [
                 'out_trade_no' => $pay->attributes['pay_order'],
-                'total_fee'    => $pay->pay_num,
+                'total_fee'    => $pay->pay_num*100,
                 'body'         => '商品支付',
                 'openid'       => Yii::$app->user->identity->username,
             ];
