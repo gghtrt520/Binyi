@@ -60,6 +60,7 @@ class PhotoController extends BaseController
         $model   = \common\models\Photo::find()->where(['room_id'=>$room_id])->all();
         $option = [
             'common\models\Photo' => [
+                'id',
                 'name',
                 'detail'=> function ($post){
                     return $post->photoList;
