@@ -88,6 +88,27 @@ class SiteController extends \yii\rest\Controller
     }
 
 
+    public function actionAddComment()
+    {
+        $model = new \common\models\Comment();
+        $model->content = Yii::$app->request->post('content');
+        $model->room_id = Yii::$app->request->post('room_id');
+        $model->user_id = Yii::$app->request->post('user_id');
+        if($model->save()){
+            return [
+                'code'    => 1,
+                'message' => '操作成功',
+                'data'    => $model
+            ];
+        }else{
+            return [
+                'code'    => 0,
+                'message' =>$this->getErrorMessage($model),
+            ];
+        }
+    }
+
+
     public function actionPayBack()
     {
         $pay = Yii::$app->pay->wechat();

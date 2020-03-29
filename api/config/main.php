@@ -42,6 +42,7 @@ return [
             'rules' => [
                 ''            => 'site/index',
                 'login'       => 'site/login',
+                'addcomment'  => 'site/add-comment',
                 'show'        => 'room/show',
                 'add'         => 'room/add',
                 'upload'      => 'room/upload',
