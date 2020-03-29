@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         return '背景主题';
                     }elseif ($model->type == 3) {
                         return '祭品';
-                    }elseif ($model->type == 3)
+                    }elseif ($model->type == 4)
                     {
                         return '预约扫墓';
                     }else {
