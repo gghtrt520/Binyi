@@ -33,7 +33,7 @@ class Appointment extends \common\models\Base
         return [
             [['cemetery', 'date','combination_id'], 'required'],
             [['date', 'start', 'end', 'updated_at', 'created_at'], 'safe'],
-            [['cemetery'], 'string', 'max' => 30],
+            [['cemetery','cemetery_num'], 'string', 'max' => 30],
             [['combination_id'], 'integer'],
         ];
     }
@@ -46,6 +46,7 @@ class Appointment extends \common\models\Base
         return [
             'id' => Yii::t('app', 'ID'),
             'cemetery' => Yii::t('app', 'Cemetery'),
+            'cemetery_num' => Yii::t('app', 'Cemetery Num'),
             'date' => Yii::t('app', 'Date'),
             'start' => Yii::t('app', 'Start'),
             'end' => Yii::t('app', 'End'),

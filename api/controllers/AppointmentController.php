@@ -10,6 +10,7 @@ class AppointmentController extends BaseController
     {
         $model = new \common\models\Appointment();
         $model->cemetery = Yii::$app->request->post('cemetery');
+        $model->cemetery_num = Yii::$app->request->post('cemetery_num');
         $model->date     = Yii::$app->request->post('date');
         $model->start    = Yii::$app->request->post('start');
         $model->end      = Yii::$app->request->post('end');
