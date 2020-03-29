@@ -68,7 +68,7 @@ return [
                 'appointmentcreate'   => 'appointment/appointment-create',
                 'paycreate'   => 'pay/pay-create',
                 'paysuccess'   => 'appointment/pay-success',
-                'payback'      => 'appointment/pay-back',
+                'payback'      => 'site/pay-back',
                 'combinationlist'=>'combination/combination-list'
             ],
         ],
