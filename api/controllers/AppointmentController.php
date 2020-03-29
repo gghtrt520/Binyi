@@ -46,14 +46,14 @@ class AppointmentController extends BaseController
         $pay = new \common\models\Pay();
         $pay->type    = Yii::$app->request->post('type');
         $pay->pay_num = Yii::$app->request->post('pay_num');
-        $pay->user_id = Yii::$app->user->identify->id;
+        $pay->user_id = Yii::$app->user->identity->id;
         $pay->type_id = Yii::$app->request->post('type_id');
         if($pay->save()){
             $order = [
                 'out_trade_no' => $pay->attributes['id'],
                 'total_fee'    => $pay->pay_num,
                 'body'         => '商品支付',
-                'openid'       => Yii::$app->user->identify->username,
+                'openid'       => Yii::$app->user->identity->username,
             ];
             $pay = Yii::$app->pay->wechat()->miniapp($order);
             return [
