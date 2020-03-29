@@ -102,6 +102,7 @@ class RoomController extends BaseController
             $model->area       = Yii::$app->request->post('area');
             $model->religion   = Yii::$app->request->post('religion');
             $model->category   = Yii::$app->request->post('category');
+            $model->is_pay     = Yii::$app->request->post('is_pay');
             $model->rule       = Yii::$app->request->post('rule');
         }else{
             throw new yii\web\NotFoundHttpException('数据查询失败');
