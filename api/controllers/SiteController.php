@@ -140,6 +140,11 @@ class SiteController extends \yii\rest\Controller
         $model = \common\models\Pay::findOne(['pay_order'=>$data->out_trade_no]);
         $model->is_success = 1;
         if($model->save()){
+            if($model->type == 4){
+                $room = \common\models\Room::findOne($model->type_id);
+                $room->is_pay = 1;
+                $room ->save();
+            }
             return $pay->success()->send();
         }else{
             return $model->getErrors();
