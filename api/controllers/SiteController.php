@@ -105,7 +105,7 @@ class SiteController extends \yii\rest\Controller
         }else{
             return [
                 'code'    => 0,
-                'message' =>$this->getErrorMessage($model),
+                'message' =>$model->getErrors(),
             ];
         }
     }
