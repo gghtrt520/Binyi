@@ -105,7 +105,7 @@ class RoomController extends BaseController
             $model->is_pay     = Yii::$app->request->post('is_pay');
             $model->rule       = Yii::$app->request->post('rule');
         }else{
-            throw new yii\web\NotFoundHttpException('数据查询失败');
+            throw new \yii\web\NotFoundHttpException('数据查询失败');
         }
         if ($model->save()) {
             return [
@@ -133,7 +133,7 @@ class RoomController extends BaseController
                 'data'    => $model
             ];
         }else{
-            throw new yii\web\NotFoundHttpException('数据查询失败');
+            throw new \yii\web\NotFoundHttpException('数据查询失败');
         }
     }
 
