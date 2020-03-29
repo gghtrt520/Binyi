@@ -31,9 +31,10 @@ class Appointment extends \common\models\Base
     public function rules()
     {
         return [
-            [['cemetery', 'date'], 'required'],
+            [['cemetery', 'date','combination_id'], 'required'],
             [['date', 'start', 'end', 'updated_at', 'created_at'], 'safe'],
             [['cemetery'], 'string', 'max' => 30],
+            [['combination_id'], 'integer'],
         ];
     }
 
@@ -48,6 +49,7 @@ class Appointment extends \common\models\Base
             'date' => Yii::t('app', 'Date'),
             'start' => Yii::t('app', 'Start'),
             'end' => Yii::t('app', 'End'),
+            'combination_id' => Yii::t('app', 'Combination Id'),
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
         ];

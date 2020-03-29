@@ -13,6 +13,7 @@ class AppointmentController extends BaseController
         $model->date     = Yii::$app->request->post('date');
         $model->start    = Yii::$app->request->post('start');
         $model->end      = Yii::$app->request->post('end');
+        $model->combination_id = Yii::$app->request->post('combination_id');
         if($model->save()){
             $person = new \common\models\AppointmentPerson();
             $person->appointment_id = $model->attributes['id'];
