@@ -28,7 +28,7 @@ class Pay extends \common\models\Base
     {
         return [
             [['type', 'pay_num', 'user_id', 'type_id'], 'required'],
-            [['type', 'pay_num', 'user_id', 'type_id'], 'integer'],
+            [['type', 'pay_num', 'user_id', 'type_id','is_success'], 'integer'],
             [['updated_at', 'created_at'], 'safe'],
         ];
     }
@@ -42,6 +42,7 @@ class Pay extends \common\models\Base
             'pay_num' => Yii::t('app', 'Pay Num'),
             'user_id' => Yii::t('app', 'Pay User ID'),
             'type_id' => Yii::t('app', 'Pay Type ID'),
+            'is_success' => Yii::t('app', 'Is Success'),
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
         ];

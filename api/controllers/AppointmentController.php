@@ -43,40 +43,32 @@ class AppointmentController extends BaseController
 
     public function actionPaySuccess()
     {
-        $order = [
-            'out_trade_no' => time(),
-            'total_fee'    => '1',
-            'body'         => 'test body - 测试',
-            'openid'       => 'o4kYL4yivEMXVydsDh7OUpv9qMkA',
-        ];
-        $pay = Yii::$app->pay->wechat()->miniapp($order);
-        return [
-            'code' => 1,
-            'message'=>'操作成功',
-            'data' =>$pay
-        ];
-    }
-
-
-    public function actionPayBack()
-    {
         $pay = new \common\models\Pay();
-        $pay->type = 1;
-        $pay->pay_num = 1;
-        $pay->user_id = 1;
-        $pay->type_id = 1;
+        $pay->type    = Yii::$app->request->post('type');
+        $pay->pay_num = Yii::$app->request->post('pay_num');
+        $pay->user_id = Yii::$app->user->identify->id;
+        $pay->type_id = Yii::$app->request->post('type_id');
         if($pay->save()){
-            $pay = Yii::$app->pay->wechat();
-            try{
-                $data = $pay->verify();
-            } catch (\Exception $e) {
-                $e->getMessage();
-            }
-            return $pay->success()->send();
+            $order = [
+                'out_trade_no' => $pay->attributes['id'],
+                'total_fee'    => $pay->pay_num,
+                'body'         => '商品支付',
+                'openid'       => Yii::$app->user->identify->username,
+            ];
+            $pay = Yii::$app->pay->wechat()->miniapp($order);
+            return [
+                'code' => 1,
+                'message'=>'操作成功',
+                'data' =>$pay
+            ];
         }else{
-            return $pay->getErrors();
+            return [
+                'code'    => 0,
+                'message' =>$this->getErrorMessage($pay),
+            ];
         }
     }
+
 
 
     
