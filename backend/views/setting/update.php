@@ -12,9 +12,8 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Settings'), 'url' =>
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
-<div class="setting-update">
+<div class="form">
 
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

@@ -12,12 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="setting-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a(Yii::t('app', 'Create Setting'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -26,14 +20,17 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'key',
+            [
+                'label' => '价格类型',
+                'value'     => function ($model) {
+                    return '房间价格';
+                }
+            ],
             'price',
-            'created_at',
-            'updated_at',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view} {update}',
+            ],
         ],
     ]); ?>
 

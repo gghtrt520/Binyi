@@ -92,5 +92,11 @@ return [
     'Combinations'      => '预约扫墓',
     'Combinations Name' => '套餐名称',
     'Combinations Description'=>'套餐简介',
-    'Update Combination: {name}'=>'更新预约套餐：{name}'
+    'Update Combination: {name}'=>'更新预约套餐：{name}',
+
+    /**
+     * Settings
+     */
+    'Settings'=>'设置',
+    'Update Setting: {name}'=>'更新价格'
 ];
