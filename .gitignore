@@ -18,7 +18,6 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-/vendor
 /backend/runtime/*
 /backend/web/assets/*
 /backend/web/upload/*
