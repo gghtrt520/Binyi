@@ -15,7 +15,7 @@ class PaySearch extends Pay
     public function rules()
     {
         return [
-            [['id', 'type', 'pay_num', 'user_id', 'type_id'], 'integer'],
+            [['id', 'type', 'pay_num', 'user_id', 'type_id','is_success'], 'integer'],
             [['updated_at', 'created_at','username'], 'safe'],
         ];
     }
@@ -57,6 +57,7 @@ class PaySearch extends Pay
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'is_success'=>$this->is_success,
             'pay.type' => $this->type,
             'pay_num' => $this->pay_num,
             'type_id' => $this->type_id,

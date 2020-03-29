@@ -82,6 +82,7 @@ return [
     'Pay Num' => '金额',
     'Pay User ID' => '付费用户',
     'Pay Type ID' => '付费产品',
+    'Is Success'  =>'支付状态',
 
     /**
      * Combination
