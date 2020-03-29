@@ -31,7 +31,7 @@ class GiftController extends BaseController
     public function actionPresentList()
     {
         $room_id = Yii::$app->request->post('room_id');
-        $data = \common\models\Gift::find()->joinWith(['user','product'])->where(['gift.room_id'=>$room_id])->orderBy('id desc')->all();
+        $gift = \common\models\Gift::find()->joinWith(['user','product'])->where(['gift.room_id'=>$room_id])->orderBy('id desc')->all();
         $option = [
             'common\models\Gift' => [
                 'created_at',
@@ -43,11 +43,26 @@ class GiftController extends BaseController
                 },
             ],
         ];
-        $data = yii\helpers\ArrayHelper::toArray($data,$option);
+        $gift_data = yii\helpers\ArrayHelper::toArray($gift,$option);
+
+        $comment   = \common\models\Comment::find()->where(['room_id'=>$room_id])->all();
+        $option = [
+            'common\models\Comment' => [
+                'content',
+                'user'=> function ($model){
+                    return $model->user ? $model->user->nick_name : '游客';
+                },
+                'created_at'
+            ],
+        ];
+        $comment_list = yii\helpers\ArrayHelper::toArray($comment,$option);
         return [
             'code'    => 1,
             'message' => '操作成功',
-            'data'    => $data
+            'data'    => [
+                'gift'=>$gift_data,
+                'comment'=>$comment_list
+            ]
         ];
     }
 
