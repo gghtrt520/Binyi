@@ -35,6 +35,25 @@ class PhotoController extends BaseController
 
     }
 
+
+    public function actionPhotoDelete()
+    {
+        $photo_id = Yii::$app->request->post('photo_id');
+        $model    = \common\models\Photo::findOne($photo_id);
+        if($model && $model->delete()){
+            \common\models\PhotoList::deleteAll(['photo_id'=>$photo_id]);
+            return [
+                'code' => 1,
+                'message' => '操作成功'
+            ];
+        }else{
+            return [
+                'code'    => 0,
+                'message' => '操作失败',
+            ];
+        }
+    }
+
     public function actionPhotoDetail()
     {   
         $room_id = Yii::$app->request->post('room_id');

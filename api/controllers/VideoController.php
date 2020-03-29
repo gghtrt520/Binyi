@@ -42,6 +42,23 @@ class VideoController extends BaseController
         }
     }
 
+    public function actionVideoDelete()
+    {
+        $video_id  = Yii::$app->request->post('video_id');
+        $model     = \common\models\Video::findOne($video_id);
+        if($model && $model->delete()){
+            return [
+                'code' => 1,
+                'message' => '操作成功'
+            ];
+        }else{
+            return [
+                'code'    => 0,
+                'message' => '操作失败',
+            ];
+        }
+    }
+
 
     public function actionVideoList()
     {
