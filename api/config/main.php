@@ -50,7 +50,7 @@ return [
                 'change'      => 'room/change',
                 'roomdelete'  => 'room/delete-room',
                 'detail'      => 'room/detail',
-                'setting'     => 'room/room-setting'
+                'setting'     => 'room/room-setting',
                 'commentlist' => 'room/comment-list',
                 'present'     => 'gift/present',
                 'list'        => 'product/list',
