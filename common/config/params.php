@@ -5,8 +5,8 @@ return [
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
     'user.passwordResetTokenExpire' => 3600,
-    'AppID'      => 'wx63337fb12da9aa79',
-    'AppSecret'  => '6e9ee1defe31caa977950338ea134b74',
+    'AppID'      => 'wxf8966f5ad9c4f6e2',
+    'AppSecret'  => 'e96ca5d340d12ed301c72710eca66469',
     'Category'  =>[
         '免费'   =>'免费',
         '时代人物'=>'时代人物',
