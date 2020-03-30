@@ -25,27 +25,6 @@ use Yii;
 class Room extends Base
 {
 
-    public function beforeValidate()
-    {
-        $root_path = Yii::getAlias('@backend/web');
-        $upload    = new Upload();
-        $path      = $upload->uploadFile($this,$root_path,'avatar_url');
-        if($this->isNewRecord){
-            if($path){
-                $this->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
-            }else{
-                $this->addError('avatar_url', Yii::t('app', '必须上传一个图片'));
-            }
-        }else{
-            if($path){
-                $this->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
-            }else{
-                $this->avatar_url = $this->getOldAttribute('avatar_url');
-            }
-        }
-        return parent::beforeValidate();
-    }
-
     public static function tableName()
     {
         return '{{%room}}';

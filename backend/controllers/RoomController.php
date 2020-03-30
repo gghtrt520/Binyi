@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Room;
+use common\models\RoomBack;
 use common\models\RoomSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -87,7 +87,7 @@ class RoomController extends Controller
      */
     public function actionCreate()
     {
-        $model  = new Room();
+        $model  = new RoomBack();
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
             $model->user_id    = Yii::$app->user->identity->id;
@@ -146,7 +146,7 @@ class RoomController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Room::findOne($id)) !== null) {
+        if (($model = RoomBack::findOne($id)) !== null) {
             return $model;
         }
 
@@ -154,8 +154,4 @@ class RoomController extends Controller
     }
 
 
-    public function actionAsyncUpload()
-    {
-        
-    }
 }
