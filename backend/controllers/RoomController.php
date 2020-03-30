@@ -91,7 +91,6 @@ class RoomController extends Controller
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
             $model->user_id    = Yii::$app->user->identity->id;
-            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
@@ -114,7 +113,6 @@ class RoomController extends Controller
         $upload = new \common\models\Upload();
         $model  = $this->findModel($id);
         if ($model->load(Yii::$app->request->post())) {
-            $model->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'avatar_url');
             if($model->save()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }

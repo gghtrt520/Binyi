@@ -72,7 +72,6 @@ class BackgroundController extends Controller
         $model = new Background();
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
-            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
@@ -95,7 +94,6 @@ class BackgroundController extends Controller
         $model = $this->findModel($id);
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
-            $model->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'background');
             if($model->save()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }

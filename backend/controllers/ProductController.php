@@ -72,7 +72,6 @@ class ProductController extends Controller
         $model = new Product();
         $upload = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
-            $model->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'style');
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
@@ -95,7 +94,6 @@ class ProductController extends Controller
         $upload = new \common\models\Upload();
         $model  = $this->findModel($id);
         if ($model->load(Yii::$app->request->post())) {
-            $model->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$this->root_path,'style');
             if($model->save()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }

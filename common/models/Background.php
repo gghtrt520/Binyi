@@ -15,9 +15,29 @@ use Yii;
  */
 class Background extends \common\models\Base
 {
-    /**
-     * {@inheritdoc}
-     */
+    
+    public function beforeValidate()
+    {
+        $root_path = Yii::getAlias('@backend/web');
+        $upload    = new Upload();
+        $path      = $upload->uploadFile($this,$root_path,'background');
+        if($this->isNewRecord){
+            if($path){
+                $this->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->addError('background', Yii::t('app', '必须上传一个图片'));
+            }
+        }else{
+            if($path){
+                $this->background = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->background = $this->getOldAttribute('background');
+            }
+        }
+        return parent::beforeValidate();
+    }
+
+
     public static function tableName()
     {
         return '{{%background}}';
@@ -29,7 +49,7 @@ class Background extends \common\models\Base
     public function rules()
     {
         return [
-            [['name','background'], 'required'],
+            [['name'], 'required'],
             [['price'], 'integer'],
             ['price', 'default', 'value' =>0],
             [['updated_at', 'created_at'], 'safe'],

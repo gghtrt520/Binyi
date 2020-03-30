@@ -24,6 +24,28 @@ use Yii;
  */
 class Room extends Base
 {
+
+    public function beforeValidate()
+    {
+        $root_path = Yii::getAlias('@backend/web');
+        $upload    = new Upload();
+        $path      = $upload->uploadFile($this,$root_path,'avatar_url');
+        if($this->isNewRecord){
+            if($path){
+                $this->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->addError('avatar_url', Yii::t('app', '必须上传一个图片'));
+            }
+        }else{
+            if($path){
+                $this->avatar_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->avatar_url = $this->getOldAttribute('avatar_url');
+            }
+        }
+        return parent::beforeValidate();
+    }
+
     public static function tableName()
     {
         return '{{%room}}';
@@ -35,13 +57,14 @@ class Room extends Base
     public function rules()
     {
         return [
-            [['avatar_url', 'name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion','category','description'], 'required'],
+            [['name', 'gender', 'birthdate', 'death', 'age', 'province','city' ,'area','religion','category','description','rule'], 'required'],
             [['gender'], 'string'],
             [['birthdate', 'death'], 'date'],
             [['updated_at', 'created_at'], 'safe'],
             [['age', 'rule','is_show','user_id','background_id','is_pay'], 'integer'],
             ['background_id', 'default', 'value' =>0],
             ['is_pay', 'default', 'value' =>0],
+            ['rule', 'default', 'value' =>0],
             [['avatar_url'], 'string', 'max' => 150],
             [['description'], 'string', 'max' => 100],
             [['name', 'religion','province','city','area','category'], 'string', 'max' => 30],

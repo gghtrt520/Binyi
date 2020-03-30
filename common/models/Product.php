@@ -18,6 +18,29 @@ use Yii;
  */
 class Product extends Base
 {
+
+
+    public function beforeValidate()
+    {
+        $root_path = Yii::getAlias('@backend/web');
+        $upload    = new Upload();
+        $path      = $upload->uploadFile($this,$root_path,'style');
+        if($this->isNewRecord){
+            if($path){
+                $this->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->addError('style', Yii::t('app', '必须上传一个图片'));
+            }
+        }else{
+            if($path){
+                $this->style = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$path;
+            }else{
+                $this->style = $this->getOldAttribute('style');
+            }
+        }
+        return parent::beforeValidate();
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -32,7 +55,7 @@ class Product extends Base
     public function rules()
     {
         return [
-            [['name', 'price','style'], 'required'],
+            [['name', 'price'], 'required'],
             [['price', 'num'], 'integer'],
             ['price', 'default', 'value' =>0],
             [['updated_at', 'created_at'], 'safe'],

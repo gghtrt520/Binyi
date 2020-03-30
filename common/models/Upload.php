@@ -27,7 +27,7 @@ class Upload extends \yii\db\ActiveRecord
                 throw new BadRequestHttpException('文件上传失败');
             }
         }else {
-            throw new BadRequestHttpException('未上传文件');
+            return false;
         }
     }
 
