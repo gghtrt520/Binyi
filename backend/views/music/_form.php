@@ -25,7 +25,7 @@ use kartik\file\FileInput;
             'initialCaption'=>$model->name,
             'initialPreviewShowDelete'=>false,
             'browseLabel'=>'请上传背景音乐',
-            'allowedFileExtensions'=>['mp3','wma','flac','aac'],
+            'allowedFileExtensions'=>['mp3','wma','aac'],
             'initialPreview'=>[
                 $model->video_url
             ],
