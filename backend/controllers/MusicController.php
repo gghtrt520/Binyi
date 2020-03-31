@@ -66,7 +66,7 @@ class MusicController extends Controller
         $root_path = Yii::getAlias('@backend/web');
         $upload    = new \common\models\Upload();
         if ($model->load(Yii::$app->request->post())) {
-            $model->video_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($this,$root_path,'video_url');
+            $model->video_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($model,$root_path,'video_url');
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
