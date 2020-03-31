@@ -22,7 +22,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
             'name',
-            'video_url:url',
+            [
+                'attribute'=>'video_url',
+                'format'=>'raw',
+                'value' => function ($model){
+                    return Html::a($model->video_url,$model->video_url,['target'=>'_blank']);
+                }
+    
+            ],
             'created_at',
             [
                 'class' => 'yii\grid\ActionColumn',

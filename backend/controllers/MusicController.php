@@ -34,7 +34,7 @@ class MusicController extends Controller
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Music::find(),
+            'query' => Music::find()->orderBy('id desc'),
         ]);
 
         return $this->render('index', [
