@@ -11,8 +11,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="music-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a(Yii::t('app', 'Create Music'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -23,14 +21,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
             'name',
             'video_url:url',
-            'updated_at',
             'created_at',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view} {delete}',
+            ],
         ],
     ]); ?>
 

@@ -98,5 +98,13 @@ return [
      * Settings
      */
     'Settings'=>'设置',
-    'Update Setting: {name}'=>'更新价格'
+    'Update Setting: {name}'=>'更新价格',
+
+    /**
+     * Music
+     */
+    'Musics'=>'背景音乐',
+    'Create Music'=>'创建背景音乐',
+    'Music Name'=>'音乐名称',
+    'Video Url' =>'音乐地址'
 ];

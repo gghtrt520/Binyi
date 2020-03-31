@@ -14,9 +14,7 @@ use yii\filters\VerbFilter;
  */
 class MusicController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
+    
     public function behaviors()
     {
         return [
@@ -65,9 +63,13 @@ class MusicController extends Controller
     public function actionCreate()
     {
         $model = new Music();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $root_path = Yii::getAlias('@backend/web');
+        $upload    = new \common\models\Upload();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->video_url = Yii::$app->request->hostInfo.Yii::$app->homeUrl.$upload->uploadFile($this,$root_path,'video_url');
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
 
         return $this->render('create', [

@@ -43,7 +43,7 @@ class Music extends \common\models\Base
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
+            'name' => Yii::t('app', 'Music Name'),
             'video_url' => Yii::t('app', 'Video Url'),
             'updated_at' => Yii::t('app', 'Updated At'),
             'created_at' => Yii::t('app', 'Created At'),
