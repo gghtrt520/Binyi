@@ -161,8 +161,8 @@ class RoomController extends BaseController
                 'message' => '操作成功',
                 'data'    => [
                     'room'=>$model,
-                    'bg'  =>$model->background ? $model->background->background:null;
-                    'music'=>$model->music ? $model->music->video_url:null;
+                    'bg'  =>$model->background ? $model->background->background:null,
+                    'music'=>$model->music ? $model->music->video_url:null,
                 ]
             ];
         }else{
