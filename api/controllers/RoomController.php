@@ -78,6 +78,7 @@ class RoomController extends BaseController
         return [
             'code'    => 0,
             'message' => '操作失败',
+        ];
     }
 
     public function actionAdd()
