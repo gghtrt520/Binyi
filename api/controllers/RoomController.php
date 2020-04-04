@@ -159,7 +159,11 @@ class RoomController extends BaseController
             return [
                 'code'    => 1,
                 'message' => '操作成功',
-                'data'    => $model
+                'data'    => [
+                    'room'=>$model,
+                    'bg'  =>$model->background ? $model->background->background:null;
+                    'music'=>$model->music ? $model->music->video_url:null;
+                ]$model
             ];
         }else{
             throw new NotFoundHttpException('数据查询失败');

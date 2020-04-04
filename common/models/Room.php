@@ -84,4 +84,9 @@ class Room extends Base
     {
         return $this->hasOne(Background::className(),['id'=>'background_id']);
     }
+
+    public function getMusic()
+    {
+        return $this->hasOne(Music::className(),['id'=>'music_id']);
+    }
 }
