@@ -156,14 +156,38 @@ class RoomController extends BaseController
         $id = Yii::$app->request->post('id');
         $model = \common\models\Room::findOne($id);
         if($model){
+            $option = [
+                'common\models\Room' => [
+                    'id',
+                    'avatar_url',
+                    'name',
+                    'gender',
+                    'birthdate',
+                    'death',
+                    'age',
+                    'description',
+                    'province',
+                    'city',
+                    'area',
+                    'religion',
+                    'category',
+                    'is_pay',
+                    'is_show',
+                    'rule',
+                    'user_id',
+                    'bg'=> function ($model){
+                        return $model->background ? $model->background->background:null;
+                    },
+                    'music' => function ($model){
+                        return $model->music ? $model->music->video_url:null;
+                    },
+                ],
+            ];
+            $room_data = yii\helpers\ArrayHelper::toArray($model,$option);
             return [
                 'code'    => 1,
                 'message' => '操作成功',
-                'data'    => [
-                    'room'=>$model,
-                    'bg'  =>$model->background ? $model->background->background:null,
-                    'music'=>$model->music ? $model->music->video_url:null,
-                ]
+                'data'    => $room_data
             ];
         }else{
             throw new NotFoundHttpException('数据查询失败');
