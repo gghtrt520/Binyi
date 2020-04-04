@@ -27,6 +27,7 @@ return [
     'City'    =>  '籍贯:市',
     'Area'    =>  '籍贯:区',
     'Background Name'=>'背景主题',
+    'Music Name'=>'背景音乐',
     'Is Pay'=>'是否付费',
     'Religion'  => '宗教信仰',
     'Category'  => '所属分类',

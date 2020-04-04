@@ -72,6 +72,7 @@ class Room extends Base
             'category' => Yii::t('app', 'Category'),
             'rule' => Yii::t('app', 'Rule'),
             'background_id'=>Yii::t('app', 'Background Name'),
+            'music_id'=>Yii::t('app', 'Music Name'),
             'is_pay'=>Yii::t('app', 'Is Pay'),
             'is_show' => Yii::t('app', 'Is Show'),
             'user_id' => Yii::t('app', 'User Id'),

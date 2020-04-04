@@ -72,6 +72,8 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'background_id')->dropDownList(\common\models\Background::getList(), ['prompt' => '默认背景图片']) ?>
 
+    <?= $form->field($model, 'music_id')->dropDownList(\common\models\Music::getList(), ['prompt' => '默认背景音乐']) ?>
+
     <?= $form->field($model, 'is_pay')->dropDownList([ '0' => '免费', '1' => '付费'], ['prompt' => '请选择房间类型']) ?>
 
     <?= $form->field($model, 'rule')->dropDownList([ '0' => '仅自己可见', '1' => '公开'], ['prompt' => '请选择浏览权限']) ?>
