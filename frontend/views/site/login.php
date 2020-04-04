@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         id:"login_container", 
         appid: '<?= Html::encode(Yii::$app->params['AppID'])?>', 
         scope: "snsapi_login", 
-        redirect_uri: "<?= Html::encode(urlencode('http://192.168.50.125/site/index'))?>",
+        redirect_uri: "<?= Html::encode(urlencode(Yii::$app->request->hostInfo.'/site/index'))?>",
         state: "",
         style: "",
         href: ""
