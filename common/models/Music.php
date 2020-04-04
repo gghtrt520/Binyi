@@ -29,8 +29,9 @@ class Music extends \common\models\Base
     public function rules()
     {
         return [
-            [['name', 'video_url'], 'required'],
+            [['video_url'], 'required'],
             [['updated_at', 'created_at'], 'safe'],
+            ['name', 'default', 'value' =>'房间背景音乐'.time()],
             [['name'], 'string', 'max' => 30],
             [['video_url'], 'string', 'max' => 100],
         ];

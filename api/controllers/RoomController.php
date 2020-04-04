@@ -53,6 +53,33 @@ class RoomController extends BaseController
         ];
     }
 
+
+    public function actionUploadMusic()
+    {
+        $room_id= Yii::$app->request->post('room_id');
+        $room   = \common\models\Room::findOne($room_id);
+        $model  = new \common\models\Music();
+        $upload = new \common\models\Upload();
+        $result = $upload->uploadFile($model, $this->root_path, 'video_url');
+        $model->video_url = Yii::$app->request->hostInfo.$result;
+        if($model->save()){
+            $music_id = $model->attributes['id'];
+            $room->music_id = $music_id;
+            if($room->save()){
+                return [
+                    'code' => 1,
+                    'message'=>'操作成功',
+                    'data' => [
+                        'path' => $model->video_url
+                    ]
+                ];
+            }
+        }
+        return [
+            'code'    => 0,
+            'message' => '操作失败',
+    }
+
     public function actionAdd()
     {
         $model  = new \common\models\Room();

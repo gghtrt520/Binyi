@@ -46,6 +46,7 @@ return [
                 'show'        => 'room/show',
                 'add'         => 'room/add',
                 'upload'      => 'room/upload',
+                'uploadmusic' => 'room/upload-music',
                 'self'        => 'room/self',
                 'change'      => 'room/change',
                 'roomdelete'  => 'room/delete-room',
