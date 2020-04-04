@@ -106,6 +106,7 @@ class MusicController extends Controller
      */
     public function actionDelete($id)
     {
+        \common\models\Room::updateAll(['music_id'=>0],['music_id'=>$id]);
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
