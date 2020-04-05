@@ -1,0 +1,425 @@
+/*ͷ��*/
+.header-top{
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+}
+.header-top-nav>li{
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    border-right: 1px solid #bfbfbf;
+    vertical-align: middle;
+}
+.header-top-nav>li a{
+    display: inline-block;
+    padding: 0 10px;
+}
+.logo-img-div{
+    width: 280px;
+    height: 60px;
+    margin-top: 6px;
+}
+.logo-img-div img{
+    width: 100%;
+}
+.header-bottom{
+    width: 100%;
+    height: 70px;
+    background-color: #0878a3;
+}
+.header-bottom-nav>li{
+    display: inline-block;
+    padding-right: 30px;
+}
+.header-bottom-nav>li>a{
+    font-size: 16px;
+    display: inline-block;
+    height: 70px;
+    min-width: 80px;
+    text-align: center;
+    line-height: 70px;
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+.header-bottom-nav>li>a:hover{
+    background-color: #08b2f5;
+    font-size: 16px;
+    color: #fff;
+}
+.header-bottom-nav .active-li-nav{
+    background-color: #08b2f5;
+    font-size: 16px;
+    color: #fff;
+}
+/*�Ų�*/
+.footer{
+    width: 100%;
+    height: 180px;
+    background-color: #e5e5e5;
+}
+.footer-content{
+    padding: 30px 0;
+}
+.footer-tel-div{
+    margin: 10px 0 0 30px;
+}
+.footer-tel-div p{
+    font-size: 18px;
+}
+.footer-tel-div h6{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.footer-img-div{
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    margin-right: 20px;
+}
+.footer-nav li{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #666666;
+}
+.footer-img-div img{
+    width: 100%;
+}
+.footer-right-text{
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+    padding-bottom: 10px;
+    vertical-align: bottom;
+    margin-right: 20px;
+}
+.footer-right-text p{
+    margin-top: 10px;
+}
+/*ͼ�궨λ*/
+.tel-icon-pos{
+    background-position: -19px -10px;
+}
+.weiBo-icon-pos{
+    background-position: -70px -10px;
+}
+.qq-icon-pos{
+    background-position: -122px -10px;
+}
+.micChat-icon-pos{
+    background-position: -172px -10px;
+}
+.ask-icon-pos{
+    background-position: -226px -17px;
+    margin-right: 5px;
+}
+.teach-icon-pos{
+    background-position: -267px -17px;
+    margin-right: 5px;
+}
+
+.bigBox{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.showBox{
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    position: fixed;
+    top: 0;
+    opacity: 0.4;
+    z-index: 101;
+}
+.dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 506px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #0878a3;
+    margin-top: -240px;
+    margin-left: -500px;
+    background-color: #ffffff;
+    z-index: 101;
+}
+.title-dialog{
+    height: 64px;
+    background-color: #0878a3;
+}
+.title-dialog h6{
+    display: inline-block;
+    font-size: 28px;
+    color: #ffffff;
+    margin: 10px 0 0 20px;
+}
+.close-icon{
+    display: inline-block;
+    background: url(../img/icon-bnackimg.png) no-repeat -898px -89px;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.content-dialog{
+    margin-top: 20px;
+    text-align: center;
+}
+.content-dialog h5{
+    font-size: 24px;
+    color: #38a36f;
+    line-height: 30px;
+    margin: 20px;
+}
+.person-icon{
+    background-position: -946px -88px;
+}
+.input-card{
+    width: 500px;
+    height: 56px;
+    border: 1px solid #d2d2d2;
+    margin: 15px auto;
+    line-height: 56px;
+    text-align: left;
+}
+.input-card2{
+    width: 318px;
+    height: 44px;
+    border: 1px solid #d2d2d2;
+    margin: 15px auto;
+    line-height: 44px;
+    text-align: left;
+}
+.tel-icon{
+    background-position: -850px -182px;
+    border-right: 1px solid #d2d2d2;
+}
+.yzm-icon{
+    background-position: -876px -189px;
+    border-right: 1px solid #d2d2d2;
+}
+.mes-icon{
+    background-position: -898px -189px;
+    border-right: 1px solid #d2d2d2;
+}
+.input-card span{
+    font-size: 20px;
+    color: #000000;
+    margin-left: 30px;
+}
+.input-card2 input{
+    font-size: 18px;
+    padding: 4px 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+.input-card input{
+    font-size: 20px;
+    padding: 4px 20px;
+    width: 350px;
+    border: none;
+    outline: none;
+}
+.yzm-div-login{
+    margin: 15px auto;
+    width: 501px;
+    line-height: 56px;
+    text-align: left;
+}
+.yzm-div-login2{
+    margin: 15px auto;
+    width: 318px;
+    line-height: 46px;
+    text-align: left;
+}
+.yzm-div-login2>a{
+    display: inline-block;
+}
+.yzm-div-login2 p{
+    display: inline-block;
+}
+.yzm-div-login>a{
+    display: inline-block;
+}
+.yzm-div-login2 input{
+    font-size: 18px;
+    padding: 4px 10px;
+    width: 120px;
+    border: none;
+    outline: none;
+}
+.yzm-div-login input{
+    font-size: 20px;
+    padding: 4px 4px;
+    width: 180px;
+    border: none;
+    outline: none;
+}
+.yzm-div-login p{
+    display: inline-block;
+}
+.yzm-div-login .yzm-div{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.yzm-div{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background-color: #0878a3;
+}
+.yzm-mes{
+    display: inline-block;
+}
+.yzm-mes button{
+    height: 46px;
+    border-radius: 18px;
+    background-color: #0878a3;
+    padding: 0 12px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.yzm-mes button:hover{
+    background-color: #246491;
+}
+.yzm-div2{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background-color: #0878a3;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.yzm-input{
+    display: inline-block;
+    width: 300px;
+    line-height: 56px;
+    height: 56px;
+    margin-right: 10px;
+    border: 1px solid #d2d2d2;
+}
+.yzm-input2{
+    display: inline-block;
+    width: 170px;
+    line-height: 46px;
+    height: 46px;
+    margin-right: 10px;
+    border: 1px solid #d2d2d2;
+}
+.yzm-input span{
+    font-size: 20px;
+    color: #000000;
+    margin-left: 30px;
+}
+.content-dialog > p{
+    color: #f56467;
+    font-size: 14px;
+}
+.btn-card-div2 .sure{
+    width: 100px;
+    height: 46px;
+    background-color: #0878a3;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn-card-div2 .cancel{
+    width: 100px;
+    height: 46px;
+    background-color: #d2d2d2;
+    font-size: 24px;
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn-card-div button{
+    width: 200px;
+    height: 54px;
+    background-color: #0878a3;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.errorMsg{
+    color: #f56a4b;
+}
+.navigation{
+    height: 70px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.navigation p{
+    font-size: 16px;
+    line-height: 60px;
+}
+.navigation p a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #999999;
+}
+.navigation p a:hover{
+    color: #0878a3;
+}
+/*翻页*/
+.page-num{
+    text-align: center;
+    margin-top: 20px;
+}
+.page-num > p , .page-num > ul{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.page-num ul > li{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 8px;
+    height: 14px;
+    line-height: 16px;
+    padding: 2px 6px;
+    border: 1px solid #d2d2d2;
+}
+.page-num .active-li{
+    background-color: #0878a3;
+    color: #ffffff;
+}
+.tip-icon{
+    display: inline-block;
+    background: url("../img/ts.png") no-repeat;
+    width: 42px;
+    height: 42px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.content-dialog h4{
+    font-size: 28px;
+    padding: 60px 0 30px 0;
+}
+.tip-msg span{
+    display: inline-block;
+    font-size: 22px;
+    color: #111111;
+    padding: 20px 0;
+}
+.content-dialog .tel-tip{
+    color: #f56467;
+    font-size: 24px;
+    margin-top: 40px;
+}

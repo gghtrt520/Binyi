@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+/* 公共样式 */
+html,body{
+    background:rgb(255, 255, 255);
+    word-break:break-all;
+    word-wrap:break-word;
+    font-size:12px;
+    font-family: "Microsoft YaHei","Helvetica";
+    line-height:150%; margin:0; padding:0; color: #666666;
+    min-width: 1200px;
+}
+input{ font-family:"Arial";}
+div{margin:0 auto; padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
+table{border-collapse: collapse;border-spacing: 0;}
+button{border:0;background: transparent;outline: none}
+.f_l{float:left;}
+.f_r{float:right;}
+.t_l{ text-align:left;}
+.t_c{ text-align:center;}
+.t_r{ text-align:right;}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.hide{display:none;}
+/*自动高对齐，伪类清除浮动*/
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+/*全局链接样式*/
+a{ color: #565656; text-decoration:none; }
+a:hover{color: #0878a3;text-decoration:none; cursor: pointer}
+
+/*段落样式省略*/
+.word-break{word-break:break-all;}
+.ellipsis{
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+/*雪碧图*/
+.icon-back-img{
+    display: inline-block;
+    background: url(../img/01.png) no-repeat;
+    vertical-align: middle;
+}
+.icon-back-img2{
+    display: inline-block;
+    background: url(../img/icon-bnackimg.png) no-repeat;
+    vertical-align: middle;
+}
+.icon-size-40-36{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+}
+.icon-size-48-48{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+.icon-size-40-50{
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+}
+.icon-size-35-35{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.icon-size-26-26{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+.icon-size-26-33{
+    display: inline-block;
+    width: 26px;
+    height: 33px;
+}
+.icon-size-22-22{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+.icon-size-34-30{
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+}
+.icon-size-115-110{
+    display: inline-block;
+    width: 115px;
+    height: 110px;
+}
+.icon-size-160-35{
+    display: inline-block;
+    width: 160px;
+    height: 35px;
+}
