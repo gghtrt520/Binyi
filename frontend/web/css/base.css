@@ -20,7 +20,7 @@ button{border:0;background: transparent;outline: none}
 .t_c{ text-align:center;}
 .t_r{ text-align:right;}
 
-.container{
+.mycontainer{
     width: 1200px;
     margin: 0 auto;
 }
