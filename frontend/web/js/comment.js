@@ -3,9 +3,7 @@
  */
 //弹出登录框
 function showLoginBox(){
-    var loginHtml='<div class="title-dialog cf"><h6 class="f_l"><i class="icon-back-img2 icon-size-48-48 person-icon"></i>填写VIP卡信息登录</h6> <i class="f_r close-icon"></i> </div> <div class="content-dialog"> <h5>VIP会员登录</h5> <div class="input-card"><span>卡号：</span><label for="6"><input type="text" id="6" placeholder="请输入您购买的VIP卡号"/></label></div> <div class="input-card"><span>密码：</span><label for="7"><input type="password" id="7" placeholder="请输入您的VIP卡密码"/></label></div> <div class="yzm-div-login"><div class="yzm-input"><span>验证码：</span><label for="8"><input type="text" id="8" placeholder="请输入图片验证码"/></label></div><a href=""> <div class="yzm-div"><img src="" alt=""/></div><p>换一张</p></a></div> <p>注：您可以致电400-888-8888购买会员卡进入下一步操作！</p> <div class="btn-card-div"> <button>确认</button> <p class="errorMsg">错误信息！</p> </div> </div>';
     $(".bigBox").show();
-    $(".dialog").html(loginHtml);
     $(".close-icon").on("click",function(){
         $(".bigBox").hide()
     });
