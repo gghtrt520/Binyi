@@ -72,8 +72,8 @@ AppAsset::register($this);
                     <li><a href="">关于我们</a></li>
                     <li style="padding-right: 0;border-right: none;"><a href="">帮助中心</a></li>
                 </ul>
-                <p>2020-2026 版权所有，翻版必究</p>
-                <p>微信号: <span>测试</span></p>
+                <p>2020-2021 版权所有，翻版必究</p>
+                <p>小程序名称: <span>云典祭祀</span></p>
             </div>
         </div>
     </div>

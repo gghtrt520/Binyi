@@ -136,7 +136,7 @@ AppAsset::addScript($this, "js/index.js");
 </div>
 <div class="bigBox">
     <div class="showBox"></div>
-    <div class="dialog">
+    <div class="dialog-login">
         <div class="title-dialog cf">
             <h6 class="f_l"><i class="icon-back-img2 icon-size-48-48 person-icon"></i>微信扫码登录</h6>
             <i class="f_r close-icon"></i>

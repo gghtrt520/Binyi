@@ -136,6 +136,20 @@
     opacity: 0.4;
     z-index: 101;
 }
+.dialog-login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #0878a3;
+    margin-top: -200px;
+    margin-left: -300px;
+    background-color: #ffffff;
+    z-index: 101;
+}
 .dialog{
     position: fixed;
     top: 50%;
