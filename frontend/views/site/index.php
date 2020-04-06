@@ -1,6 +1,6 @@
 <?php
 
-use backend\assets\AppAsset;
+use frontend\assets\AppAsset;
 /* @var $this yii\web\View */
 
 $this->title = '天堂纪念馆';
