@@ -15,5 +15,10 @@ class AuthController extends Controller
         return $this->render('myself');
     }
 
+    public function actionCreate()
+    {
+        return $this->render('create');
+    }
+
     
 }
