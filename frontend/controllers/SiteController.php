@@ -144,7 +144,12 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $id = Yii::$app->request->get('id');
+        if($room = \common\models\Room::findOne($id)){
+            return $this->render('about',['room'=>$room]);
+        }else{
+            return $this->redirect('index');
+        }
     }
 
     /**
