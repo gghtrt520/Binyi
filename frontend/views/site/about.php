@@ -64,19 +64,19 @@ use yii\helpers\Html;
     <div class="left-base">
         <h2 class="base-title">基本信息</h2> 
         <div class="content-p">
-            <p>姓名： <span>李四</span></p>
-            <p>性别： <span>男</span></p>
-            <p>生辰： <span>2000-06-01</span></p>
-            <p>忌日： <span>2020-07-01</span></p>
-            <p>享年： <span>20</span></p>
-            <p>籍贯： <span>湖北省武汉市文阿斯顿噶</span></p>
-            <p>寄语： <span>试试事实上事实上事实上试试事实上事实上事实上试试事实上事实上事实上试试事实上事实上事实上试试事实上事实上事实上</span></p>
+            <p>姓名： <span><?= Html::encode($room->name) ?></span></p>
+            <p>性别： <span><?= Html::encode($room->gender) ?></span></p>
+            <p>生辰： <span><?= Html::encode($room->birthdate) ?></span></p>
+            <p>忌日： <span><?= Html::encode($room->death) ?></span></p>
+            <p>享年： <span><?= Html::encode($room->age) ?></span></p>
+            <p>籍贯： <span><?= Html::encode($room->province.$room->city.$room->area) ?></span></p>
+            <p>寄语： <span><?= Html::encode($room->description) ?></span></p>
         </div>  
     </div>
     <div class="right-bgimg">
         <div class="content-right">
-            <div class="big-bg" style="background-image: url(/img/mu1.jpg);">
-                <div class="avator-bg" style="background-image: url(/img/邵逸夫.jpg);"></div>
+            <div class="big-bg" style="background-image: url(<?= Html::encode($room->avatar_url) ?>);">
+                <div class="avator-bg" style="background-image: url(<?= Html::encode($room->avatar_url) ?>);"></div>
             </div>
         </div>
     </div>
