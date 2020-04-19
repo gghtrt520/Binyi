@@ -475,6 +475,7 @@
     width: 120px;
     height: 130px;
     margin-bottom: 10px;
+    overflow: hidden;
     cursor: pointer;
 }
 .img-div-teacher img{
