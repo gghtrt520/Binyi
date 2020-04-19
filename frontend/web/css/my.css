@@ -1,1 +1,28 @@
 /*my.css*/
+.page-title{
+    padding-top: 20px;
+}
+.page-title h2{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.icon-school-page{
+    background-position: -854px -88px;
+    margin-right: 12px;
+}
+.creatBtn {
+    float: right;
+    height: 40px;
+    padding: 10px 40px;
+    margin-top: 14px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 16px;
+    background-color: #0878a3;
+    cursor: pointer;
+}
+.list-v{
+    margin-top: 20px;
+}
