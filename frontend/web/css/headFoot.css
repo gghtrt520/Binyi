@@ -4,6 +4,9 @@
     margin-right: 10px;
     vertical-align: middle;
 }
+.header{
+    border-bottom: 1px solid #ddd;
+}
 .header-top{
     height: 50px;
     font-size: 14px;

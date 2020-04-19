@@ -34,7 +34,7 @@ AppAsset::register($this);
         </div>
         <div class="f_r">
             <ul class="header-top-nav">
-                <li><a href="">小程序</a></li><li style="border-right: none;"><a href="javascript:showLoginBox();"><i class="icon-back-img icon-size-40-36 micChat-icon-pos"></i>登录注册</a></li><li style="border-right: none;"><a href="">我的纪念馆</a></li>
+                <li><a href="/">首页</a></li><li><a href="">小程序</a></li><li style="border-right: none;"><a href="javascript:showLoginBox();">登录注册</a></li><li style="border-right: none;"><a href="/auth/myself">我的纪念馆</a></li>
             </ul>
         </div>
     </div>
