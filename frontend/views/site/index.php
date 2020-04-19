@@ -35,28 +35,28 @@ AppAsset::addScript($this, "js/index.js");
                 <ul class="teacher-ul cf">
                     <li class="f_l">
                         <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
+                            <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""/></a></div>
                             <h6>杨袖珠</h6>
                         </div>
                     </li><li class="f_l">
                         <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
+                            <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""/></a></div>
                             <h6>杨袖珠</h6>
                         </div>
                     </li><li class="f_l">
                         <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
+                            <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""/></a></div>
                             <h6>杨袖珠</h6>
                         </div>
                     </li><li class="f_l">
                         <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
+                            <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""/></a></div>
                             <h6>杨袖珠</h6>
                         </div>
                     </li>
                     </li><li class="f_l">
                         <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
+                            <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""/></a></div>
                             <h6>杨袖珠</h6>
                         </div>
                     </li>
@@ -74,7 +74,7 @@ AppAsset::addScript($this, "js/index.js");
                         <?php foreach ($era as $value) : ?>
                             <li class="f_l">
                                 <div class="div-teacher-info">
-                                    <div class="img-div-teacher"><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></div>
+                                    <div class="img-div-teacher"><a href=""><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></a></div>
                                     <h6><?= Html::encode($value->name) ?></h6>
                                 </div>
                             </li>
@@ -95,7 +95,7 @@ AppAsset::addScript($this, "js/index.js");
                         <?php foreach ($per as $value) : ?>
                             <li class="f_l">
                                 <div class="div-teacher-info">
-                                    <div class="img-div-teacher"><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></div>
+                                    <div class="img-div-teacher"><a href=""><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></a></div>
                                     <h6><?= Html::encode($value->name) ?></h6>
                                 </div>
                             </li>
