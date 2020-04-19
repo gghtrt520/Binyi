@@ -1,7 +1,7 @@
 <?php
 
 use frontend\assets\AppAsset;
-/* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = '天堂纪念馆';
 AppAsset::register($this);
@@ -70,33 +70,16 @@ AppAsset::addScript($this, "js/index.js");
             </div>
             <div class="teacher-div">
                 <ul class="teacher-ul cf">
-                    <li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/zyxt7.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li>
+                    <?php if ($era) : ?>
+                        <?php foreach ($era as $value) : ?>
+                            <li class="f_l">
+                                <div class="div-teacher-info">
+                                    <div class="img-div-teacher"><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></div>
+                                    <h6><?= Html::encode($value->name) ?></h6>
+                                </div>
+                            </li>
+                        <?php endforeach ?>
+                    <?php endif ?>
                 </ul>
             </div>
         </div>
@@ -108,27 +91,16 @@ AppAsset::addScript($this, "js/index.js");
             </div>
             <div class="teacher-div">
                 <ul class="teacher-ul cf">
-                    <li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li><li class="f_l">
-                        <div class="div-teacher-info">
-                            <div class="img-div-teacher"><img src="/img/04.png" alt=""/></div>
-                            <h6>杨袖珠</h6>
-                        </div>
-                    </li>
+                    <?php if ($per) : ?>
+                        <?php foreach ($per as $value) : ?>
+                            <li class="f_l">
+                                <div class="div-teacher-info">
+                                    <div class="img-div-teacher"><img src="<?= Html::encode($value->avatar_url) ?>" alt=""/></div>
+                                    <h6><?= Html::encode($value->name) ?></h6>
+                                </div>
+                            </li>
+                        <?php endforeach ?>
+                    <?php endif ?>
                 </ul>
             </div>
         </div>

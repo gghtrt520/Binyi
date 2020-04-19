@@ -74,7 +74,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $era = \common\models\Room::findAll(['category'=>'时代人物']);
+        $per = \common\models\Room::findAll(['category'=>'艺术人生']);
+        return $this->render('index',['era'=>$era,'per'=>$per]);
     }
 
     /**
