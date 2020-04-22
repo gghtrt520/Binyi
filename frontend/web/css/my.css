@@ -23,6 +23,9 @@
     background-color: #0878a3;
     cursor: pointer;
 }
+.creatBtn:hover{
+    color: #FFFFFF;
+}
 .list-v{
     margin-top: 20px;
 }

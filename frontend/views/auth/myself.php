@@ -11,7 +11,7 @@ AppAsset::addScript($this, "js/my.js");
 <div class="main mycontainer">
     <div class="page-title cf">
         <h2 class="f_l"><i class="icon-back-img2 icon-size-40-50 icon-school-page"></i>我的纪念馆</h2>
-        <button class="creatBtn">创建纪念馆</button>
+        <a href="/auth/create" class="creatBtn">创建纪念馆</a>
     </div>
     <div class="list-v">
         <ul class="teacher-ul cf">
