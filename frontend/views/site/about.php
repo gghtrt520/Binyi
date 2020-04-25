@@ -75,7 +75,7 @@ use yii\helpers\Html;
     </div>
     <div class="right-bgimg">
         <div class="content-right">
-            <div class="big-bg" style="background-image: url(<?= Html::encode($room->background?$room->background->background:'') ?>);">
+            <div class="big-bg" style="background-image: url(<?= Html::encode($room->background?$room->background->background:'https://xcx.xhbinyi.com/upload/bg1111111.jpg') ?>);">
                 <div class="avator-bg" style="background-image: url(<?= Html::encode($room->avatar_url) ?>);"></div>
             </div>
         </div>
