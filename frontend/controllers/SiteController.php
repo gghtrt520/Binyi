@@ -14,15 +14,17 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\httpclient\Client;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
+    
+    private $oauth_url = 'https://api.weixin.qq.com/sns/oauth2/access_token';
+    private $user_info = 'https://api.weixin.qq.com/sns/userinfo';
+
     public function behaviors()
     {
         return [
@@ -263,5 +265,57 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+
+
+    public function actionWxcallback(){
+        $code      = Yii::$app->request->get('code');
+        $state     = Yii::$app->request->get('state');
+        $appid     = Yii::$app->params['Login']['AppID'];
+        $appsecret = Yii::$app->params['Login']['AppSecret'];
+        if($code){
+            $client    = new Client();
+            $response  = $client->createRequest()
+                ->setMethod('GET')
+                ->setUrl($this->oauth_url)
+                ->setData([
+                    'appid'      => $appid,
+                    'secret'     => $appsecret,
+                    'code'       => $code,
+                    'grant_type' => 'authorization_code'
+                ])->send();
+            if(isset($response->data['errcode'])){
+                
+            }else{
+                $access_token = $response->data['access_token'];
+                $openid       = $response->data['openid'];
+                $user = $this->getUser($access_token,$openid);
+                if($user){
+                    Yii::$app->user->login($user,3600 * 24 * 30);
+                    $this->redirect('auth/myself');
+                }
+            }
+        }
+    }
+
+
+    private function getUser($access_token,$openid)
+    {
+        $client    = new Client();
+        $response  = $client->createRequest()
+            ->setMethod('GET')
+            ->setUrl($this->user_info)
+            ->setData([
+                'access_token' => $access_token,
+                'openid'       => $openid
+                'lang'         => 'zh_CN'
+            ])->send();
+        if(isset($response->data['errcode'])){
+            
+        }else{
+            $data   = $response->data;
+            $result = \common\models\User::checkUserExistAndSave($data['openid'], Yii::$app->security->generateRandomString(), $data['nick_name'],$data['avatar_url'],$data['gender']);
+            return $result;
+        }
     }
 }
