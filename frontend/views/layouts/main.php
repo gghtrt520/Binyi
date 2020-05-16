@@ -34,7 +34,13 @@ AppAsset::register($this);
         </div>
         <div class="f_r">
             <ul class="header-top-nav">
-                <li><a href="/">首页</a></li><li><a href="javascript:showLoginBox();">登录注册</a></li><li><a href="/auth/myself">我的纪念馆</a></li><li style="border-right: none;"><a class="hover-show">小程序</a><div class="qr-v"><img src="/img/smallqr.jpg"></div></li>
+                <li><a href="/">首页</a></li><li>
+                <?php if (Yii::$app->user->isGuest): ?>
+                    <a href="javascript:showLoginBox();">登录注册</a>
+                <?php elseif ?>
+                    <a href="javascript:showLoginBox();"><?= Html::encode(Yii::$app->user->username) ?></a>
+                <?php endif ?>
+                <a href="javascript:showLoginBox();">登录注册</a></li><li><a href="/auth/myself">我的纪念馆</a></li><li style="border-right: none;"><a class="hover-show">小程序</a><div class="qr-v"><img src="/img/smallqr.jpg"></div></li>
             </ul>
         </div>
     </div>
