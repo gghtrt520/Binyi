@@ -37,7 +37,7 @@ AppAsset::register($this);
                 <li><a href="/">首页</a></li>
                 <li>
                     <?php if (Yii::$app->user->isGuest): ?>
-                        <a href="javascript:showLoginBox();">登录注册</a>
+                        <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx07a5baa6f39cd947&redirect_uri=https://xcx.xhbinyi.com/site/wxcallback&response_type=code&scope=snsapi_login&state=STATE">登录注册</a>
                     <?php else: ?>
                         <a href="#"><?= Html::encode(Yii::$app->user->identity->nick_name) ?></a>
                     <?php endif ?>
