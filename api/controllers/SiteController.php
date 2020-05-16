@@ -98,7 +98,7 @@ class SiteController extends \yii\rest\Controller
         $out  = [];
         $pc   = new \common\models\WXBizDataCrypt($this->AppID, $session_key);
         $code = $pc->decryptData($data, $iv, $out );
-        return json_decode($out,true);
+        return $out;
     }
 
 
