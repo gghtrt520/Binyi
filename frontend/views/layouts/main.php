@@ -50,7 +50,7 @@ AppAsset::register($this);
     </div> -->
 </div>
 
-<div>
+<div style="padding-bottom: 40px;">
     <?= Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]) ?>
@@ -58,7 +58,6 @@ AppAsset::register($this);
     <?= $content ?>
 </div>
 
-<br><br>
 <div class="footer">
     <div class="footer-content container cf">
         <div class="f_l footer-tel-div">

@@ -8,7 +8,7 @@ use yii\helpers\Html;
     .left-base{
         display: inline-block;
         width: 350px;
-        height: 500px;
+        height: 510px;
         padding: 5px;
         border: 1px solid #ddd;
         margin-right: 30px;
@@ -49,7 +49,7 @@ use yii\helpers\Html;
     }
     .avator-bg{
         width: 80px;
-        height: 96px;
+        height: 90px;
         background-position: center;
         background-size: cover;
         position: absolute;
