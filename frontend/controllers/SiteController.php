@@ -292,7 +292,7 @@ class SiteController extends Controller
                 $user = $this->getUser($access_token,$openid);
                 if($user){
                     Yii::$app->user->login($user,3600 * 24 * 30);
-                    $this->redirect('auth/myself');
+                    $this->redirect('/auth/myself');
                 }
             }
         }
