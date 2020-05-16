@@ -56,6 +56,10 @@ class SiteController extends \yii\rest\Controller
         $nick_name  = Yii::$app->request->post('nick_name');
         $avatar_url = Yii::$app->request->post('avatar_url');
         $gender     = Yii::$app->request->post('gender');
+
+        $data       = Yii::$app->request->post('data');
+        $iv         = Yii::$app->request->post('iv');
+        $signature  = Yii::$app->request->post('signature');
         $client   = new Client();
         $response = $client->createRequest()
             ->setMethod('GET')
@@ -70,11 +74,12 @@ class SiteController extends \yii\rest\Controller
             if (isset($response->data['errcode'])) {
                 return ['code'=>self::FAILED,'message'=>'接口请求错误'];
             } else {
-                $result = \common\models\User::checkUserExistAndSave($response->data['unionid'], $response->data['session_key'], $nick_name, $avatar_url, $gender);
+                $out    = $this->decryptData($response->data['session_key'],$data,$iv);
+                $result = \common\models\User::checkUserExistAndSave($out['unionId'], $response->data['session_key'], $nick_name, $avatar_url, $gender);
                 if ($result) {
                     return [
                         'code'    => self::SUCCESS,
-                        'data'    => ['openid'=> $response->data['unionid'],'access_token'=> $result->access_token,'user_id'=>$result->id],
+                        'data'    => ['openid'=> $out['unionId'],'access_token'=> $result->access_token,'user_id'=>$result->id],
                         'message' => '请求成功'
                     ];
                 } else {
@@ -85,6 +90,14 @@ class SiteController extends \yii\rest\Controller
             return ['code'=>self::FAILED,'message'=>'接口请求错误'];
         }
 
+    }
+
+
+    public function decryptData($session_key,$data,$iv)
+    {
+        $pc   = new \common\models\WXBizDataCrypt($this->AppID, $session_key);
+        $code = $pc->decryptData($data, $iv, $out );
+        return json_decode($out,true);
     }
 
 
