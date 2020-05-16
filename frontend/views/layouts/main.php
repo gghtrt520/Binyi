@@ -34,7 +34,7 @@ AppAsset::register($this);
         </div>
         <div class="f_r">
             <ul class="header-top-nav">
-                <li><a href="/">首页</a></li><li><a href="">小程序</a></li><li style="border-right: none;"><a href="javascript:showLoginBox();">登录注册</a></li><li style="border-right: none;"><a href="/auth/myself">我的纪念馆</a></li>
+                <li><a href="/">首页</a></li><li><a href="javascript:showLoginBox();">登录注册</a></li><li><a href="/auth/myself">我的纪念馆</a></li><li style="border-right: none;"><a class="hover-show">小程序</a><div class="qr-v"><img src="/img/smallqr.jpg"></div></li>
             </ul>
         </div>
     </div>
@@ -69,11 +69,11 @@ AppAsset::register($this);
             <div class="footer-img-div"><img src="/img/07.png" alt="二维码"/></div>
             <div class="footer-right-text">
                 <ul class="footer-nav">
-                    <li><a href="">关于我们</a></li>
-                    <li style="padding-right: 0;border-right: none;"><a href="">帮助中心</a></li>
+                    <li><a href=""></a></li>
+                    <li style="padding-right: 0;border-right: none;"><a href=""></a></li>
                 </ul>
                 <p>2020-2021 版权所有，翻版必究</p>
-                <p>小程序名称: <span>云典祭祀</span></p>
+                <p>公众号: <span>西户殡仪馆</span></p>
             </div>
         </div>
     </div>

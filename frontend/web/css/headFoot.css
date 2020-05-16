@@ -60,6 +60,22 @@
     font-size: 16px;
     color: #fff;
 }
+.hover-show:hover + .qr-v{
+    display: block;
+}
+.qr-v{
+    position: absolute;
+    top: 55px;
+    margin-left: -70px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px #666;
+    z-index: 1000;
+    display: none;
+}
+.qr-v img{
+    width: 100%;
+}
 /*�Ų�*/
 .footer{
     width: 100%;
