@@ -95,10 +95,9 @@ class SiteController extends \yii\rest\Controller
 
     public function decryptData($session_key,$data,$iv)
     {
-        $out  = [];
         $pc   = new \common\models\WXBizDataCrypt($this->AppID, $session_key);
-        $code = $pc->decryptData($data, $iv, $out );
-        return $out;
+        $code = $pc->decryptData($data, $iv, $out);
+        return json_decode($out,true);
     }
 
 
