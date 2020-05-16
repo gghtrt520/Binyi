@@ -314,7 +314,7 @@ class SiteController extends Controller
             
         }else{
             $data   = $response->data;
-            $result = \common\models\User::checkUserExistAndSave($data['openid'], Yii::$app->security->generateRandomString(), $data['nick_name'],$data['headimgurl'],$data['sex']);
+            $result = \common\models\User::checkUserExistAndSave($data['openid'], Yii::$app->security->generateRandomString(), $data['nickname'],$data['headimgurl'],$data['sex']);
             return $result;
         }
     }
