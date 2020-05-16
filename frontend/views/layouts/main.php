@@ -50,7 +50,7 @@ AppAsset::register($this);
     </div> -->
 </div>
 
-<div style="padding-bottom: 40px;">
+<div style="padding-bottom: 40px;min-height: 500px;">
     <?= Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]) ?>
@@ -68,8 +68,8 @@ AppAsset::register($this);
             <div class="footer-img-div"><img src="/img/07.png" alt="二维码"/></div>
             <div class="footer-right-text">
                 <ul class="footer-nav">
-                    <li><a href=""></a></li>
-                    <li style="padding-right: 0;border-right: none;"><a href=""></a></li>
+                    <li><a href="http://www.xhbinyi.com/site/ourserver">服务项目</a></li>
+                    <li style="padding-right: 0;border-right: none;"><a href="http://www.xhbinyi.com/site/contact">联系我们</a></li>
                 </ul>
                 <p>2020-2021 版权所有，翻版必究</p>
                 <p>公众号: <span>西户殡仪馆</span></p>
