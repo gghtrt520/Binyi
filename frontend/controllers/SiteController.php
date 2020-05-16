@@ -307,7 +307,7 @@ class SiteController extends Controller
             ->setUrl($this->user_info)
             ->setData([
                 'access_token' => $access_token,
-                'openid'       => $openid
+                'openid'       => $openid,
                 'lang'         => 'zh_CN'
             ])->send();
         if(isset($response->data['errcode'])){
