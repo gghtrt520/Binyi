@@ -23,7 +23,7 @@ class AuthController extends Controller
     {
         $user_id = Yii::$app->user->identity->id;
         $room    = \common\models\Room::find()->where(['user_id'=>$user_id])->all();
-        return $this->render('myself','room'=>$room);
+        return $this->render('myself',['room'=>$room]);
     }
 
     public function actionCreate()
