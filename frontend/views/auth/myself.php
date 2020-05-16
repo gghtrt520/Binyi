@@ -13,44 +13,22 @@ AppAsset::addScript($this, "js/my.js");
         <h2 class="f_l"><i class="icon-back-img2 icon-size-40-50 icon-school-page"></i>我的纪念馆</h2>
         <a href="/auth/create" class="creatBtn">创建纪念馆</a>
     </div>
-    <div class="list-v">
-        <ul class="teacher-ul cf">
-            <li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""></a></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li><li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""></a></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li><li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""></a></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li><li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><a href=""><img src="/img/04.png" alt=""></a></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li>
-            <li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><img src="/img/zyxt7.png" alt=""></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li>
-            <li class="f_l">
-                <div class="div-teacher-info">
-                    <div class="img-div-teacher"><img src="/img/zyxt7.png" alt=""></div>
-                    <h6>杨袖珠</h6>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- <div class="nodata">
-        暂无信息
-    </div> -->
+    <?php if ($room): ?>
+        <div class="list-v">
+            <ul class="teacher-ul cf">
+            <?php foreach ($room as $value) : ?>
+                <li class="f_l">
+                    <div class="div-teacher-info">
+                        <div class="img-div-teacher"><a href=""><img src="<?= Html::encode($value->avatar_url) ?>" alt=""></a></div>
+                        <h6><?= Html::encode($value->name) ?></h6>
+                    </div>
+                </li>
+            <?php endforeach ?>
+            </ul>
+        </div>
+    <?php else: ?>
+        <div class="nodata">
+            暂无信息
+        </div>
+    <?php endif ?>
 </div>
