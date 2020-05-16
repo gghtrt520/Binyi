@@ -70,11 +70,11 @@ class SiteController extends \yii\rest\Controller
             if (isset($response->data['errcode'])) {
                 return ['code'=>self::FAILED,'message'=>'接口请求错误'];
             } else {
-                $result = \common\models\User::checkUserExistAndSave($response->data['openid'], $response->data['session_key'], $nick_name, $avatar_url, $gender);
+                $result = \common\models\User::checkUserExistAndSave($response->data['unionid'], $response->data['session_key'], $nick_name, $avatar_url, $gender);
                 if ($result) {
                     return [
                         'code'    => self::SUCCESS,
-                        'data'    => ['openid'=> $response->data['openid'],'access_token'=> $result->access_token,'user_id'=>$result->id],
+                        'data'    => ['openid'=> $response->data['unionid'],'access_token'=> $result->access_token,'user_id'=>$result->id],
                         'message' => '请求成功'
                     ];
                 } else {
