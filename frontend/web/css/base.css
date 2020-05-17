@@ -105,3 +105,9 @@ a:hover{color: #0878a3;text-decoration:none; cursor: pointer}
     width: 160px;
     height: 35px;
 }
+#uedMinuteTip{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #eee;
+}

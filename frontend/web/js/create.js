@@ -168,7 +168,7 @@ $("button.cancel").on("click",function(){
 $("button.save").on("click",function(){
   var $form = $("form.form-horizontal");
   var avatar_url = $form.find(".avator img").attr("src");
-  var name = $form.find(".avator img").attr("src");
+  var name = $form.find("#username").val();
   var gender = $('input:radio[name=sex]:checked').val();
   var birthdate = $(".start-time input").val();
   var death = $(".end-time input").val();

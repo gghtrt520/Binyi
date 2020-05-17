@@ -79,9 +79,9 @@ AppAsset::addScript($this, "js/create.js");
         <div class="form-group">
           <label for="age" class="col-sm-4 control-label">籍贯：</label>
           <div class="col-sm-8 select-v">
-            <input type="text" placeholder="省" id="province">
-            <input type="text" placeholder="市" id="city">
-            <input type="text" placeholder="区/县" id="area">
+            <input type="text" class="form-control" placeholder="省" id="province"><br>
+            <input type="text" class="form-control" placeholder="市" id="city"><br>
+            <input type="text" class="form-control" placeholder="区/县" id="area"><br>
             <!-- <select class="form-control">
               <option value="1">陕西省</option>
             </select>
