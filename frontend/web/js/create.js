@@ -199,7 +199,7 @@ $("button.save").on("click",function(){
     });
     return;
   }
-  if (avatarUrl) {
+  if(avatar_url) {
     $("body").xTip({
         type: "warning",
         message: "请上传头像照片"
