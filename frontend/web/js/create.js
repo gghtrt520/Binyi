@@ -1,3 +1,44 @@
+function GetAge(strBirthday, deathDay) {
+  var returnAge,
+    strBirthdayArr = strBirthday.split("-"),
+    birthYear = strBirthdayArr[0],
+    birthMonth = strBirthdayArr[1],
+    birthDay = strBirthdayArr[2],
+    d = new Date(),
+    deathDayArr = deathDay.split("-"),
+    nowYear = deathDayArr[0],
+    nowMonth = deathDayArr[1],
+    nowDay = deathDayArr[2];
+  if (nowYear == birthYear) {
+    returnAge = 0;//同年 则为0周岁
+  }
+  else {
+    var ageDiff = nowYear - birthYear; //年之差
+    if (ageDiff > 0) {
+      if (nowMonth == birthMonth) {
+        var dayDiff = nowDay - birthDay;//日之差
+        if (dayDiff < 0) {
+          returnAge = ageDiff - 1;
+        } else {
+          returnAge = ageDiff;
+        }
+      } else {
+        var monthDiff = nowMonth - birthMonth;//月之差
+        if (monthDiff < 0) {
+          returnAge = ageDiff - 1;
+        }
+        else {
+          returnAge = ageDiff;
+        }
+      }
+    } else {
+      returnAge = -1;//返回-1 表示出生日期输入错误 晚于今天
+    }
+  }
+  // return returnAge;//返回周岁年龄
+  $("#age").val(returnAge);
+}
+
 function initDatePicker(el, defalut, startDate, endDate) {
   var time = new Date();
   var mtime = time.getFullYear() + '-' + (time.getMonth() + 1 < 10 ? '0' + (time.getMonth() + 1) : time.getMonth() + 1) + '-' + (time.getDate() < 10 ? '0' + (time.getDate()) : time.getDate());
@@ -33,12 +74,14 @@ function initDatePicker(el, defalut, startDate, endDate) {
           } else if (einput.val() == "") {
               einput.val(sinput.val());
           }
+          GetAge(sinput.val(),einput.val());
       })
       $(el[1]).datetimepicker(option, defalut).on('changeDate', function (ev) {
           if (sinput.val() == "") {
               sinput.val(einput.val());
               $(el[1]).datetimepicker('setStartDate', sinput.val());
           }
+          GetAge(sinput.val(),einput.val());
       });
       if (defalut) {
           sinput.val(mtime);
@@ -104,9 +147,8 @@ $(".comBtn").on("click", function() {
             processData: false,
             contentType: false,
             success: function(data) {
-                // console.log('Upload success');
-                $(".headImage").attr("src", data.data.path);
-                $(".dialog-wrap").hide();
+                $(".avator img").attr("src", data.data.path);
+                $(".avator input").val(data.data.path);
             },
             error: function() {
                  console.log('Upload error');
@@ -119,4 +161,74 @@ $(".celBtn").on("click",function(){
 });
 $(".avator img").on("click",function(){
   $(".dialog-wrap").show();
+});
+$("button.cancel").on("click",function(){
+  window.location.href = "/auth/myself";
+});
+$("button.save").on("click",function(){
+  var $form = $("form.form-horizontal");
+  var avatar_url = $form.find(".avator img").attr("src");
+  var name = $form.find(".avator img").attr("src");
+  var gender = $('input:radio[name=sex]:checked').val();
+  var birthdate = $(".start-time input").val();
+  var death = $(".end-time input").val();
+  var age = $("#age").val();
+  var description = $("#jiyu").val();
+  var province = $("#province").val();
+  var city = $("#city").val();
+  var area = $("#jiyu").val();
+  var rule = $(".rule").val();
+  if (name == "") {
+    $("body").xTip({
+        type: "warning",
+        message: "请输入逝者姓名"
+    });
+    return;
+  }
+  if (description == "") {
+    $("body").xTip({
+        type: "warning",
+        message: "请输入寄语"
+    });
+    return;
+  }
+  if (age == "") {
+    $("body").xTip({
+        type: "warning",
+        message: "请选择生辰忌日"
+    });
+    return;
+  }
+  if (avatarUrl) {
+    $("body").xTip({
+        type: "warning",
+        message: "请上传头像照片"
+    });
+    return;
+  }
+  var params = {
+    "avatar_url":avatar_url,
+    "name": name,
+    "gender": gender,
+    "birthdate": birthdate,
+    "death": death,
+    "age": age,
+    "description": description,
+    "province": province,
+    "city": city,
+    "area": area,
+    "category": '免费',
+    "rule": rule
+  }
+  $.ajax('/site/add', {
+      method: "POST",
+      data: params,
+      success: function(data) {
+        console.log(data);
+        window.location.href = "/auth/myself";
+      },
+      error: function() {
+           console.log('error');
+      }
+  });
 });

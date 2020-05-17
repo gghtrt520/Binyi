@@ -38,10 +38,10 @@ AppAsset::addScript($this, "js/create.js");
           <label for="sex" class="col-sm-4 control-label">性别：</label>
           <div class="col-sm-8">
             <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" checked value="0"> 男
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" checked value="男"> 男
             </label>
             <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1"> 女
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="女"> 女
             </label>
           </div>
         </div>
@@ -79,7 +79,10 @@ AppAsset::addScript($this, "js/create.js");
         <div class="form-group">
           <label for="age" class="col-sm-4 control-label">籍贯：</label>
           <div class="col-sm-8 select-v">
-            <select class="form-control">
+            <input type="text" placeholder="省" id="province">
+            <input type="text" placeholder="市" id="city">
+            <input type="text" placeholder="区/县" id="area">
+            <!-- <select class="form-control">
               <option value="1">陕西省</option>
             </select>
             <select class="form-control">
@@ -89,42 +92,42 @@ AppAsset::addScript($this, "js/create.js");
             <select class="form-control">
               <option value="2">碑林区</option>
               <option value="1">未央区</option>
-            </select>
+            </select> -->
           </div>
         </div>
         <div class="form-group">
           <label for="age" class="col-sm-4 control-label">权限：</label>
           <div class="col-sm-8">
-            <select class="form-control">
-              <option value="1">仅自己可见</option>
-              <option value="2">公开</option>
+            <select class="form-control rule">
+              <option value="0">仅自己可见</option>
+              <option value="1">公开</option>
             </select>
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-offset-4 col-sm-8">
-            <button type="submit" class="btn btn-default">取消</button>
-            <button type="submit" class="btn btn-primary">保存</button>
+            <button type="button" class="btn btn-default cancel">取消</button>
+            <button type="button" class="btn btn-primary save">保存</button>
           </div>
         </div>
       </form>
     </div>
     </div>
-    <div class="dialog-wrap">
-        <div id="dialog">
-            <div class="preview">
-                <img id="preview" />
+</div>
+<div class="dialog-wrap">
+    <div id="dialog">
+        <div class="preview">
+            <img id="preview" />
+        </div>
+        <div style="text-align: center;">
+            <div class="box">
+            <button class="btn btn-primary selectImg">选择图片</button>
+            <input id="imgPicker" type="file" accept="image/" />
             </div>
-            <div style="text-align: center;">
-                <div class="box">
-                <button class="btn btn-primary selectImg">选择图片</button>
-                <input id="imgPicker" type="file" accept="image/" />
-                </div>
-            </div>
-            <div class="footer-dialog">
-                <button class="celBtn btn btn-default">取消</button>
-                <button class="comBtn btn btn-primary">确定</button>
-            </div>
+        </div>
+        <div class="footer-dialog">
+            <button class="celBtn btn btn-default">取消</button>
+            <button class="comBtn btn btn-primary">确定</button>
         </div>
     </div>
 </div>

@@ -97,3 +97,38 @@ $(function(){
         }
     });
 });
+
+$.fn.xTip=function(options){
+    var defaults={
+        type:"success",
+        position:"fixed",
+        location:null,
+        message:"",//提示消息
+        showTime:2000,
+        callback:"",
+        fadeOutTime:1000
+    };
+    var opts=$.extend(defaults,options);
+    // console.log($("#uedMinuteTip"))
+    opts.location=[$(window).width()/2-120,"35%"];
+    $("#uedMinuteTip").remove();
+    var html = "";
+    if(opts.type=="success"){
+        html += "<div id='uedMinuteTip' class='minute-tip ue-minute-success' style='position:"+opts.position+";top:"+opts.location[1]+";left:"+opts.location[0]+"px;z-index:99999999999999;'><span class='icon-ok'></span>";
+    }else{
+        html += "<div id='uedMinuteTip' class='minute-tip ue-minute-warning' style='position:"+opts.position+";top:"+opts.location[1]+";left:"+opts.location[0]+"px;z-index:99999999999999;'><span class='icon-exclamation-sign'></span>";
+    }
+    html += opts.message + "</div>";
+    $("body").append(html);
+    var tip = $("#uedMinuteTip");
+    var tipWidth = tip[0].offsetWidth;
+    tip.css({'left':$(window).width()/2-tipWidth/2})
+    setTimeout(function(){
+        tip.fadeOut(opts.fadeOutTime,function(){
+            $(this).remove();
+        });
+        if(typeof opts.callback == "function"){
+            opts.callback();
+        }   
+    },opts.showTime);
+};
