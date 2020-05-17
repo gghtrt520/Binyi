@@ -16,10 +16,10 @@ AppAsset::addScript($this, "js/index.js");
         <div id="slider" class="case_box">
             <ul>
                 <li class="case_1">
-                    <a href="#"><img src="/img/banner.png" alt=""></a>
+                    <a href="#"><img src="/img/bg0001.jpg" alt=""></a>
                 </li>
                 <li class="case_2">
-                    <a href="#"><img src="/img/banner.png" alt=""></a>
+                    <a href="#"><img src="/img/bg0002.jpg" alt=""></a>
                 </li>
             </ul>
         </div>
