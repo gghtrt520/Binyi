@@ -192,7 +192,7 @@
     color: #727272;
     text-align: center;
     line-height: 50px;
-    font-weight: 200;
+    font-weight: bold;
 }
 .title-text > h2 i:first-child{
     background-position: -120px -66px;
