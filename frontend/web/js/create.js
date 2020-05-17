@@ -93,7 +93,7 @@ $(".comBtn").on("click", function() {
     	return;
     }
     cas.toBlob(function(e) {
-        console.log(e); //生成Blob的图片格式
+        // console.log(e); //生成Blob的图片格式
         var formData = new FormData();
         var fileName = new Date().getTime() + '.png';
         formData.append('Room[avatar_url]', e, fileName);
@@ -104,8 +104,8 @@ $(".comBtn").on("click", function() {
             processData: false,
             contentType: false,
             success: function(data) {
-                console.log('Upload success');
-                $(".headImage").attr("src", data);
+                // console.log('Upload success');
+                $(".headImage").attr("src", data.data.path);
                 $(".dialog-wrap").hide();
             },
             error: function() {
