@@ -10,7 +10,7 @@ html,body{
     min-width: 1200px;
 }
 input{ font-family:"Arial";}
-div{margin:0 auto; padding:0;}
+div{margin:0; padding:0;}
 h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
 table{border-collapse: collapse;border-spacing: 0;}
 button{border:0;background: transparent;outline: none}
