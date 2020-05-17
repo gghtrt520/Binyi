@@ -16,10 +16,10 @@ AppAsset::addScript($this, "js/index.js");
         <div id="slider" class="case_box">
             <ul>
                 <li class="case_1">
-                    <a href="#"><img src="/img/banner.png" alt=""></a>
+                    <a href="#"><img src="/img/banner1.jpg" alt=""></a>
                 </li>
                 <li class="case_2">
-                    <a href="#"><img src="/img/banner.png" alt=""></a>
+                    <a href="#"><img src="/img/banner2.jpg" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -27,7 +27,7 @@ AppAsset::addScript($this, "js/index.js");
     <div class="mycontainer">
         <div style="height: 360px;"></div>
         <div>
-            <div class="title-text">
+            <!-- <div class="title-text">
                 <h1></h1>
                 <h2><i></i>抗疫英雄<i></i></h2>
             </div>
@@ -62,7 +62,7 @@ AppAsset::addScript($this, "js/index.js");
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div>
             <div class="title-text">
