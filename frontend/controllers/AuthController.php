@@ -15,6 +15,7 @@ class AuthController extends Controller
         if(Yii::$app->user->isGuest){
             return $this->redirect($this->login_url);
         }
+        return parent::beforeAction($action);
     }
 
     public function actionMyself()
