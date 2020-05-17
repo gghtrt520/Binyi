@@ -8,7 +8,7 @@ use yii\web\Controller;
 class AuthController extends Controller
 {
     private $login_url = 'https://open.weixin.qq.com/connect/qrconnect?appid=wx07a5baa6f39cd947&redirect_uri=https://xcx.xhbinyi.com/site/wxcallback&response_type=code&scope=snsapi_login&state=STATE';
-
+    private $root_path = Yii::getAlias('@frontend/web');
     
     public function beforeAction($action)
     {
@@ -34,6 +34,21 @@ class AuthController extends Controller
             return $this->redirect($this->login_url);
         }
         return $this->render('create');
+    }
+
+    public function actionUpload()
+    {
+        $model  = new \common\models\Room();
+        $upload = new \common\models\Upload();
+        $result = $upload->uploadFile($model, $this->root_path, 'avatar_url');
+        $path   = Yii::$app->request->hostInfo.$result;
+        return [
+            'code' => 1,
+            'message'=>'操作成功',
+            'data' => [
+                'path' => $path
+            ]
+        ];
     }
 
     
