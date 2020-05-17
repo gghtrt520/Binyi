@@ -195,7 +195,7 @@
     font-weight: bold;
 }
 .title-text > h2 i:first-child{
-    background-position: -120px -66px;
+    background-position: 30px;
 }
 .title-text > h2 i:first-child:before{
     display: inline-block;
@@ -207,7 +207,7 @@
     margin-bottom: 16px;
 }
 .title-text > h2 i:last-child{
-    background-position: -164px -66px;
+    background-position: 30px;
 }
 .title-text > h2 i:last-child:after{
     display: inline-block;

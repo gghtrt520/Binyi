@@ -52,7 +52,7 @@ a:hover{color: #0878a3;text-decoration:none; cursor: pointer}
 }
 .icon-back-img2{
     display: inline-block;
-    /*background: url(../img/icon-bnackimg.png) no-repeat;*/
+    background: url(../img/icon-bnackimg.png) no-repeat;
     vertical-align: middle;
 }
 .icon-size-40-36{

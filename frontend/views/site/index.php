@@ -29,7 +29,7 @@ AppAsset::addScript($this, "js/index.js");
         <div>
             <div class="title-text">
                 <h1></h1>
-                <h2><i class="icon-back-img icon-size-40-50"></i>抗疫英雄<i class="icon-back-img icon-size-40-50"></i></h2>
+                <h2><i></i>抗疫英雄<i></i></h2>
             </div>
             <div class="list-nav">
                 <div class="teacher-div">
@@ -67,7 +67,7 @@ AppAsset::addScript($this, "js/index.js");
         <div>
             <div class="title-text">
                 <h1></h1>
-                <h2><i class="icon-back-img icon-size-40-50"></i>时代人物<i class="icon-back-img icon-size-40-50"></i></h2>
+                <h2><i></i>时代人物<i></i></h2>
             </div>
             <div class="teacher-div">
                 <ul class="teacher-ul cf">
@@ -88,7 +88,7 @@ AppAsset::addScript($this, "js/index.js");
         <div>
             <div class="title-text">
                 <h1></h1>
-                <h2><i class="icon-back-img icon-size-40-50"></i>艺术人生<i class="icon-back-img icon-size-40-50"></i></h2>
+                <h2><i></i>艺术人生<i></i></h2>
             </div>
             <div class="teacher-div">
                 <ul class="teacher-ul cf">
