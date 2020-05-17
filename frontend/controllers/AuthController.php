@@ -43,13 +43,13 @@ class AuthController extends Controller
         $upload = new \common\models\Upload();
         $result = $upload->uploadFile($model, $this->root_path, 'avatar_url');
         $path   = Yii::$app->request->hostInfo.$result;
-        return [
+        return $this->asJson([
             'code' => 1,
             'message'=>'操作成功',
             'data' => [
                 'path' => $path
             ]
-        ];
+        ]);
     }
 
     
