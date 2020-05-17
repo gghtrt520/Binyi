@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div class="header">
     <div class="container header-top cf">
         <div class="f_l">
-            <p><span class="title-head">云典祭祀</span><i class="icon-back-img icon-size-40-36 tel-icon-pos"></i> : 029-84851765
+            <p><span class="title-head">云典祭祀</span> 云端追思，文明祭祀
             </p>
         </div>
         <div class="f_r">
@@ -69,6 +69,8 @@ AppAsset::register($this);
 <div class="footer">
     <div class="footer-content container cf">
         <div class="f_l footer-tel-div">
+            <p>联系电话:</p>
+            <h6>029-84851765</h6>
             <p>服务邮箱:</p>
             <h6>7064755@qq.com</h6>
         </div>
