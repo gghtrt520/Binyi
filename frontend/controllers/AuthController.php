@@ -8,13 +8,14 @@ use yii\web\Controller;
 class AuthController extends Controller
 {
     private $login_url = 'https://open.weixin.qq.com/connect/qrconnect?appid=wx07a5baa6f39cd947&redirect_uri=https://xcx.xhbinyi.com/site/wxcallback&response_type=code&scope=snsapi_login&state=STATE';
-    private $root_path = Yii::getAlias('@frontend/web');
+    private $root_path;
     
     public function beforeAction($action)
     {
         if(Yii::$app->user->isGuest){
             return $this->redirect($this->login_url);
         }
+        $this->root_path = Yii::getAlias('@frontend/web');
         return parent::beforeAction($action);
     }
 
