@@ -31,7 +31,7 @@ AppAsset::addScript($this, "js/create.js");
         <div class="form-group">
           <label for="username" class="col-sm-4 control-label">逝者姓名：</label>
           <div class="col-sm-8">
-            <input type="text" class="form-control" id="username" placeholder="请输入逝者姓名">
+            <input type="text" class="form-control" maxlength="6" id="username" placeholder="请输入逝者姓名">
           </div>
         </div>
         <div class="form-group">
@@ -49,7 +49,7 @@ AppAsset::addScript($this, "js/create.js");
         <div class="form-group">
           <label for="jiyu" class="col-sm-4 control-label">寄语：</label>
           <div class="col-sm-8">
-            <input type="text" class="form-control" id="jiyu" placeholder="请输入寄语">
+            <input type="text" class="form-control" id="jiyu" maxlength="120" placeholder="请输入寄语">
           </div>
         </div>
         <div class="form-group">
@@ -79,9 +79,9 @@ AppAsset::addScript($this, "js/create.js");
         <div class="form-group">
           <label for="age" class="col-sm-4 control-label">籍贯：</label>
           <div class="col-sm-8 select-v">
-            <input type="text" class="form-control" placeholder="省" id="province"><br>
-            <input type="text" class="form-control" placeholder="市" id="city"><br>
-            <input type="text" class="form-control" placeholder="区/县" id="area">
+            <input type="text" class="form-control" maxlength="6" placeholder="省" id="province"><br>
+            <input type="text" class="form-control" maxlength="8" placeholder="市" id="city"><br>
+            <input type="text" class="form-control" maxlength="12" placeholder="区/县" id="area">
             <!-- <select class="form-control">
               <option value="1">陕西省</option>
             </select>

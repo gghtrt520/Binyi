@@ -111,7 +111,7 @@ $('#imgPicker').bind('change', function() {
   reader.onload = function(e) {
       $('#preview').attr("src", e.target.result);
       $image.cropper({
-          aspectRatio: 1 / 1,
+          aspectRatio: 1 / 1.2,
           preview: "#preview",
           dragMode: "none",
           modal: true,
