@@ -218,7 +218,7 @@ $("button.save").on("click",function(){
     "city": city,
     "area": area,
     "category": '免费',
-    "religion" '无',
+    "religion":'无',
     "rule": rule
   }
   $.ajax('/auth/add', {

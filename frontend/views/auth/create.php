@@ -81,7 +81,7 @@ AppAsset::addScript($this, "js/create.js");
           <div class="col-sm-8 select-v">
             <input type="text" class="form-control" placeholder="省" id="province"><br>
             <input type="text" class="form-control" placeholder="市" id="city"><br>
-            <input type="text" class="form-control" placeholder="区/县" id="area"><br>
+            <input type="text" class="form-control" placeholder="区/县" id="area">
             <!-- <select class="form-control">
               <option value="1">陕西省</option>
             </select>

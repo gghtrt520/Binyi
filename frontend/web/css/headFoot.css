@@ -490,6 +490,7 @@
 .img-div-teacher{
     width: 120px;
     height: 130px;
+    margin: 0 auto;
     margin-bottom: 10px;
     overflow: hidden;
     cursor: pointer;
