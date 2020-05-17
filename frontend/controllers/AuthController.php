@@ -11,10 +11,10 @@ class AuthController extends Controller
 
     public function  init()
     {
-        parent::init();
         if(Yii::$app->user->isGuest){
-            $this->redirect($this->login_url);
+            return $this->redirect($this->login_url);
         }
+        parent::init();
     }
 
 
