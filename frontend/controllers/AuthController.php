@@ -79,7 +79,7 @@ class AuthController extends Controller
         } else {
             return  $this->asJson([
                 'code'    => 0,
-                'message' =>$this->getErrorMessage($model),
+                'message' =>$model->getErrors(),
             ]);
         }
     }
