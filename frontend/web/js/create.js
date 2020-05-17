@@ -169,7 +169,7 @@ $("button.save").on("click",function(){
   var $form = $("form.form-horizontal");
   var avatar_url = $form.find(".avator img").attr("src");
   var name = $form.find("#username").val();
-  var gender = $('input:radio[name=sex]:checked').val();
+  var gender = $('input:radio[name=inlineRadioOptions]:checked').val();
   var birthdate = $(".start-time input").val();
   var death = $(".end-time input").val();
   var age = $("#age").val();
@@ -218,6 +218,7 @@ $("button.save").on("click",function(){
     "city": city,
     "area": area,
     "category": '免费',
+    "religion" '无',
     "rule": rule
   }
   $.ajax('/auth/add', {
@@ -225,7 +226,14 @@ $("button.save").on("click",function(){
       data: params,
       success: function(data) {
         console.log(data);
-        window.location.href = "/auth/myself";
+        if(data.code == 1){
+          window.location.href = "/auth/myself";
+        }else{
+          $("body").xTip({
+              type: "warning",
+              message: data.message
+          });
+        }
       },
       error: function() {
            console.log('error');
