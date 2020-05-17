@@ -95,22 +95,22 @@ $(".comBtn").on("click", function() {
     cas.toBlob(function(e) {
         console.log(e); //生成Blob的图片格式
         var formData = new FormData();
-        formData.append('croppedImage', e);
+        formData.append('Room[avatar_url]', e);
         $(".dialog-wrap").hide();
-        // $.ajax('/path/to/upload', {
-        //     method: "POST",
-        //     data: formData,
-        //     processData: false,
-        //     contentType: false,
-        //     success: function(data) {
-        //         console.log('Upload success');
-        //         $(".headImage").attr("src", data);
-        //         $(".dialog-wrap").hide();
-        //     },
-        //     error: function() {
-        //          console.log('Upload error');
-        //     }
-        // });
+        $.ajax('/auth/upload', {
+            method: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(data) {
+                console.log('Upload success');
+                $(".headImage").attr("src", data);
+                $(".dialog-wrap").hide();
+            },
+            error: function() {
+                 console.log('Upload error');
+            }
+        });
     });
 })
 $(".celBtn").on("click",function(){
