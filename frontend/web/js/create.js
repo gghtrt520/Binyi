@@ -95,7 +95,8 @@ $(".comBtn").on("click", function() {
     cas.toBlob(function(e) {
         console.log(e); //生成Blob的图片格式
         var formData = new FormData();
-        formData.append('Room[avatar_url]', e);
+        var fileName = new Date().getTime() + '.png';
+        formData.append('Room[avatar_url]', e, fileName);
         $(".dialog-wrap").hide();
         $.ajax('/auth/upload', {
             method: "POST",
