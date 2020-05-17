@@ -2,6 +2,7 @@
 
 use frontend\assets\AppAsset;
 use yii\helpers\Html;
+use  yii\helpers\Url;
 
 $this->title = '天堂纪念馆';
 AppAsset::register($this);
@@ -19,7 +20,7 @@ AppAsset::addScript($this, "js/my.js");
             <?php foreach ($room as $value) : ?>
                 <li class="f_l">
                     <div class="div-teacher-info">
-                        <div class="img-div-teacher"><a href=""><img src="<?= Html::encode($value->avatar_url) ?>" alt=""></a></div>
+                        <div class="img-div-teacher"><a href="<?=Url::toRoute(['site/about','id' =>$value->id]);?>"><img src="<?= Html::encode($value->avatar_url) ?>" alt=""></a></div>
                         <h6><?= Html::encode($value->name) ?></h6>
                     </div>
                 </li>
