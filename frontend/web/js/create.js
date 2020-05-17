@@ -199,7 +199,7 @@ $("button.save").on("click",function(){
     });
     return;
   }
-  if(avatar_url) {
+  if(!avatar_url) {
     $("body").xTip({
         type: "warning",
         message: "请上传头像照片"
@@ -220,7 +220,7 @@ $("button.save").on("click",function(){
     "category": '免费',
     "rule": rule
   }
-  $.ajax('/site/add', {
+  $.ajax('/auth/add', {
       method: "POST",
       data: params,
       success: function(data) {
