@@ -58,7 +58,7 @@ AppAsset::register($this);
     </div> -->
 </div>
 
-<div style="padding-bottom: 40px;min-height: 500px;">
+<div style="padding-bottom: 40px;min-height: 700px;">
     <?= Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]) ?>
