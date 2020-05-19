@@ -3,7 +3,7 @@
 use frontend\assets\AppAsset;
 use yii\helpers\Html;
 
-$this->title = '天堂纪念馆';
+$this->title = '云典殿堂';
 AppAsset::register($this);
 
 AppAsset::addCss($this, "plugin/bootstrap/css/bootstrap.min.css");

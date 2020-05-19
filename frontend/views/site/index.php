@@ -4,7 +4,7 @@ use frontend\assets\AppAsset;
 use yii\helpers\Html;
 use  yii\helpers\Url;
 
-$this->title = '天堂纪念馆';
+$this->title = '云典殿堂';
 AppAsset::register($this);
 AppAsset::addCss($this, "css/index.css");
 AppAsset::addScript($this, "js/script.js");
