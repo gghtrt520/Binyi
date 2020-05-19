@@ -35,16 +35,16 @@ AppAsset::register($this);
         <div class="f_r">
             <ul class="header-top-nav">
                 <li><a href="/">首页</a></li>
-                <li>
+                <li role="presentation" class="dropdown">
                     <?php if (Yii::$app->user->isGuest): ?>
                         <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx07a5baa6f39cd947&redirect_uri=https://xcx.xhbinyi.com/site/wxcallback&response_type=code&scope=snsapi_login&state=STATE">登录注册</a>
                     <?php else: ?>
-                        <a href="#"><?= Html::encode(Yii::$app->user->identity->nick_name) ?></a>
-                        <?= Html::a(
-                            '退出',
-                            ['/site/logout'],
-                            ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
-                        ) ?>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <?= Html::encode(Yii::$app->user->identity->nick_name) ?><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/site/logout">退出</a></li>
+                        </ul>
                     <?php endif ?>
                 </li>
                 <li><a href="/auth/myself">我的纪念馆</a></li><li style="border-right: none;"><a class="hover-show">小程序</a><div class="qr-v"><img src="/img/smallqr.jpg"></div></li>
