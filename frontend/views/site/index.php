@@ -84,7 +84,6 @@ AppAsset::addScript($this, "js/index.js");
                 </ul>
             </div>
         </div>
-        </div>
         <div>
             <div class="title-text">
                 <h1></h1>
